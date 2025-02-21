@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TchadMaCulture</title>
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+        /* Navbar */
+        .navbar { background: #2c3e50; padding: 1rem; position: sticky; top: 0; z-index: 100; }
+        .navbar-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .navbar-logo { color: #fff; font-size: 1.5rem; text-decoration: none; }
+        .navbar-links { list-style: none; display: flex; gap: 1.5rem; }
+        .navbar-links a { color: #fff; text-decoration: none; }
+        .navbar-links a:hover { color: #e74c3c; }
+
+        /* Hero */
+        .hero { background: #ecf0f1; padding: 4rem 2rem; text-align: center; }
+        .hero-container { max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .hero-image img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        /* Sections */
+        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
+
+        /* Heritage Grid */
+        .heritage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .heritage-item { text-align: center; }
+        .heritage-item img { width: 100%; height: auto; border-radius: 5px; }
+
+        /* Event & Artisan Lists */
+        .event-list, .artisan-list { display: grid; gap: 1.5rem; }
+        .event, .artisan { background: #f9f9f9; padding: 1rem; border-radius: 5px; }
+
+        /* Gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .gallery-grid img { width: 100%; height: auto; border-radius: 5px; }
+
+        /* Buttons */
+        .button { background: #e74c3c; color: #fff; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; }
+        .button:hover { background: #c0392b; }
+
+        /* Newsletter */
+        .newsletter form { display: flex; gap: 1rem; justify-content: center; }
+        .newsletter input { padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; }
+
+        /* Footer */
+        footer { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .footer-content a { color: #fff; text-decoration: none; }
+        .footer-content a:hover { color: #e74c3c; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar-container { flex-direction: column; }
+            .navbar-links { flex-direction: column; gap: 1rem; margin-top: 1rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .newsletter form { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo" aria-label="Home">TchadMaCulture</a>
+            <ul class="navbar-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#heritage">Cultural Heritage</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#meet-artisans">Meet the Artisans</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-container">
+            <h1>Celebrate and Preserve Chadian Culture</h1>
+            <p>Explore Chad’s rich cultural heritage, engage with local traditions, and contribute to preserving our history.</p>
+            <button class="button" aria-label="Join Us">Join Us</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/tchad_culture.jpeg" alt="Chadian cultural representation" loading="lazy">
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About TchadMaCulture</h2>
+        <p>TchadMaCulture is dedicated to preserving, promoting, and celebrating Chad’s diverse cultural heritage. Through storytelling, art, music, and history, we strive to keep our traditions alive for future generations.</p>
+    </section>
+
+    <!-- Heritage -->
+    <section id="heritage" class="heritage">
+        <h2>Our Cultural Heritage</h2>
+        <div class="heritage-grid">
+            <div class="heritage-item">
+                <img src="images/music_dance.jpeg" alt="Traditional Music and Dance" loading="lazy">
+                <h3>Traditional Music & Dance</h3>
+                <p>Experience the rhythms and dances that have been passed down for generations.</p>
+            </div>
+            <div class="heritage-item">
+                <img src="images/cuisine.jpeg" alt="Chadian Cuisine" loading="lazy">
+                <h3>Chadian Cuisine</h3>
+                <p>Discover the flavors of Chad’s unique and diverse culinary traditions.</p>
+            </div>
+            <div class="heritage-item">
+                <img src="images/artifacts.jpeg" alt="Historical Artifacts" loading="lazy">
+                <h3>Historical Artifacts</h3>
+                <p>Learn about the artifacts and ancient traditions that shape Chad’s history.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="events">
+        <h2>Upcoming Cultural Events</h2>
+        <p>Join us in celebrating Chad’s culture through various events, festivals, and workshops.</p>
+        <div class="event-list">
+            <div class="event">
+                <h3>Chad Heritage Festival</h3>
+                <p>December 5, 2024 | Abeche</p>
+                <p>Join us for a grand celebration of Chad's history and traditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artisans -->
+    <section id="meet-artisans" class="meet-artisans">
+        <h2>Meet the Artisans</h2>
+        <p>Discover the talented artists, musicians, and craftsmen preserving Chad’s heritage.</p>
+        <div class="artisan-list">
+            <div class="artisan">
+                <h3>Fatima Oumar</h3>
+                <p>A renowned potter creating traditional Chadian ceramics.</p>
+            </div>
+            <div class="artisan">
+                <h3>Moussa Abdoulaye</h3>
+                <p>A master kora player sharing ancient melodies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <p>Explore visuals showcasing Chad’s vibrant culture.</p>
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpeg" alt="Dancers at N’Djamena Festival 2024" loading="lazy">
+            <img src="images/gallery2.jpeg" alt="Traditional Chadian craftwork" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog">
+        <h2>Stories & Insights</h2>
+        <p>Read about Chadian cultural history, interviews, and personal experiences.</p>
+        <div class="blog-list">
+            <div class="blog-post">
+                <h3>The Art of Chadian Weaving</h3>
+                <p>A deep dive into the weaving traditions passed down through generations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter to receive the latest updates on Chadian culture and events.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" aria-label="Email Address">
+            <button class="button" type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Get Involved -->
+    <section id="get-involved" class="get-involved">
+        <h2>Get Involved</h2>
+        <p>Join our mission to preserve Chad’s cultural heritage by volunteering, donating, or collaborating.</p>
+        <button class="button">Become a Member</button>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2>What People Say</h2>
+        <p>Hear from those passionate about Chadian culture.</p>
+        <div class="testimonial">
+            <blockquote>"TchadMaCulture has been an eye-opener to the rich traditions of Chad."</blockquote>
+            <p>- Awa Mahamat</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: info@tchadmaculture.com</p>
+                <p>Phone: +235 6789 1234</p>
+                <p>Address: N'Djamena, Chad</p>
+            </div>
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
