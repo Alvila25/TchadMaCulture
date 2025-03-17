@@ -1,3 +1,6 @@
+import os
+
+
 INSTALLED_APPS = [
     'culture.apps.CultureConfig',
     'django.contrib.staticfiles',
