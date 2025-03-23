@@ -1,51 +1,310 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; line-height: 1.6; }
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Navbar */
-.navbar { background: #2c3e50; padding: 1rem; position: sticky; top: 0; z-index: 100; }
-.navbar-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-.navbar-logo { color: #fff; font-size: 1.5rem; text-decoration: none; }
-.navbar-links { list-style: none; display: flex; gap: 1.5rem; }
-.navbar-links a { color: #fff; text-decoration: none; }
-.navbar-links a:hover { color: #e74c3c; }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
-/* Hero */
-.hero { background: #ecf0f1; padding: 4rem 2rem; text-align: center; }
-.hero-container { max-width: 800px; margin: 0 auto; }
-.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
-.hero-image img { max-width: 100%; height: auto; }
+/* Navbar Styles */
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
 
-/* Sections */
-section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
-h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-/* Heritage Grid */
-.heritage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-.heritage-item { text-align: center; }
-.heritage-item img { width: 100%; height: auto; }
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    margin: 0 2rem;
+}
 
-/* Event & Artisan Lists */
-.event-list, .artisan-list { display: grid; gap: 1.5rem; }
-.event, .artisan { background: #f9f9f9; padding: 1rem; border-radius: 5px; }
+.navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-/* Gallery */
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-.gallery-grid img { width: 100%; height: auto; }
+.navbar-links li {
+    margin: 0.5rem 1rem;
+}
 
-/* Buttons */
-.button { background: #e74c3c; color: #fff; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; }
-.button:hover { background: #c0392b; }
+.navbar-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
 
-/* Footer */
-footer { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; }
-.footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; }
-.footer-content a { color: #fff; }
+.navbar-links a:hover {
+    color: #e74c3c;
+}
 
-/* Responsive */
+/* Hero Styles */
+.hero {
+    background: #f4f4f4;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Button Styles */
+.button, .cta-button {
+    background: #e74c3c;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.button:hover, .cta-button:hover {
+    background: #c0392b;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section h3 {
+    color: #34495e;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+section p, section ul {
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Unique Section Background Colors */
+.about { background: #f8e1e1; }
+.mission-vision-section { background: #e1f8e1; }
+.heritage-section { background: #e1e1f8; }
+.art-section { background: #f8f1e1; }
+.music-section { background: #e1f8f1; }
+.tourism-section { background: #f1e1f8; }
+.knowledge-section { background: #e8f8e1; }
+.community-section { background: #e1e8f8; }
+.partnerships-section { background: #f8e8e1; }
+.meet-artisans { background: #e1f8e8; }
+.gallery { background: #f8e1f8; }
+.blog { background: #e1f1f8; }
+.newsletter { background: #f8f8e1; }
+.get-involved { background: #e1f8f4; }
+.testimonials { background: #f4e1f8; }
+
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Artisan List */
+.artisan-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.artisan {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-content a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #e74c3c;
+}
+
+/* Newsletter Styles */
+.newsletter form {
+    display: flex;
+    max-width: 400px;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #1a1a1a;
+    color: #ecf0f1;
+}
+
+.dark-mode .navbar {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+.dark-mode .navbar-logo,
+.dark-mode .navbar-links a {
+    color: #ecf0f1;
+}
+
+.dark-mode .navbar-links a:hover {
+    color: #e74c3c;
+}
+
+.dark-mode .hero { background: #34495e; }
+.dark-mode .about { background: #423131; }
+.dark-mode .mission-vision-section { background: #314231; }
+.dark-mode .heritage-section { background: #313142; }
+.dark-mode .art-section { background: #423d31; }
+.dark-mode .music-section { background: #31423d; }
+.dark-mode .tourism-section { background: #3d3142; }
+.dark-mode .knowledge-section { background: #384231; }
+.dark-mode .community-section { background: #313842; }
+.dark-mode .partnerships-section { background: #423831; }
+.dark-mode .meet-artisans { background: #314238; }
+.dark-mode .gallery { background: #423142; }
+.dark-mode .blog { background: #313d42; }
+.dark-mode .newsletter { background: #424231; }
+.dark-mode .get-involved { background: #31423f; }
+.dark-mode .testimonials { background: #3f3142; }
+
+.dark-mode section h2,
+.dark-mode section h3 {
+    color: #ecf0f1;
+}
+
+.dark-mode .artisan {
+    background: #34495e;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .navbar-container { flex-direction: column; }
-    .navbar-links { flex-direction: column; gap: 1rem; margin-top: 1rem; }
-    .hero h1 { font-size: 1.8rem; }
+    .navbar-container {
+        padding: 1rem 0;
+    }
+    
+    .navbar-links {
+        margin-top: 1rem;
+    }
+    
+    .navbar-links li {
+        margin: 0.5rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
 }
