@@ -1,338 +1,722 @@
-
-
 <!DOCTYPE html>
-< lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TchadMaCulture</title>
+    <title>Chadian Cultural Heritage</title>
     <style>
-        /* Reset */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-
-        /* Navbar */
-        .navbar { background: #2c3e50; padding: 1rem; position: sticky; top: 0; z-index: 100; }
-        .navbar-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .navbar-logo { color: #fff; font-size: 1.5rem; text-decoration: none; }
-        .navbar-links { list-style: none; display: flex; gap: 1.5rem; }
-        .navbar-links a { color: #fff; text-decoration: none; }
-        .navbar-links a:hover { color: #e74c3c; }
-
-        /* Hero */
-        .hero { background: #ecf0f1; padding: 4rem 2rem; text-align: center; }
+        /* Navigation Header */
+        header.nav-header { background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .nav-links { list-style: none; display: flex; gap: 1rem; margin-top: 1rem; }
+        .nav-links a { text-decoration: none; color: #333; }
+        .language-switcher { margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        /* Hero Header */
+        header.hero { background: #ecf0f1; padding: 4rem 2rem; text-align: center; }
         .hero-container { max-width: 800px; margin: 0 auto; }
         .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
         .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
         .hero-image img { max-width: 100%; height: auto; border-radius: 5px; }
-
-        /* Sections */
-        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
-        h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
-
-        /* Heritage Grid */
-        .heritage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-        .heritage-item { text-align: center; }
-        .heritage-item img { width: 100%; height: auto; border-radius: 5px; }
-
-        /* Event & Artisan Lists */
-        .event-list, .artisan-list { display: grid; gap: 1.5rem; }
-        .event, .artisan { background: #f9f9f9; padding: 1rem; border-radius: 5px; }
-
-        /* Gallery */
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-        .gallery-grid img { width: 100%; height: auto; border-radius: 5px; }
-
-        /* Buttons */
         .button { background: #e74c3c; color: #fff; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; }
         .button:hover { background: #c0392b; }
-
-        /* Newsletter */
-        .newsletter form { display: flex; gap: 1rem; justify-content: center; }
-        .newsletter input { padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; }
-
-        /* Footer */
-        footer { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; }
-        .footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; }
-        .footer-content a { color: #fff; text-decoration: none; }
-        .footer-content a:hover { color: #e74c3c; }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .navbar-container { flex-direction: column; }
-            .navbar-links { flex-direction: column; gap: 1rem; margin-top: 1rem; }
-            .hero h1 { font-size: 1.8rem; }
-            .newsletter form { flex-direction: column; }
-        }
+        /* Sections */
+        .section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .section:nth-child(odd) { background: #f9f9f9; }
+        .section:nth-child(even) { background: #e6e6e6; }
+        @media (max-width: 768px) { .nav-links { flex-direction: column; } .hero h1 { font-size: 1.8rem; } }
     </style>
 </head>
+<body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar sticky">
-        <div class="navbar-container">
-            <a href="/" class="navbar-logo" aria-label="Home">TchadMaCulture</a>
-            <ul class="navbar-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#mission">Mission and Vision</a></li>
-                <li><a href="#heritage">Heritage & History</a></li>
-                <li><a href="#arts">Art & Literature</a></li>
-                <li><a href="#music">Music & Performing Arts</a></li>
-                <li><a href="#community">Community & Engagement</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#get-involved">Get Involved</a></li>
-                <li><a href="#contact">Contact</a></li>
+<header>
+    <div class="nav-container">
+        <h1 id="site-title">Chadian Cultural Heritage</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about" data-lang="menu_about">About</a></li>
+                <li><a href="#history" data-lang="menu_history">History & Heritage</a></li>
+                <li><a href="#art" data-lang="menu_art">Art & Literature</a></li>
+                <li><a href="#music" data-lang="menu_music">Music & Performing Arts</a></li>
+                <li><a href="#gallery" data-lang="menu_gallery">Gallery</a></li>
+                <li><a href="#contact" data-lang="menu_contact">Contact</a></li>
             </ul>
+        </nav>
+        <div class="language-switcher">
+            <label for="language-select">Choose Language:</label>
+            <select id="language-select">
+                <option value="en">🇬🇧 English</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="ar">🇸🇦 العربية</option>
+            </select>
         </div>
-    </nav>
+    </div>
+</header>
 
-    <!-- Hero -->
-    <header class="hero">
-        <div class="hero-container">
-            <h1>Celebrate and Preserve Chadian Culture</h1>
-            <p>Explore Chad’s rich cultural heritage, engage with local traditions, and contribute to preserving our history.</p>
-            <button class="button" aria-label="Join Us">Join Us</button>
-        </div>
-        <div class="hero-image">
-            <img src="static/images/Nation placeChad.jpg" alt="Chadian cultural representation" loading="lazy">
-        </div>
-    </header>
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-container">
+        <h1 data-lang="hero_title">Celebrate and Preserve Chadian Culture</h1>
+        <p data-lang="hero_text">Explore Chad’s rich cultural heritage, engage with local traditions, and contribute to preserving our history.</p>
+        <button class="button" aria-label="Join Us" data-lang="hero_button">Join Us</button>
+    </div>
+    <div class="hero-image">
+        <img src="static/images/Nation placeChad.jpg" alt="Chadian cultural representation" loading="lazy">
+    </div>
+</header>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <h2>About TchadMaCulture</h2>
-        <p>TchadMaCulture is a pioneering digital platform dedicated to the preservation, promotion, and global recognition of Chad’s rich cultural heritage. 
-            By blending tradition with innovation, we provide an immersive experience that celebrates the nation’s diverse artistic expressions, historical depth, and indigenous knowledge</p>
+    <!--About Chad and Our Mission-->
+    <section id="about" class="section">
+       <h2 data-lang="section_about"></h2>About Chad & Our Mission</h2>
+        <p data-lang="about_text">
+           Chad is a nation of diverse cultures, rich traditions, and deep-rooted heritage. Chad is located at the crossroads of North and Central Africa. 
+         Chad is home to over 200 ethnic groups, each contributing to its vibrant cultural landscape.</p>
+        <p>
+            Our mission is to preserve, promote, and shape Chad’s cultural identity globally. We are committed to showcasing its unique art, music, literature, traditions, and history to the world. By educating and engaging communities, we aim to foster a deeper appreciation of Chad’s heritage while embracing modern innovations to keep its traditions alive for future generations.
+        </p>
     </section>
 
-    <!--Our Mission and Viosion-->
-    <section id="mission-vision" class="mission-vision-section">
-        <h2>Our Vision & Mission</h2>
-    
-        <h3>Vision</h3>
-        <p>To establish Chad as a global center for cultural excellence, heritage preservation, and artistic innovation—bridging the past with the future.</p>
-    
-        <h3>Mission</h3>
+    <!--Our Vision and Cultural Mission-->
+    <section id="vision" class="section">
+        <h2 data-lang="section_vision">Our Vision & Cultural Mission</h2>
+        <p data-lang="vision_text">
+         Our vision is to establish Chad as a globally recognized cultural hub, where traditions are preserved, artists are empowered, and the world is educated about our rich heritage. We strive to connect the past, present, and future of Chadian culture through innovation and collaboration.</p>
+        <p>Our mission is driven by the following key commitments:</p>
         <ul>
-            <li>Preserve and digitize Chad’s cultural history for future generations.</li>
-            <li>Showcase Chadian art, literature, and traditions on a world stage.</li>
-            <li>Empower local artists, historians, and creators through digital platforms.</li>
-            <li>Promote Chad’s tourism and economic potential through interactive storytelling.</li>
-            <li>Engage international audiences with immersive virtual and physical experiences.</li>
+            <li><strong>Preserving Traditions:</strong> Documenting, archiving, and celebrating Chad’s diverse cultural practices.</li>
+            <li><strong>Empowering Artists:</strong> Providing platforms and resources for Chadian creators in art, music, and literature.</li>
+            <li><strong>Global Education:</strong> Showcasing Chad’s cultural identity to international audiences through digital content and storytelling.</li>
+            <li><strong>Innovation & Modernization:</strong> Embracing technology, digital media, and contemporary art to keep Chadian heritage alive in the modern world.</li>
         </ul>
-    
-        <a href="#explore-culture" class="cta-button">Explore Our Culture</a>
     </section>
 
-    <!-- Heritage and History -->
-    <section id="heritage" class="heritage-section">
-        <h2>Heritage & History</h2>
-        <p>Explore Chad’s rich historical tapestry, where ancient civilizations, remarkable landmarks, and timeless traditions come to life.</p>
-        
-        <h3>Ancient Civilizations</h3>
-        <p>Discover the legacies of the <strong>Sao Kingdom</strong>, the <strong>Kanem-Bornu Empire</strong>, and Chad’s pre-colonial heritage, which shaped the region’s identity.</p>
-        
-        <h3>Landmarks of Legacy</h3>
-        <p>Journey through UNESCO-listed sites such as the breathtaking <strong>Ennedi Plateau</strong> and the mystical <strong>Lakes of Ounianga</strong>, which hold centuries of history.</p>
-        
-        <h3>Virtual Exhibitions</h3>
-        <p>Immerse yourself in Chad’s past through interactive 3D tours of historical artifacts, archaeological discoveries, and sacred sites.</p>
-      
-        <h3>Chadian Cuisine</h3>
-        <p>Discover the flavors of Chad’s unique and diverse culinary traditions.</p>
+    <!-- History & Heritage Section -->
+    <section id="history" class="section">
+        <h2 data-lang="section_history">Heritage & History of Chad</h2>
+        <div class="section box"></div>
+        <h3 data-lang="history_roots">Chad’s Historical Roots</h3>
+        <p data-lang="history_text">
+            Chad's history is deeply rooted in the ancient civilizations that flourished in the region. The Kanem-Bornu Empire, one of Africa’s most powerful kingdoms, thrived for centuries, influencing trade, culture, and governance. Chad is home to over 200 ethnic groups, each with its own unique traditions and customs, contributing to the country's diverse cultural landscape.
+        </p>
 
-        <h3>Historical Artifacts</h3>
-        <p>Learn about the artifacts and ancient traditions that shape Chad’s history.</p>
-        
-        <a href="#explore-more" class="cta-button">Discover Chad’s History</a>
+         <h3 data-lang="cultural_milestones">Cultural Milestones</h3>
+        <p data-lang="milestones_text">
+            Throughout history, Chad has experienced significant cultural transformations. From the rise of indigenous kingdoms and Islamic influences to the impact of colonization and independence in 1960, these milestones have shaped Chad’s identity. Today, Chad continues to celebrate its heritage through festivals, traditional ceremonies, and cultural preservation efforts.
+        </p>
+
+        <h3 data-lang="oral_traditions">Oral Traditions & Folklore</h3>
+        <p data-lang="oral_text">
+            Oral traditions play a vital role in preserving Chad’s history. Storytelling, poetry, and folklore have been passed down through generations, keeping ancestral wisdom alive. Elders and griots (traditional storytellers) share myths, legends, and moral lessons that continue to influence Chadian society today.
+        </p>
     </section>
 
-    <!--Art and Literature-->
-    <section id="art" class="art-section">
-        <h2>Art & Literature</h2>
-        <p>Chad’s artistic soul is expressed through stunning visual arts, timeless literature, and powerful storytelling that connect generations.</p>
-    
-        <h3>Visual Arts & Digital Galleries</h3>
-        <p>Explore a curated collection of works from Chadian painters, sculptors, and photographers, bringing traditional and modern creativity to the world.</p>
-    
-        <h3>Chadian Literature & Oral Traditions</h3>
-        <p>From ancient folktales to contemporary novels, Chad’s literary heritage reflects the voices of poets, writers, and storytellers who shape the nation’s cultural identity.</p>
-    
-        <h3>Creative Industry Hub</h3>
-        <p>Connecting Chadian artists with global markets, fostering collaboration, and providing a digital space for artistic exchange and growth.</p>
-    
-        <a href="#explore-art" class="cta-button">Explore Chadian Art</a>
+    <!-- 🎨 Art & Literature Section -->
+    <section id="art" class="section">
+        <h2 data-lang="section_art">🎨 Chadian Art & Literature</h2>
+
+        <h3 data-lang="art_traditional">🖌️ Traditional & Contemporary Art</h3>
+        <p data-lang="art_text1">
+            Chad has a long tradition of artistic expression, from <strong>handwoven textiles and intricate pottery</strong> to wood carvings and rock art. 
+            Ancient cave paintings in the <strong>Ennedi Plateau</strong> are among the oldest artistic representations in Africa.
+        </p>
+        <p data-lang="art_text2">
+            In modern times, Chadian artists blend traditional themes with contemporary styles, creating works that reflect identity, resilience, and social change.
+        </p>
+
+        <h3 data-lang="art_storytelling">📖 Chadian Storytelling & Folklore</h3>
+        <p data-lang="art_text3">
+            Storytelling is central to Chadian culture. Passed down orally by griots (traditional storytellers), folktales, myths, and historical legends preserve knowledge across generations.
+        </p>
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="Chadian Storytelling & Folklore" width="560" height="315" frameborder="0" allowfullscreen>
+        </iframe>
+
+        <h3 data-lang="art_writers">📚 Notable Chadian Writers</h3>
+        <p data-lang="art_text4">
+            Chadian literature has grown through writers like <strong>Joseph Brahim Seid</strong>, whose works explore Chad’s history and cultural identity. 
+            Contemporary authors continue to share Chad’s narratives on the global stage.
+        </p>
     </section>
 
-    <!--Music and Performing Arts-->
-    <section id="music" class="music-section">
-        <h2>Music & Performing Arts</h2>
-        <p>Experience the heartbeat of Chad through its rich musical heritage, from traditional rhythms to modern fusion genres.</p>
+    <!-- 🎶 Music & Performing Arts Section -->
+    <section id="music" class="section">
+        <h2 data-lang="section_music">🎶 Music & Performing Arts of Chad</h2>
+
+        <h3 data-lang="music_instruments">🥁 Traditional Instruments</h3>
+        <p data-lang="music_text1">
+            Chad’s music features unique instruments like the kakaki (ceremonial trumpet), the balafon (African xylophone), and the ngombi (harp),drums,and flutes.
+            These instruments accompany songs used for ceremonies, events of death, rituals, and storytelling.
+        </p>
+
+        <h3 data-lang="music_dance">💃 Cultural Dance & Theater</h3>
+        <p data-lang="music_text2">
+            Traditional Chadian dances, such as those at the <strong>Gerewol Festival</strong>, are performed with elaborate costumes and rhythmic beats. 
+            Theater performances often include masked acting and musical storytelling.
+        </p>
+
+        <h3 data-lang="music_modern">🎧 Modern Chadian Music</h3>
+        <p data-lang="music_text3">
+            Chad’s contemporary artists are blending Hip-hop, Afrobeat, and indigenous sounds, addressing themes of social change and identity.
+        </p>
+    </section>
     
-        <h3>Traditional Sounds & Instruments</h3>
-        <p>Discover the soulful melodies of Chad’s indigenous instruments, including the balafon, flutes, and percussions that have echoed through generations.</p>
-    
-        <h3>Modern Music Evolution</h3>
-        <p>From Afrobeats to hip-hop, Chad’s contemporary music scene blends tradition with innovation, creating a unique sound that resonates worldwide.</p>
-    
-        <h3>Live Sessions & Global Collaborations</h3>
-        <p>Bridging cultures through music, we showcase live performances and collaborations between Chadian musicians and international artists.</p>
-    
-        <a href="#listen-music" class="cta-button">Listen to Chad</a>
+    <!-- 🍽️ Chadian Cuisine Section -->
+    <section id="cuisine" class="section">
+        <h2 data-lang="section_cuisine">🍽️Cuisine: Taste of Tradition</h2>
+
+        <h3 data-lang="dishes_recipes">🥘Traditional Dishes & Recipes</h3>
+        <p data-lang="cuisine_text">
+            Chadian cuisine is a delightful blend of African, Arab, and French influences, offering a variety of hearty and flavorful dishes. One of the most iconic meals is <span class="highlight">Bouillie</span>, a traditional porridge made from millet, often enjoyed as breakfast. 
+        </p>
+        <p data-lang="staple_text">
+            Another staple is <span class="highlight">Daraba</span>, a nutritious vegetable stew cooked with okra, tomatoes, and peanuts. <span class="highlight">Kisra</span>, a thin sorghum-based flatbread, is commonly served with rich sauces. Grilled meats, such as <span class="highlight">Chadian-style lamb skewers</span>, are also popular across the country.
+        </p>
+
+        <h3 data-lang="food_identity">🍛Food & Cultural Identity</h3>
+        <p data-lang="identity_text">
+            Food plays a central role in Chadian cultural identity, symbolizing hospitality, community, and tradition. Meals are often shared in large groups, emphasizing the value of togetherness. Traditional dishes are deeply connected to the country's diverse ethnic heritage, with each region offering its own unique flavors and cooking techniques.
+        </p>
+        <p data-lang="Ingredients_text">
+            Ingredients like millet, sorghum, fish, peanuts, and spices are commonly used in daily cooking, reflecting the country's agricultural resources and historical trade influences.
+        </p>
+
+        <h3 data-lang="food_world">Chadian Food Around the World</h3>
+         <p data-lang="world_text">
+            While Chadian cuisine is not as widely recognized as other African culinary traditions, it is slowly gaining international appreciation. Chadian restaurants and food festivals in diaspora communities are introducing global audiences to the unique flavors of Chad.
+        </p>
+        <p data-lang="digital_text">
+            Additionally, Chadian chefs and food enthusiasts are using digital platforms to share traditional recipes and cooking methods with the world, helping to preserve and promote the country’s culinary heritage.
+        </p>
     </section>
 
-    <!--Cultural Tourism and Travel-->
-    <section id="tourism" class="tourism-section">
-        <h2>Cultural Tourism & Travel</h2>
-        <p>Discover Chad’s breathtaking landscapes, vibrant cultural heritage, and immersive travel experiences designed for explorers and history enthusiasts.</p>
-    
-        <h3>Top Attractions</h3>
-        <p>From the majestic <strong>Tibesti Mountains</strong> to the diverse wildlife of <strong>Zakouma National Park</strong> and the artistic vibrancy of <strong>N’Djamena</strong>, Chad offers a wealth of unforgettable destinations.</p>
-    
-        <h3>AI-powered Travel Guide</h3>
-        <p>Plan your journey with smart recommendations tailored to your interests, ensuring a seamless and enriching travel experience.</p>
-    
-        <h3>Augmented Reality (AR) Tours</h3>
-        <p>Scan QR codes at historic sites to unlock interactive history lessons and immersive storytelling experiences.</p>
-    
-        <h3>Exclusive Travel Packages</h3>
-        <p>Partnering with top tour agencies, we offer curated cultural trips that highlight Chad’s unique traditions, landscapes, and heritage.</p>
-    
-        <a href="#plan-visit" class="cta-button">Plan Your Visit</a>
+
+    <!-- 🏛️ Cultural Tourism Section -->
+    <section id="tourism" class="section">
+        <h2 data-lang="section_tourism">🏛️Tourism & Heritage Sites</h2>
+
+        <h3 data-lang="tourism_unesco">🌍UNESCO & Historical Sites</h3>
+        <p data-lang="tourism_text1">
+            Chad is home to remarkable natural and historical landmarks that reflect its cultural and environmental significance. One of the most famous is <span class="highlight">Zakouma National Park</span>, a protected wildlife sanctuary known for its elephants, lions, and diverse ecosystems.
+        </p>
+        <p data-lang="tourism_text1">
+            The <span class="highlight">Ennedi Plateau</span>, a UNESCO World Heritage Site, is a breathtaking rock formation featuring ancient cave paintings that date back thousands of years. Another key landmark is <span class="highlight">Lake Chad</span>, once one of the largest lakes in Africa, playing a crucial role in the region’s history and economy.
+        </p>
+
+        <h3 data-lang="cultural_gems">Hidden Cultural Gems</h3>
+        <p data-lang="tourism_text2">
+            Beyond the well-known landmarks, Chad offers many hidden cultural treasures. The <span class="highlight">Gerewol Festival</span>, celebrated by the Wodaabe people, is a spectacular event where men compete in elaborate dances and attire to attract partners.
+        </p>
+        <p data-lang="tourism_text3">
+            In rural areas, travelers can experience traditional <span class="highlight">nomadic lifestyles</span>, visit local craft markets, and engage with communities that preserve ancient customs. From vibrant village celebrations to centuries-old storytelling traditions, these hidden gems provide an authentic glimpse into Chad’s cultural richness.
+        </p>
+
+        <h3 data-lang="travel_guide">Travel Guide for Cultural Enthusiasts</h3>
+        <p data-lang="tourism_text4">
+            Exploring Chad requires cultural sensitivity and an appreciation for its traditions. Visitors are encouraged to <span class="highlight">respect local customs</span>, dress modestly, and engage with communities in a meaningful way.
+            </p>
+        <p data-lang="tourism_text5">
+            Guided tours to UNESCO sites, eco-tourism experiences, and cultural immersion programs offer a responsible way to discover Chad’s heritage. Whether witnessing a traditional dance, exploring rock art, or tasting local cuisine, every visitor can leave with a deeper understanding of this unique country.
+        </p>
     </section>
 
-    <!--Digital Knowledge Hub-->
-    <section id="knowledge" class="knowledge-section">
-        <h2>Digital Knowledge Hub</h2>
-        <p>Access a wealth of knowledge through Chad’s digital archives, expert discussions, and interactive learning experiences.</p>
+    <!-- 🤝 Community & Cultural Engagement Section -->
+    <section id="engagement" class="section">
+        <h2 data-lang="section_engagement">🤝 Community & Cultural Engagement</h2>
+        <h3 data-lang="engagement_festivals">🎉Festivals & Events</h3>
+        <p data-lang="engagement_text1">
+            Chad hosts a variety of festivals and cultural events that showcase the nation’s vibrant traditions. One of the most famous celebrations is the <span class="highlight">Gerewol Festival</span>, where the Wodaabe people participate in an elaborate courtship dance competition.
+        </p>
+        <p data-lang="engagement_text2">
+            The <span class="highlight">N'Djamena Biennale</span> is a major cultural event that brings together artists, musicians, and performers from across Chad and beyond, celebrating creativity and heritage. Other local festivals highlight traditional music, dance, and storytelling, keeping Chad’s cultural spirit alive.
+        </p>
+
+        <h3 data-="learning_space">Workshops & Learning Spaces</h3>
+        <p data-lang="learning_text1">
+            To preserve and pass down Chadian traditions, various workshops and learning spaces provide hands-on experiences in arts, crafts, and music. Visitors and locals can participate in activities such as <span class="highlight">traditional pottery-making</span>, <span class="highlight">musical instrument crafting</span>, and <span class="highlight">dance workshops</span>.
+        </p>
+        <p data-lang="learning_text2">
+            These interactive sessions not only educate but also inspire younger generations to embrace and continue their cultural heritage.
+        </p>
+        <h3 data-lang="global_partneship">Local & Global Partnerships</h3>
+        <p data-lang="global_text1"></p>
+            Cultural preservation and promotion thrive through collaboration. Chad is actively engaging with local organizations, international cultural bodies, and academic institutions to <span class="highlight">document, celebrate, and innovate</span> its rich traditions.
+        </p>
+        <p data-lang="global_text2"></p>
+            Global partnerships have helped Chadian artists, musicians, and historians gain international recognition. Through exhibitions, digital archives, and educational exchanges, Chad’s culture is being shared with the world, ensuring its legacy for future generations.
+        </p>
+     </section>
+
+    <!-- 🖼️ Gallery Section -->
+    <section id="gallery" class="section">
+        <h2 data-lang="section_gallery">Visual Journey: Gallery</h2>
+        <p data-lang="gallery_text">Explore the beauty of Chad through stunning images and videos showcasing its landscapes, arts, people, and traditions.</p>
+            
+        <div class="gallery">
+            <img src="chad_landscape.jpg" alt="Beautiful Landscape of Chad">
+            <img src="chad_art.jpg" alt="Traditional Chadian Artwork">
+            <img src="chad_people.jpg" alt="People of Chad in Traditional Attire">
+            <img src="chad_festival.jpg" alt="Chadian Cultural Festival">
+            <img src="chad_dance.jpg" alt="Traditional Dance Performance">
+            <img src="chad_market.jpg" alt="Local Market in Chad">
+        </div>
+
+        <div class="video-container">
+            <h3 data-lang="gallery_video">🎥 Watch Chad’s Cultural Highlights</h3>
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Chadian Cultural Video"></iframe>
+        </div>
+    </section>
     
-        <h3>E-Library & Digital Archives</h3>
-        <p>Explore a vast collection of research papers, historical texts, and rare manuscripts that preserve Chad’s rich intellectual heritage.</p>
-    
-        <h3>Podcasts & Expert Panels</h3>
-        <p>Listen to thought-provoking discussions featuring historians, artists, and scholars sharing insights on Chad’s cultural evolution.</p>
-    
-        <h3>Masterclasses & Webinars</h3>
-        <p>Learn from the best through in-depth sessions on Chadian art, music, storytelling, and historical studies, designed for global audiences.</p>
-    
-        <a href="#start-learning" class="cta-button">Start Learning</a>
+    <!-- ✍️ Cultural Insights & Blog -->
+    <section id="blog" class="section">>
+        <h2 data-lang="section_blog">✍️ Cultural Insights & Blog</h2>
+
+        <div class="blog-post">
+            <h3 data-lang="blog_traditions">📖 Deep Dives into Chadian Traditions</h3>
+            <p data-lang="blog_text1">
+                Explore the rich traditions of Chad, from <strong>marriage customs</strong> to <strong>traditional clothing</strong> and ancient beliefs. These customs reflect the deep-rooted history and diversity of the country's many ethnic groups.
+            </p>
+                <a href="deep-dives.html" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h3 data-lang="blog_modern">🌍 Modern Cultural Shifts</h3>
+             <p data-lang="blog_text2">
+                As Chad embraces modernization, its culture is evolving. Discover how traditional and contemporary influences blend, shaping the way Chadians live, dress, and celebrate today.
+            </p>
+                <a href="modern-shifts.html" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h3 data-lang="blog_interviews">Interviews with Artists, Musicians, & Historians</h3>
+            <p data-lang="blog_text3">
+                Meet the cultural pioneers preserving and promoting Chadian heritage. Read exclusive interviews with <strong>artists, musicians, and historians</strong> who are shaping the future of Chad’s cultural identity.
+            </p>
+                <a href="interviews.html" class="read-more">Read More</a>
+        </div>
     </section>
 
-    <!--Community and Global Engagement-->
-    <section id="community" class="community-section">
-        <h2>Community & Global Engagement</h2>
-        <p>Join a thriving network of historians, creators, and cultural enthusiasts working together to celebrate and promote Chadian heritage.</p>
-    
-        <h3>Join Our Cultural Network</h3>
-        <p>Connect with like-minded individuals passionate about preserving and sharing Chad’s rich traditions, stories, and artistic expressions.</p>
-    
-        <h3>Get Involved</h3>
-        <p>Contribute by submitting research, articles, and creative projects that showcase Chad’s cultural brilliance to a global audience.</p>
-    
-        <h3>Collaborate</h3>
-        <p>Partner with universities, museums, and cultural organizations worldwide to foster knowledge exchange and artistic collaboration.</p>
-    
-        <a href="#join-movement" class="cta-button">Join the Movement</a>
+    <!-- 📜 Proverbs & Wisdom Section -->
+    <section id="proverbs" class="section">
+        <h2 data-lang="section_proverbs">📜 Chadian Proverbs & Wisdom</h2>
+
+        <div class="proverb">
+            <h3 data-lang="proverb_general">🔹Traditional Sayings & Meanings</h3>
+            <p data-lang="proverb_text1"><span class="highlight">"The river that forgets its source will soon dry up."</span></p>
+            <p data-lang="proverb_meaning1"><em>Meaning:</em> Never forget your roots, heritage, or where you come from.</p>
+        </div>
+
+        <div class="proverb">
+            <h3 data-lang="proverb_general1"> Proverbs by Region</h3>
+            <p data-lang="proverb_text2"><span class="highlight">Kanembu Proverb:</span> <br> <strong>"A tree does not grow taller than the one that gave it shade."</strong></p>
+            <p data-lang="proverb_meaning2"><em>Meaning:</em> Respect and honor those who have supported and guided you.</p>
+
+            <p data-lang="proverb_text3"><span class="highlight">Sara Proverb:</span> <br> <strong>"A lion’s strength is not in its roar, but in its actions."</strong></p>
+            <p data-lang="proverb_meaning3"><em>Meaning:</em> True power is demonstrated through deeds, not words.</p>
+
+            <p data-lang="proverb_text4"><span class="highlight">Arab Chadian Proverb:</span> <br> <strong>"A traveler with no destination is like a bird without wings."</strong></p>
+            <p data-lang="proverb_meaning4"><em>Meaning:</em> One must have purpose and direction in life.</p>
+        </div>
     </section>
 
-    <!--Strategic Partnerships and Global Reach-->
-    <section id="partnerships" class="partnerships-section">
-        <h2>Strategic Partnerships & Global Reach</h2>
-        <p>Building bridges between Chad and the world through cultural diplomacy, media collaborations, and funding opportunities.</p>
-    
-        <h3>Cultural Diplomacy</h3>
-        <p>Engaging with <strong>UNESCO</strong>, the <strong>African Union</strong>, and global cultural institutions to promote Chad’s heritage on an international scale.</p>
-    
-        <h3>Media & Broadcasting</h3>
-        <p>Partnering with major media networks to showcase Chadian art, literature, and traditions through documentaries, interviews, and live events.</p>
-    
-        <h3>Funding & Grants</h3>
-        <p>Connecting Chadian creatives with investors, cultural sponsors, and grant opportunities to support artistic innovation and preservation.</p>
-    
-        <a href="#become-partner" class="cta-button">Become a Partner</a>
-    </section>
+    <!-- 🎨 Featured Chadian Artists Section -->
+    <section id="artists" class="section">
+        <h2 data-lang="section_artists">🎨 Featured Chadian Artists & Creatives</h2>
+        <p data-lang="artists_text">Discover the talented painters, musicians, writers, and cultural icons who are shaping Chad’s artistic and creative landscape.</p>
 
-    <!-- Artisans -->
-    <section id="meet-artisans" class="meet-artisans">
-        <h2>Meet the Artisans</h2>
-        <p>Discover the talented artists, musicians, and craftsmen preserving Chad’s heritage.</p>
-        <div class="artisan-list">
-            <div class="artisan">
-                <h3>Fatima Oumar</h3>
-                <p>A renowned potter creating traditional Chadian ceramics.</p>
+            <div class="artist-list">
+            
+            <!-- Artist 1 -->
+            <div class="artist-card">
+                <img src="artist1.jpg" alt="Chadian Painter">
+                <h3 data-lang="artist_ahmed">Ahmed Djibrine</h3>
+                <p data-lang="artist_ahmed_desc">A renowned Chadian painter whose artwork reflects the rich history and diverse cultures of Chad.</p>
+                <a href="artist1-profile.html" class="read-more">Read More</a>
             </div>
-            <div class="artisan">
-                <h3>Moussa Abdoulaye</h3>
-                <p>A master kora player sharing ancient melodies.</p>
+
+            <!-- Artist 2 -->
+            <div class="artist-card">
+                <img src="artist2.jpg" alt="Chadian Musician">
+                <h3 data-lang="artist_fatime">Ngass David</h3>
+                <p data-lang="artist_david_desc">A talented singer blending traditional Chadian rhythms with modern Afrobeat influences.</p>
+                <a href="artist2-profile.html" class="read-more">Read More</a>
+            </div>
+
+            <!-- Artist 3 -->
+            <div class="artist-card">
+                <img src="artist3.jpg" alt="Chadian Writer">
+                <h3 data-lang="artist3.ppg">Rais Kim</h3>
+                <p data-lang="artist_kim_desc">An acclaimed writer known for his novels that explore Chadian history, politics, and identity.</p>
+                <a href="artist3-profile.html" class="read-more">Read More</a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="gallery">
-        <h2>Gallery</h2>
-        <p>Explore visuals showcasing Chad’s vibrant culture.</p>
-        <div class="gallery-grid">
-            <img src="static/images/music_dance1.jpg.jpeg" alt="Dancers at N’Djamena Festival 2024" loading="lazy">
-            <img src="static/images/house1.jpeg" alt="Traditional Chadian craftwork" loading="lazy">
+    <!-- 🗺️ Interactive Cultural Map Section -->
+    <section id="map" class="section">
+        <h2 data-lang="section_map">🗺️Interactive Cultural Map of Chad</h2>
+        <p data-lang="map_text">Click on a region to learn more about its traditions, ethnic groups, and cultural highlights.</p>
+
+        <img id="chad-map" src="chad-map.png" alt="Interactive Map of Chad" usemap="#chad-regions">
+            
+        <map name="chad-regions">
+            <!-- Define clickable areas (adjust coordinates based on the real map) -->
+            <area shape="rect" coords="100,50,200,150" href="#" alt="N'Djamena" onclick="showInfo('ndjamena');">
+            <area shape="rect" coords="250,100,350,200" href="#" alt="Lac Region" onclick="showInfo('lac');">
+            <area shape="rect" coords="150,200,250,300" href="#" alt="Ennedi" onclick="showInfo('ennedi');">
+        </map>
+
+        <div id="info-box" class="info-box">
+            <h3 id="region-title">Region Name</h3>
+            <p id="region-info">Click on a region to explore its culture and traditions.</p>
+        </div>
+
+    </section>
+
+
+    <!-- 📱 Cultural Innovation Section -->
+    <section id="innovation" class="section">
+        <h2 data-lang="section_innovation">📱Cultural Innovation & Future of Chadian Heritage</h2>
+
+        <h3 data-lang="innovation_digital">🌍<span class="icon">📱</span> Chadian Culture in the Digital Age</h3>
+        <p data-lang="innovation_text1">
+            The rise of technology is transforming how Chadian culture is preserved and shared. Social media platforms, digital archives, and streaming services are giving artists and historians the tools to showcase traditions to a global audience.
+        </p>
+        <p data-lang="innovation_text2">
+            Young Chadians are using **YouTube, TikTok, and Instagram** to promote traditional music, fashion, and languages, making culture more accessible to the younger generation.
+        </p>
+
+        <h3 data-lang="innovation_ai"><span class="icon">🤖</span> AI & Virtual Reality in Cultural Preservation</h3>
+        <p data-lang="innovation_text3">
+            Artificial Intelligence (AI) and Virtual Reality (VR) are opening new doors for cultural preservation. AI-driven **language translation tools** help document indigenous Chadian languages, ensuring they are not lost over time.
+        </p>
+        <p data-lang="innovation_text4">
+            Virtual reality experiences allow people to explore **historical sites, festivals, and traditional ceremonies** from anywhere in the world. Imagine a **VR tour of the Gerewol Festival** or a **3D recreation of ancient Chadian kingdoms**—technology is making this possible!
+        </p>
+
+        <h3 data-lang="innovation_diaspora" <span class="icon">🌍</span> Diaspora’s Role in Cultural Promotion</h3>
+        <p data-lang="innovation_text5">
+            The Chadian diaspora plays a crucial role in **spreading and preserving Chadian culture**. Through **film, literature, music, and community events**, Chadians living abroad are helping introduce their traditions to international audiences.
+        </p>
+        <p data-lang="innovation_text6">
+            Organizations and individuals in the diaspora are funding **cultural projects, language schools, and online initiatives** that keep Chad’s heritage alive across borders.
+        </p>
+
+    </section>
+
+    <!-- 📚 E-Learning & Cultural Resources -->
+    <section id="elearning" class="section">
+        <h2 data-lang="section_elearning">📚E-Learning & Cultural Resources</h2>
+        <p data-lang="eleaning_text">Access courses, e-books, and language guides to explore Chad’s rich culture and traditions.</p>
+
+        <div class="resource-list">
+            <!-- Resource 1 -->
+            <div class="resource-card">
+                <h3data-lang="elearning_courses">🎨Online Courses & Workshops</h3>
+                <p data-lang="elearning_text1">Learn Chadian arts, traditional music, and cultural practices through interactive courses.</p>
+                <a href="courses.html" class="explore-btn">Explore Courses</a>
+            </div>
+
+            <!-- Resource 2 -->
+            <div class="resource-card">
+                <h3 data-lang="elearning_books">📚 Downloadable E-books & Research Materials</h3>
+                <p data-lang="elearning_text2">Access historical books, research papers, and cultural studies on Chad.</p>
+                <a href="ebooks.html" class="download-btn">Download E-books</a>
+            </div>
+
+            <!-- Resource 3 -->
+            <div class="resource-card">
+                <h3 data-lang="elearning_guide">🗣️ Chadian Language Guide</h3>
+                <p data-lang="elearning_text3"></p> Learn key phrases in Sara, Kanembu, Arabic, and other Chadian languages.</p>
+                <a href="language-guide.html" class="explore-btn">Explore Language Guide</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 🎙️ Podcast & Video Series Section -->
+    <section id="podcast" class="section">
+        <h2 data-lang="section_podcast">🎙️Podcast & Video Series: "Voices of Chad"</h2>
+        <p data-lang="podcast_text">Discover the stories of Chad through insightful interviews, behind-the-scenes footage, and creative showcases.</p>
+
+        <div class="media-list">
+            <!-- Podcast Episode -->
+            <div class="media-card">
+                <h3 data-lang="podcast_interviews">🎤Interviews with Cultural Icons & Elders</h3>
+                <p data-lang="podcast_text">Preserving Chad’s oral history through conversations with historians, artists, and community leaders.</p>
+                <iframe src="https://open.spotify.com/embed/episode/YOUR_SPOTIFY_EPISODE_ID" title="Traditional Chadian Music Performance"></iframe>
+                <a href="https://open.spotify.com/show/YOUR_PODCAST_LINK" class="listen-btn">Listen on Spotify</a>
+            </div>
+
+            <!-- Video Documentary -->
+            <div class="media-card">
+                <h3 data-lang="podcast_videos">🎥 Behind-the-Scenes of Festivals & Events</h3>
+                <p data-lang="podcast_text1">Experience the beauty of Chadian festivals and traditional ceremonies through documentary-style storytelling.</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Festival and Events videeo"></iframe>
+                <a href="https://www.youtube.com/channel/YOUR_YOUTUBE_CHANNEL" class="watch-btn">Watch on YouTube</a>
+            </div>
+
+            <!-- Emerging Talent Feature -->
+            <div class="media-card">
+                <h3 data-lang="podcast_spotlight">🌟 Spotlight on Emerging Talent</h3>
+                <p data-lang="podcast_text3">Meet young Chadian creators, musicians, and filmmakers who are shaping the future of Chadian culture.</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_SECOND_VIDEO_ID" title="Talents video"></iframe>
+                <a href="https://www.youtube.com/channel/YOUR_YOUTUBE_CHANNEL" class="watch-btn">Watch Creators</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 🎨 Digital Art & NFTs Section -->
+    <section id="nft" class="section">
+        <h2 data-lang="section_nft">🎨Digital Art & NFTs: The Future of Chadian Creativity</h2>
+        <p data-lang="nft_text">Chadian artists are exploring new frontiers in the digital world. Through NFTs, they are showcasing and selling their artwork globally while preserving traditional art for future generations.</p>
+
+        <div class="nft-list">
+            <!-- NFT 1 -->
+            <div class="nft-card">
+                <img src="nft1.jpg" alt="Chadian NFT Art">
+                <h3 data-lang="nft_art">Chadian Art in the NFT Space</h3>
+                <p data-lang="nft_text1">Support Chadian artists by purchasing unique digital artworks inspired by traditional and modern themes.</p>
+                <a href="https://opensea.io/collection/YOUR_COLLECTION_LINK" class="buy-btn">Buy on OpenSea</a>
+            </div>
+
+            <!-- NFT 2 -->
+            <div class="nft-card">
+                <img src="nft2.jpg" alt="Digital Archive of Chadian Art">
+                <h3 data-lang="nft_digital">Digitally Archiving Traditional Art</h3>
+                <p data-lang="nft_text2">Efforts are being made to digitize and archive Chadian paintings, sculptures, and textiles for future generations.</p>
+                <a href="digital-archive.html" class="explore-btn">Explore Archive</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 🗺️ Virtual Cultural Tour Section -->
+    <section id="tour" class="section">
+        <h2 data-lang="section_tour">🗺️Experience Chad: Virtual Cultural Tour</h2>
+        <p data-lang="tour_text">Explore Chad’s rich heritage through immersive 360° virtual tours and interactive AR experiences.</p>
+
+        <div class="tour-list">
+            <!-- Virtual Tour 1 -->
+            <div class="tour-card">
+                <h3 data-lang="tour_festival"> 🌍 360° Tour: Gerewol Festival</h3>
+                <p data-lang="tour_text1">Step into the world of the Gerewol Festival, a breathtaking cultural event featuring dance, music, and tradition.</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_360_VIDEO_ID" title="Cultural video"></iframe>
+                <a href="https://www.your360tour.com" class="experience-btn">Start 360° Tour</a>
+            </div>
+
+            <!-- Virtual Tour 2 -->
+            <div class="tour-card">
+                <h3 data-lang="tour_explore"> 🏛️ Explore Ancient Chad</h3>
+                <p data-lang="tour_text2">Take a virtual tour of Chad’s historical landmarks, including the Ennedi Plateau and ancient rock art sites.</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_SECOND_360_VIDEO_ID" title="History video"></iframe>
+                <a href="https://www.yourvrmuseum.com" class="experience-btn">Explore Now</a>
+            </div>
+
+            <!-- AR Experience -->
+            <div class="tour-card">
+                <h3 data-lang="tour_artifacts">📱 Augmented Reality: Chadian Artifacts</h3>
+                <p data-lang="tour_text3">Use AR to interact with traditional Chadian artifacts, sculptures, and ancient manuscripts.</p>
+                <a href="https://www.yourARexperience.com" class="experience-btn">Try AR Experience</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 🎤 Meet the Elders: Storytelling -->
+    <section id="elders" class="section">
+        <h2 data-lang="section_elders">🎤Meet the Elders: A Storytelling Feature</h2>
+        <p data-lang="elders_text">Experience the wisdom of Chadian elders through their stories, preserved in video, audio, and written form.</p>
+
+        <div class="story-list">
+            <!-- Story 1 -->
+            <div class="story-card">
+                <h3 data-lang="elders_kanembu">🎤 Oral Story: The Origins of the Kanembu People</h3>
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Storytelling"></iframe>
+                <p data-lang="story_text">class="transcript"><span class="translation">Translation:</span> "Long ago, our ancestors settled near Lake Chad, where the Kanembu people flourished..."</p>
+                <a href="audio-file.mp3" class="listen-btn">Listen to Audio</a>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="story-card">
+                <h3 data-lang="elders_wisdom">📖 Wisdom from a Chadian Elder</h3>
+                <iframe src="https://www.youtube.com/embed/YOUR_SECOND_VIDEO_ID" title="Storytelling"></iframe>
+                <p data-lang="story_text1">class="transcript"><span class="translation">Translation:</span> "A wise person does not rush in judgment. In our village, the elders always say..."</p>
+                <a href="audio-file2.mp3" class="listen-btn">Listen to Audio</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 🔑 Membership Portal -->
+    <section id="portal" class="section">
+        <h2 data-lang="section_portal">Membership & Community Portal</h2>
+        <p data-lang="portal_text">Become part of a growing community dedicated to preserving and promoting Chadian culture.</p>
+
+        <div class="portal-list">
+            <!-- Membership Access -->
+            <div class="portal-card">
+                <h3 data-lang="portal_access">Exclusive Member Access</h3>
+                <p data-lang="portal_text1">Join a network of cultural enthusiasts, researchers, and artists for access to exclusive content and events.</p>
+                <a href="membership.html" class="join-btn">Join Now</a>
+            </div>
+
+            <!-- Discussion Forums -->
+            <div class="portal-card">
+                <h3 data-lang="portal_discussion">💬 Discussion Forums</h3>
+                <p data-lang="portal_text2">Exchange ideas, share research, and collaborate with other members in our cultural discussion forums.</p>
+                <a href="forums.html" class="forum-btn">Visit Forum</a>
+            </div>
+
+            <!-- Monthly Newsletters -->
+            <div class="portal-card">
+                <h3 data-lang="portal_newsletters">📩 Monthly Newsletters</h3>
+                <p data-lang="portal_text3">Stay updated on Chadian culture, events, and featured artists with our exclusive monthly newsletter.</p>
+                <a href="newsletter.html" class="newsletter-btn">Subscribe Now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Interactive Quiz -->
+    <section id="quiz" class="section">
+        <h2 data-lang="section_quiz">🏆Test Your Knowledge: Interactive Quiz</h2>
+        <p data-lang="quiz_text">Answer these fun questions about Chadian history, arts, and traditions and earn badges!</p>
+
+        <div class="quiz-container">
+            <div class="question" id="question">What is the capital of Chad?</div>
+            <div class="options">
+                <label><input type="radio" name="quiz" value="A"> A) Lagos</label>
+                <label><input type="radio" name="quiz" value="B"> B) N'Djamena</label>
+                <label><input type="radio" name="quiz" value="C"> C) Bamako</label>
+                <label><input type="radio" name="quiz" value="D"> D) Nairobi</label>
+            </div>
+            <button class="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+            <div class="result" id="result"></div>
+            <div class="badge" id="badge">🏆 Congratulations! You've earned the "Chad Expert" badge! 🎉</div>
         </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog" class="blog">
-        <h2>Stories & Insights</h2>
-        <p>Read about Chadian cultural history, interviews, and personal experiences.</p>
-        <div class="blog-list">
-            <div class="blog-post">
-                <h3>The Art of Chadian Weaving</h3>
-                <p>A deep dive into the weaving traditions passed down through generations.</p>
+    <!-- 🛍️ Chadian Cultural Marketplace -->
+    <section id="marketplace" class="section">
+        <h2 data-lang="section_marketplace">🛍️Chadian Cultural Marketplace</h2>
+        <p data-lang="marketplace_text">Discover and support local Chadian artisans, musicians, and filmmakers.</p>
+
+        <h3 data-lang="marketplace_cultural">🛍️ Shop for Authentic Chadian Crafts, Books & Art</h3>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="craft1.jpg" alt="Handmade Chadian Craft">
+                <h3 data-lang="marketplace_handmade"> Handmade Chadian Basket</h3>
+                <p data-lang="marketplace_text1"> Beautifully woven baskets by Chadian artisans, perfect for home decor.</p>
+                <a href="https://yourshop.com/basket" class="buy-btn">Buy Now</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="book1.jpg" alt="Chadian Literature">
+                <h3 data-lang="marketplace_book"> "Voices of Chad" - Book</h3>
+                <p data-lang="marketplace_text2"> An insightful book exploring the rich cultural history of Chad.</p>
+                <a href="https://yourshop.com/book" class="buy-btn">Buy Now</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="painting1.jpg" alt="Chadian Art">
+                <h3 data-lang="marketplace_traditional"> Traditional Chadian Painting</h3>
+                <p data-lang="marketplace_text3"> Vibrant artwork reflecting Chad’s landscapes and traditions.</p>
+                <a href="https://yourshop.com/painting" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <h3 data-lang="media_music">🎵 Music & Film Streaming</h3>
+        <div class="media-list">
+            <!-- Music -->
+            <div class="media-card">
+                <img src="music1.jpg" alt="Chadian Music Album">
+                <h3 data-lang="media_rhythm"> Chadian Rhythms</h3>
+                <p data-lang="media_text"> A collection of traditional and modern Chadian music.</p>
+                <a href="https://open.spotify.com/album/YOUR_ALBUM_ID" class="stream-btn">Listen Now</a>
+            </div>
+
+            <!-- Film -->
+            <div class="media-card">
+                <img src="film1.jpg" alt="Chadian Documentary">
+                <h3 data-lang="media_film"> "Chad: A Cultural Journey"</h3>
+                <p data-lang="media_text1"> A documentary exploring Chad’s rich cultural heritage.</p>
+                <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="stream-btn">Watch Now</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- 📞 Join us our mission Section -->
+    <section id="join" class="section">
+        <h2 data-lang="section_join">📞Get Involved in Preserving Chadian Culture</h2>
+        <p data-lang="join_text"> Play a role in keeping Chad’s rich cultural heritage alive by volunteering, donating, or supporting artists and initiatives.</p>
+
+        <div class="involvement-list">
+            <!-- Volunteer & Collaborate -->
+            <div class="involvement-card">
+                <h3 data-lang="join_volunteer">🤝 Volunteer & Collaborate</h3>
+                <p data-lang="join_text1"> Join cultural projects, assist in research, or help document Chadian traditions for future generations.</p>
+                <a href="volunteer.html" class="action-btn">Join as a Volunteer</a>
+            </div>
+
+            <!-- Donate -->
+            <div class="involvement-card">
+                <h3 data-lang="join_donate">💰 Donate to Cultural Initiatives</h3>
+                <p data-lang="join"> Your contributions help fund cultural preservation projects, support local artists, and document traditional heritage.</p>
+                <a href="donate.html" class="action-btn">Donate Now</a>
+            </div>
+
+            <!-- Support Artists -->
+            <div class="involvement-card">
+                <h3 data-lang="join_support">🎨 Support Chadian Artists</h3>
+                <p data-lang="join_text3"> Discover and sponsor talented artists, musicians, and writers to ensure Chadian culture thrives.</p>
+                <a href="support-artists.html" class="action-btn">Support an Artist</a>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section id="newsletter" class="newsletter">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to our newsletter to receive the latest updates on Chadian culture and events.</p>
-        <form>
-            <input type="email" placeholder="Enter your email" aria-label="Email Address">
-            <button class="button" type="submit">Subscribe</button>
+    <section id="contact" class="section">
+        <h2 data-lang="section_contact">📞Contact & Collaborate</h2>
+        <p data-lang="contact_text">Connect with us to contribute, collaborate, or learn more about Chadian culture.</p>
+        <form class="contact-form" id="contactForm">
+            <div>
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" autocomplete="name" required>
+            </div>
+            <div>
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="email" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message" rows="5" autocomplete="off" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- Get Involved -->
-    <section id="get-involved" class="get-involved">
-        <h2>Get Involved</h2>
-        <p>Join our mission to preserve Chad’s cultural heritage by volunteering, donating, or collaborating.</p>
-        <button class="button">Become a Member</button>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-        <h2>What People Say</h2>
-        <p>Hear from those passionate about Chadian culture.</p>
-        <div class="testimonial">
-            <blockquote>"TchadMaCulture has been an eye-opener to the rich traditions of Chad."</blockquote>
-            <p>- Awa Mahamat</p>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer id="contact">
+    <footer id="footer" class="section">
         <div class="footer-content">
             <div class="contact-info">
-                <h4>Contact Us</h4>
-                <p>Email: info@tchadmaculture.com</p>
-                <p>Phone: +235 6789 1234</p>
-                <p>Address: N'Djamena, Chad</p>
+                <h4 data-lang="footer_us"> Contact Us</h4>
+                <p data-lang="footer_text"> Email: info@tchadmaculture.com</p>
+                <p data-lang="footer_text1"> Phone: +235 64 74 76 26</p>
+                <p data-lang="footer_text2"> Address N'Djamena, Chad</p>
             </div>
             <div class="social-media">
-                <h4>Follow Us</h4>
+                <h4 data-lang="footer_us1"> Follow Us</h4>
                 <p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
             </div>
         </div>
 </footer>
-
 <!-- JavaScript -->
 <script>
     // Mobile Menu Toggle
