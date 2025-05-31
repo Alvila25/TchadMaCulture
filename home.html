@@ -785,7 +785,83 @@
     document.getElementById('dark-mode-toggle').addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
     });
+
+ <script>
+    const translations = {
+      en: {
+        page_title: "Chad My Culture",
+        site_title: "Chad My Culture",
+        menu_about: "About",
+        menu_history: "History & Heritage",
+        menu_art: "Art & Literature",
+        menu_music: "Music & Performing Arts",
+        menu_gallery: "Gallery",
+        menu_contact: "Contact",
+        hero_title: "Celebrate and Preserve Chadian Culture",
+        hero_text: "Explore Chad’s rich cultural heritage, engage with local traditions, and contribute to preserving our history.",
+        hero_button: "Join Us",
+        section_about: "About Chad",
+        about_text: "Chad is a nation of diverse cultures, rich traditions, and deep-rooted heritage...",
+        section_vision: "Our Vision & Cultural Mission",
+        vision_text: "Our vision is to establish Chad as a globally recognized cultural hub..."
+      },
+      fr: {
+        page_title: "Tchad Ma Culture",
+        site_title: "Tchad Ma Culture",
+        menu_about: "À propos",
+        menu_history: "Histoire & Patrimoine",
+        menu_art: "Art & Littérature",
+        menu_music: "Musique & Arts de la scène",
+        menu_gallery: "Galerie",
+        menu_contact: "Contact",
+        hero_title: "Célébrez et préservez la culture tchadienne",
+        hero_text: "Explorez le riche patrimoine culturel du Tchad, engagez-vous avec les traditions locales et contribuez à préserver notre histoire.",
+        hero_button: "Rejoignez-nous",
+        section_about: "À propos du Tchad",
+        about_text: "Le Tchad est une nation de cultures diverses, de traditions riches et d’un patrimoine profondément enraciné...",
+        section_vision: "Notre vision et mission culturelle",
+        vision_text: "Notre vision est d'établir le Tchad comme un centre culturel mondialement reconnu..."
+      },
+      ar: {
+        page_title: "تشاد ثقافتي",
+        site_title: "تشاد ثقافتي",
+        menu_about: "حول",
+        menu_history: "التاريخ والتراث",
+        menu_art: "الفن والأدب",
+        menu_music: "الموسيقى وفنون الأداء",
+        menu_gallery: "معرض الصور",
+        menu_contact: "اتصال",
+        hero_title: "الاحتفال بالثقافة التشادية والحفاظ عليها",
+        hero_text: "استكشف التراث الثقافي الغني لتشاد، وشارك في التقاليد المحلية، وساهم في الحفاظ على تاريخنا.",
+        hero_button: "انضم إلينا",
+        section_about: "عن تشاد",
+        about_text: "تشاد هي أمة ذات ثقافات متنوعة وتقاليد غنية وتراث عميق الجذور...",
+        section_vision: "رؤيتنا والمهمة الثقافية",
+        vision_text: "رؤيتنا هي أن نجعل تشاد مركزًا ثقافيًا معترفًا به عالميًا..."
+      }
+    };
+
+    const elements = document.querySelectorAll('[data-lang]');
+    const languageSelect = document.getElementById('language-select');
+
+    function setLanguage(lang) {
+      elements.forEach(el => {
+        const key = el.getAttribute('data-lang');
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      localStorage.setItem('preferredLanguage', lang);
+    languageSelect.addEventListener('change', () => {
+      setLanguage(languageSelect.value);
+    });
+
+    // Initialize language on page load
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    languageSelect.value = savedLanguage;
+    setLanguage(savedLanguage);
 </script>
 </body>
 </html>
-
