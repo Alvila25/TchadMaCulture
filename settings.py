@@ -12,22 +12,22 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.middleware.locale.LocaleMiddleware',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',  # Add this line
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 ]
 
-LANGUAGE_CODE = 'fr'  # Default language
+LANGUAGE_CODE = 'fr'  # Default site language
 
 LANGUAGES = [
+    ('en', _('English')),
     ('fr', _('French')),
     ('ar', _('Arabic')),
 ]
@@ -42,12 +42,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]
-
-# For production:
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-LANGUAGES = [
-    ('en', _('English')),
-    ('fr', _('French')),
-    ('ar', _('Arabic')),
-]
+TIME_ZONE = 'UTC'
