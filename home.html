@@ -30,12 +30,12 @@
         /* Gallery */
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
         .gallery img { width: 100%; height: auto; border-radius: 5px; object-fit: cover; }
-        /* Cards (Artist, Product, etc.) */
-        .artist-list, .product-list, .resource-list, .media-list, .involvement-list, .nft-list, .tour-list, .story-list, .portal-list { 
+        /* Cards (Heritage, Cuisine, Artist, Product, etc.) */
+        .heritage-list, .literature-list, .music-list, .taste-list, .tourism-list, .community-list, .blog-list, .proverb-list, .artist-list, .product-list,.cultural-list, .resource-list, .media-list, .involvement-list, .nft-list, .tour-list, .story-list, .portal-list { 
             display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
-        .artist-card, .product-card, .resource-card, .media-card, .involvement-card, .nft-card, .tour-card, .story-card, .portal-card { 
+        .heritage-card, .artist-card, .literature-card, .music-card, .taste-card, .tourism-card, .community-card, .blog-card, .proverb-card, .product-card, .cultural-card, .resource-card, .media-card, .involvement-card, .nft-card, .tour-card, .story-card, .portal-card { 
             background: #fff; padding: 1rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .artist-card img, .product-card img, .media-card img, .nft-card img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
+        .heritage-card img, .literature-card img, .music-card img, .taste-card img, .tourism-card img, .community-card img, .blog-card img, .proverb-card img, .artist-card img, .cultural-card img, .product-card img, .media-card img, .nft-card img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
         .read-more, .explore-btn, .buy-btn, .stream-btn, .action-btn, .listen-btn, .watch-btn, .experience-btn, .join-btn, .forum-btn, .newsletter-btn { 
             color: #e74c3c; text-decoration: none; display: inline-block; margin-top: 0.5rem; }
         .read-more:hover, .explore-btn:hover, .buy-btn:hover, .stream-btn:hover, .action-btn:hover, .listen-btn:hover, .watch-btn:hover, .experience-btn:hover, .join-btn:hover, .forum-btn:hover, .newsletter-btn:hover { 
@@ -129,8 +129,8 @@
     <!-- History & Heritage Section -->
     <section id="history" class="section">
         <h2 data-lang="section_history">Heritage & History of Chad</h2>
-        <div class="list-heritage">
-            <div class="car-heritage">
+        <div class="heritage-list">
+            <div class="heritage-card">
               <h3 data-lang="history_roots">Chad’s Historical Roots</h3>
               <p data-lang="history_text">
               Chad's history is deeply rooted in the ancient civilizations that flourished in the region. The country boasts ancient archaeological sites, including the Sao civilization ruins and prehistoric rock engravings of the Ennedi Plateau. 
@@ -138,13 +138,13 @@
               The Kanem-Bornu Empire, one of Africa’s most powerful kingdoms, thrived for centuries, influencing trade, culture, and governance. Chad is home to over 200 ethnic groups, each with its own unique traditions and customs, contributing to the country's diverse cultural landscape.
               </p>
             </div>
-            <div class="card-heritage">
+            <div class="heritage-card">
               <h3 data-lang="cultural_milestones">Cultural Milestones</h3>
               <p data-lang="milestones_text">
               Throughout history, Chad has experienced significant cultural transformations. From the rise of indigenous kingdoms and Islamic influences to the impact of colonization and independence in 1960, these milestones have shaped Chad’s identity. Today, Chad continues to celebrate its heritage through festivals, traditional ceremonies, and cultural preservation efforts.
-             </p>
+              </p>
             </div>
-            <div class="card-heritage">
+            <div class="heritage-card">
               <h3 data-lang="oral_traditions">Oral Traditions & Folklore</h3>
               <p data-lang="oral_text">
               Oral traditions play a vital role in preserving Chad’s history. Storytelling, poetry, and folklore have been passed down through generations, keeping ancestral wisdom alive. Elders and griots (traditional storytellers) share myths, legends, and moral lessons that continue to influence Chadian society today.
@@ -153,65 +153,65 @@
     </section>
 
     <!-- Art & Literature Section -->
-    <section id="art" class="section">
+    <section id="art" class="section"> 
         <h2 data-lang="section_art">🎨 Chadian Art & Literature</h2>
-        <div class="list-literature">
-            <div class="card-literature">
+        <div class="literature-list">
+            <div class="literature-card">
               <h3 data-lang="art_traditional">🖌️ Traditional & Contemporary Art</h3>
               <p data-lang="art_text1">
               Chad has a long tradition of artistic expression, from <strong>handwoven textiles and intricate pottery</strong> to wood carvings and rock art. 
               Ancient cave paintings in the <strong>Ennedi Plateau</strong> are among the oldest artistic representations in Africa.
-              </p>
-              <p data-lang="art_text2">
-              In modern times, Chadian artists blend traditional themes with contemporary styles, creating works that reflect identity, resilience, and social change.
-              </p>
+             </p>
+             <p data-lang="art_text2">
+             In modern times, Chadian artists blend traditional themes with contemporary styles, creating works that reflect identity, resilience, and social change.
+             </p>
             </div>
-            <div class="card-literature">
+            <div class="literature-card">
               <h3 data-lang="art_storytelling">📖 Chadian Storytelling & Folklore</h3>
               <p data-lang="art_text3">
               Storytelling is central to Chadian culture. Passed down orally by griots (traditional storytellers), folktales, myths, and historical legends preserve knowledge across generations.
-              </p>
+             </p>
             </div>
-            <div class="card-literature"></div>
+            <div class="literature-card">
               <h3 data-lang="art_writers">📚 Notable Chadian Writers</h3>
               <p data-lang="art_text4">
               Chadian literature has grown through writers like <strong>Joseph Brahim Seid</strong>, whose works explore Chad’s history and cultural identity. 
               Contemporary authors continue to share Chad’s narratives on the global stage.
-              </p>
+             </p>
             </div>
     </section>
 
     <!-- Music & Performing Arts Section -->
     <section id="music" class="section">
         <h2 data-lang="section_music">🎶 Music & Performing Arts of Chad</h2>
-        <div class="list-music">
-           <div class="card-music"></div>
+        <div class="music-list">
+            <div class="music-card">
               <h3 data-lang="music_instruments">🥁 Traditional Instruments</h3>
               <p data-lang="music_text1">
               Chad’s music features unique instruments like the kakaki (ceremonial trumpet), the balafon (African xylophone), drums, and flutes.
               These instruments accompany songs used for ceremonies, events of death, rituals, and storytelling.
-              </p>
+             </p>
             </div>
-            <div class="card-music">
+            <div class="music-card">
               <h3 data-lang="music_dance">💃 Cultural Dance & Theater</h3>
               <p data-lang="music_text2">
               Traditional Chadian dances, such as those at the <strong>Gerewol Festival</strong>, are performed with elaborate costumes and rhythmic beats. 
               Theater performances often include masked acting and musical storytelling.
               </p>
             </div>
-            <div class="card-music">
+            <div class="music-card">
               <h3 data-lang="music_modern">🎧 Modern Chadian Music</h3>
               <p data-lang="music_text3">
               Chad’s contemporary artists are blending Hip-hop, Afrobeat, and indigenous sounds, addressing themes of social change and identity.
-              </p>
+             </p>
             </div>
     </section>
 
-    <!-- Chadian Cuisine Section -->
+    <!-- Cuisine and Taste of Tradition Section -->
     <section id="cuisine" class="section">
-        <h2 data-lang="section_cuisine">🍽️ Cuisine: Taste of Tradition</h2>
-        <div class="list-cuisine">
-           <div class="card-cuisine"></div>
+        <h2 data-lang="section_cuisine">🍽️ Cuisine and Taste of Tradition</h2>
+        <div class="taste-list">
+            <div class="taste-card">
               <h3 data-lang="dishes_recipes">🥘 Traditional Dishes & Recipes</h3>
               <p data-lang="cuisine_text">
               Chadian cuisine is a delightful blend of African, Arab, and French influences, offering a variety of hearty and flavorful dishes. One of the most iconic meals is <span class="highlight">Bouillie</span>, a traditional porridge made from millet, often enjoyed as breakfast. 
@@ -220,7 +220,7 @@
               Another staple is <span class="highlight">Daraba</span>, a nutritious vegetable stew cooked with okra, tomatoes, and peanuts. <span class="highlight">Kisra</span>, a thin sorghum-based flatbread, is commonly served with rich sauces. Grilled meats, such as <span class="highlight">Chadian-style lamb skewers</span>, are also popular across the country.
               </p>
             </div>
-            <div class="card-cuisine">
+            <div class="taste-card">
               <h3 data-lang="food_identity">🍛 Food & Cultural Identity</h3>
               <p data-lang="identity_text">
               Food plays a central role in Chadian cultural identity, symbolizing hospitality, community, and tradition. Meals are often shared in large groups, emphasizing the value of togetherness. Traditional dishes are deeply connected to the country's diverse ethnic heritage, with each region offering its own unique flavors and cooking techniques.
@@ -229,7 +229,7 @@
               Ingredients like millet, sorghum, fish, peanuts, and spices are commonly used in daily cooking, reflecting the country's agricultural resources and historical trade influences.
               </p>
             </div>
-            <div class="card-cuisine">
+            <div class="taste-card">
               <h3 data-lang="food_world">Chadian Food Around the World</h3>
               <p data-lang="world_text">
               While Chadian cuisine is not as widely recognized as other African culinary traditions, it is slowly gaining international appreciation. Chadian restaurants and food festivals in diaspora communities are introducing global audiences to the unique flavors of Chad.
@@ -243,39 +243,53 @@
     <!-- Cultural Tourism Section -->
     <section id="tourism" class="section">
         <h2 data-lang="section_tourism">🏛️ Tourism & Heritage Sites</h2>
-        <h3 data-lang="tourism_unesco">🌍 UNESCO & Historical Sites</h3>
-        <p data-lang="tourism_text1">
-            Chad is home to remarkable natural and historical landmarks that reflect its cultural and environmental significance. One of the most famous is <span class="highlight">Zakouma National Park</span>, a protected wildlife sanctuary known for its elephants, lions, and diverse ecosystems.
-            The <span class="highlight">Ennedi Plateau</span>, a UNESCO World Heritage Site, is a breathtaking rock formation featuring ancient cave paintings that date back thousands of years. Another key landmark is <span class="highlight">Lake Chad</span>, once one of the largest lakes in Africa, playing a crucial role in the region’s history and economy.
-        </p>
-        <h3 data-lang="cultural_gems">Hidden Cultural Gems</h3>
-        <p data-lang="tourism_text2">
-            Beyond the well-known landmarks, Chad offers many hidden cultural treasures. The <span class="highlight">Gerewol Festival</span>, celebrated by the Wodaabe people, is a spectacular event where men compete in elaborate dances and attire to attract partners.
-            In rural areas, travelers can experience traditional <span class="highlight">nomadic lifestyles</span>, visit local craft markets, and engage with communities that preserve ancient customs.
-        </p>
-        <h3 data-lang="travel_guide">Travel Guide for Cultural Enthusiasts</h3>
-        <p data-lang="tourism_text3">
-            Exploring Chad requires cultural sensitivity and an appreciation for its traditions. Visitors are encouraged to <span class="highlight">respect local customs</span>, dress modestly, and engage with communities in a meaningful way.
-            Guided tours to UNESCO sites, eco-tourism experiences, and cultural immersion programs offer a responsible way to discover Chad’s heritage.
-        </p>
+        <div class="tourism-list">
+            <div class="tourism-card">
+              <h3 data-lang="tourism_unesco">🌍 UNESCO & Historical Sites</h3>
+              <p data-lang="tourism_text1">
+              Chad is home to remarkable natural and historical landmarks that reflect its cultural and environmental significance. One of the most famous is <span class="highlight">Zakouma National Park</span>, a protected wildlife sanctuary known for its elephants, lions, and diverse ecosystems.
+              The <span class="highlight">Ennedi Plateau</span>, a UNESCO World Heritage Site, is a breathtaking rock formation featuring ancient cave paintings that date back thousands of years. Another key landmark is <span class="highlight">Lake Chad</span>, once one of the largest lakes in Africa, playing a crucial role in the region’s history and economy.
+             </p>
+            </div>
+            <div class="tourism-card">
+              <h3 data-lang="cultural_gems">Hidden Cultural Gems</h3>
+              <p data-lang="tourism_text2">
+              Beyond the well-known landmarks, Chad offers many hidden cultural treasures. The <span class="highlight">Gerewol Festival</span>, celebrated by the Wodaabe people, is a spectacular event where men compete in elaborate dances and attire to attract partners.
+              In rural areas, travelers can experience traditional <span class="highlight">nomadic lifestyles</span>, visit local craft markets, and engage with communities that preserve ancient customs.
+              </p>
+            </div>
+            <div class="tourism-card">
+              <h3 data-lang="travel_guide">Travel Guide for Cultural Enthusiasts</h3>
+              <p data-lang="tourism_text3">
+              Exploring Chad requires cultural sensitivity and an appreciation for its traditions. Visitors are encouraged to <span class="highlight">respect local customs</span>, dress modestly, and engage with communities in a meaningful way.
+              Guided tours to UNESCO sites, eco-tourism experiences, and cultural immersion programs offer a responsible way to discover Chad’s heritage.
+              </p>
+            </div>
     </section>
 
     <!-- Community & Cultural Engagement Section -->
     <section id="engagement" class="section">
         <h2 data-lang="section_engagement">🤝 Community & Cultural Engagement</h2>
-        <h3 data-lang="engagement_festivals">🎉 Festivals & Events</h3>
-        <p data-lang="engagement_text1">
-            Chad hosts a variety of festivals and cultural events that showcase the nation’s vibrant traditions. One of the most famous celebrations is the <span class="highlight">Gerewol Festival</span>, where the Wodaabe people participate in an elaborate courtship dance competition.
-            The <span class="highlight">N'Djamena Biennale</span> is a major cultural event that brings together artists, musicians, and performers from across Chad and beyond.
-        </p>
-        <h3 data-lang="learning_space">Workshops & Learning Spaces</h3>
-        <p data-lang="learning_text1">
-            To preserve and pass down Chadian traditions, various workshops and learning spaces provide hands-on experiences in arts, crafts, and music. Visitors and locals can participate in activities such as <span class="highlight">traditional pottery-making</span>, <span class="highlight">musical instrument crafting</span>, and <span class="highlight">dance workshops</span>.
-        </p>
-        <h3 data-lang="global_partnership">Local & Global Partnerships</h3>
-        <p data-lang="global_text1">
-            Cultural preservation and promotion thrive through collaboration. Chad is actively engaging with local organizations, international cultural bodies, and academic institutions to <span class="highlight">document, celebrate, and innovate</span> its rich traditions.
-        </p>
+        <div class="community-list">
+            <div class="community-card">
+              <h3 data-lang="engagement_festivals">🎉 Festivals & Events</h3>
+              <p data-lang="engagement_text1">
+              Chad hosts a variety of festivals and cultural events that showcase the nation’s vibrant traditions. One of the most famous celebrations is the <span class="highlight">Gerewol Festival</span>, where the Wodaabe people participate in an elaborate courtship dance competition.
+              The <span class="highlight">N'Djamena Biennale</span> is a major cultural event that brings together artists, musicians, and performers from across Chad and beyond.
+              </p>
+            </div>
+            <div class="community-card">
+              <h3 data-lang="learning_space">Workshops & Learning Spaces</h3>
+              <p data-lang="learning_text1">
+              To preserve and pass down Chadian traditions, various workshops and learning spaces provide hands-on experiences in arts, crafts, and music. Visitors and locals can participate in activities such as <span class="highlight">traditional pottery-making</span>, <span class="highlight">musical instrument crafting</span>, and <span class="highlight">dance workshops</span>.
+              </p>
+            </div>
+            <div class="community-card">
+              <h3 data-lang="global_partnership">Local & Global Partnerships</h3>
+              <p data-lang="global_text1">
+              Cultural preservation and promotion thrive through collaboration. Chad is actively engaging with local organizations, international cultural bodies, and academic institutions to <span class="highlight">document, celebrate, and innovate</span> its rich traditions.
+              </p>
+            </div>
     </section>
 
     <!-- Gallery Section -->
@@ -295,46 +309,48 @@
     <!-- Cultural Insights & Blog -->
     <section id="blog" class="section">
         <h2 data-lang="section_blog">✍️ Cultural Insights & Blog</h2>
-        <div class="blog-post">
-            <h3 data-lang="blog_traditions">📖 Deep Dives into Chadian Traditions</h3>
-            <p data-lang="blog_text1">
-                Explore the rich traditions of Chad, from <strong>marriage customs</strong> to <strong>traditional clothing</strong> and ancient beliefs. These customs reflect the deep-rooted history and diversity of the country's many ethnic groups.
-            </p>
-            <a href="#" class="read-more" data-lang="read_more">Read More</a>
-        </div>
-        <div class="blog-post">
-            <h3 data-lang="blog_modern">🌍 Modern Cultural Shifts</h3>
-            <p data-lang="blog_text2">
-                As Chad embraces modernization, its culture is evolving. Discover how traditional and contemporary influences blend, shaping the way Chadians live, dress, and celebrate today.
-            </p>
-            <a href="#" class="read-more" data-lang="read_more">Read More</a>
-        </div>
-        <div class="blog-post">
-            <h3 data-lang="blog_interviews">Interviews with Artists, Musicians, & Historians</h3>
-            <p data-lang="blog_text3">
-                Meet the cultural pioneers preserving and promoting Chadian heritage. Read exclusive interviews with <strong>artists, musicians, and historians</strong> who are shaping the future of Chad’s cultural identity.
-            </p>
-            <a href="#" class="read-more" data-lang="read_more">Read More</a>
-        </div>
+        <div class="blog-list">
+            <div class="blog-card">
+              <h3 data-lang="blog_traditions">📖 Deep Dives into Chadian Traditions</h3>
+              <p data-lang="blog_text1">
+              Explore the rich traditions of Chad, from <strong>marriage customs</strong> to <strong>traditional clothing</strong> and ancient beliefs. These customs reflect the deep-rooted history and diversity of the country's many ethnic groups.
+             </p>
+             <a href="#" class="read-more" data-lang="read_more">Read More</a>
+            </div>
+            <div class="blog-card">
+              <h3 data-lang="blog_modern">🌍 Modern Cultural Shifts</h3>
+              <p data-lang="blog_text2">
+              As Chad embraces modernization, its culture is evolving. Discover how traditional and contemporary influences blend, shaping the way Chadians live, dress, and celebrate today.
+              </p>
+              <a href="#" class="read-more" data-lang="read_more">Read More</a>
+            </div>
+            <div class="blog-card">
+              <h3 data-lang="blog_interviews">Interviews with Artists, Musicians, & Historians</h3>
+              <p data-lang="blog_text3">
+              Meet the cultural pioneers preserving and promoting Chadian heritage. Read exclusive interviews with <strong>artists, musicians, and historians</strong> who are shaping the future of Chad’s cultural identity.
+              </p>
+              <a href="#" class="read-more" data-lang="read_more">Read More</a>
+            </div>
     </section>
 
     <!-- Proverbs & Wisdom Section -->
     <section id="proverbs" class="section">
         <h2 data-lang="section_proverbs">📜 Chadian Proverbs & Wisdom</h2>
-        <div class="proverb">
-            <h3 data-lang="proverb_general">🔹 Traditional Sayings & Meanings</h3>
-            <p data-lang="proverb_text1"><span class="highlight">"The river that forgets its source will soon dry up."</span></p>
-            <p data-lang="proverb_meaning1"><em>Meaning:</em> Never forget your roots, heritage, or where you come from.</p>
-        </div>
-        <div class="proverb">
-            <h3 data-lang="proverb_general1">Proverbs by Region</h3>
-            <p data-lang="proverb_text2"><span class="highlight">Kanembu Proverb:</span> <br> <strong>"A tree does not grow taller than the one that gave it shade."</strong></p>
-            <p data-lang="proverb_meaning2"><em>Meaning:</em> Respect and honor those who have supported and guided you.</p>
-            <p data-lang="proverb_text3"><span class="highlight">Sara Proverb:</span> <br> <strong>"A lion’s strength is not in its roar, but in its actions."</strong></p>
-            <p data-lang="proverb_meaning3"><em>Meaning:</em> True power is demonstrated through deeds, not words.</p>
-            <p data-lang="proverb_text4"><span class="highlight">Arab Chadian Proverb:</span> <br> <strong>"A traveler with no destination is like a bird without wings."</strong></p>
-            <p data-lang="proverb_meaning4"><em>Meaning:</em> One must have purpose and direction in life.</p>
-        </div>
+        <div class="proverb-list">
+            <div class="proverb-card">
+              <h3 data-lang="proverb_general">🔹 Traditional Sayings & Meanings</h3>
+              <p data-lang="proverb_text1"><span class="highlight">"The river that forgets its source will soon dry up."</span></p>
+              <p data-lang="proverb_meaning1"><em>Meaning:</em> Never forget your roots, heritage, or where you come from.</p>
+            </div>
+            <div class="proverb-card">
+              <h3 data-lang="proverb_general1">Proverbs by Region</h3>
+              <p data-lang="proverb_text2"><span class="highlight">Kanembu Proverb:</span> <br> <strong>"A tree does not grow taller than the one that gave it shade."</strong></p>
+              <p data-lang="proverb_meaning2"><em>Meaning:</em> Respect and honor those who have supported and guided you.</p>
+              <p data-lang="proverb_text3"><span class="highlight">Sara Proverb:</span> <br> <strong>"A lion’s strength is not in its roar, but in its actions."</strong></p>
+              <p data-lang="proverb_meaning3"><em>Meaning:</em> True power is demonstrated through deeds, not words.</p>
+              <p data-lang="proverb_text4"><span class="highlight">Arab Chadian Proverb:</span> <br> <strong>"A traveler with no destination is like a bird without wings."</strong></p>
+             <p data-lang="proverb_meaning4"><em>Meaning:</em> One must have purpose and direction in life.</p>
+           </div>
     </section>
 
     <!-- Featured Chadian Artists Section -->
@@ -382,24 +398,31 @@
     <!-- Cultural Innovation Section -->
     <section id="innovation" class="section">
         <h2 data-lang="section_innovation">📱 Cultural Innovation & Future of Chadian Heritage</h2>
-        <h3 data-lang="innovation_digital">🌍 Chadian Culture in the Digital Age</h3>
-        <p data-lang="innovation_text1">
-            The rise of technology is transforming how Chadian culture is preserved and shared. Social media platforms, digital archives, and streaming services are giving artists and historians the tools to showcase traditions to a global audience.
-        </p>
-        <p data-lang="innovation_text2">
-            Young Chadians are using <strong>YouTube, TikTok, and Instagram</strong> to promote traditional music, fashion, and languages, making culture more accessible to the younger generation.
-        </p>
-        <h3 data-lang="innovation_ai">🤖 AI & Virtual Reality in Cultural Preservation</h3>
-        <p data-lang="innovation_text3">
-            Artificial Intelligence (AI) and Virtual Reality (VR) are opening new doors for cultural preservation. AI-driven <strong>language translation tools</strong> help document indigenous Chadian languages, ensuring they are not lost over time.
-        </p>
-        <p data-lang="innovation_text4">
-            Virtual reality experiences allow people to explore <strong>historical sites, festivals, and traditional ceremonies</strong> from anywhere in the world.
-        </p>
-        <h3 data-lang="innovation_diaspora">🌍 Diaspora’s Role in Cultural Promotion</h3>
-        <p data-lang="innovation_text5">
-            The Chadian diaspora plays a crucial role in <strong>spreading and preserving Chadian culture</strong>. Through <strong>film, literature, music, and community events</strong>, Chadians living abroad are helping introduce their traditions to international audiences.
-        </p>
+        <div class="cultural-list">
+           <div class="cultural-card">
+              <h3 data-lang="innovation_digital">🌍 Chadian Culture in the Digital Age</h3>
+              <p data-lang="innovation_text1">
+              The rise of technology is transforming how Chadian culture is preserved and shared. Social media platforms, digital archives, and streaming services are giving artists and historians the tools to showcase traditions to a global audience.
+              </p>
+              <p data-lang="innovation_text2">
+              Young Chadians are using <strong>YouTube, TikTok, and Instagram</strong> to promote traditional music, fashion, and languages, making culture more accessible to the younger generation.
+              </p>
+            </div>
+            <div class="cultural-card">
+              <h3 data-lang="innovation_ai">🤖 AI & Virtual Reality in Cultural Preservation</h3>
+              <p data-lang="innovation_text3">
+              Artificial Intelligence (AI) and Virtual Reality (VR) are opening new doors for cultural preservation. AI-driven <strong>language translation tools</strong> help document indigenous Chadian languages, ensuring they are not lost over time.
+              </p>
+              <p data-lang="innovation_text4">
+              Virtual reality experiences allow people to explore <strong>historical sites, festivals, and traditional ceremonies</strong> from anywhere in the world.
+              </p>
+            </div>
+            <div class="cultural-card">
+              <h3 data-lang="innovation_diaspora">🌍 Diaspora’s Role in Cultural Promotion</h3>
+              <p data-lang="innovation_text5">
+              The Chadian diaspora plays a crucial role in <strong>spreading and preserving Chadian culture</strong>. Through <strong>film, literature, music, and community events</strong>, Chadians living abroad are helping introduce their traditions to international audiences.
+              </p>
+            </div>
     </section>
 
     <!-- E-Learning & Cultural Resources -->
