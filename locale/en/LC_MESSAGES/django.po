@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-22 15:49+0300\n"
+"POT-Creation-Date: 2025-06-22 23:17+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,1341 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\culture\views.py:14
-msgid "Thank you for subscribing!"
+
+#: .\home.html:7
+msgid "Tchad Ma Culture"
+msgstr ""
+
+#: .\home.html:75
+msgid "Chadian Cultural Heritage"
+msgstr ""
+
+#: .\home.html:78
+msgid "About"
+msgstr ""
+
+#: .\home.html:79
+msgid "History & Heritage"
+msgstr ""
+
+#: .\home.html:80
+msgid "Cuisine and Taste of Chad"
+msgstr ""
+
+#: .\home.html:81
+msgid "Tourism and Heritage Sites"
+msgstr ""
+
+#: .\home.html:82
+msgid "Music & Performing Arts"
+msgstr ""
+
+#: .\home.html:83
+msgid "Gallery"
+msgstr ""
+
+#: .\home.html:84
+msgid "Contact"
+msgstr ""
+
+#: .\home.html:88
+msgid "Language"
+msgstr ""
+
+#: .\home.html:111
+msgid "Celebrate and Preserve Chadian Culture"
+msgstr ""
+
+#: .\home.html:112
+msgid ""
+"Explore Chad’s rich cultural heritage, engage with local traditions, and "
+"contribute to preserving our history."
+msgstr ""
+
+#: .\home.html:113
+msgid "Join Us"
+msgstr ""
+
+#: .\home.html:116
+msgid "Chadian cultural representation"
+msgstr ""
+
+#: .\home.html:122
+msgid "About Chad"
+msgstr ""
+
+#: .\home.html:123
+msgid ""
+"\n"
+"         Chad My Culture is a digital platform dedicated to exploring and "
+"sharing the cultural richness of Chad. \n"
+"         We celebrate the diversity of our people through stories, "
+"traditions, art, language, and music. \n"
+"         Our goal is to create an accessible, engaging space where Chadians "
+"and global audiences can connect with the depth and beauty of Chadian "
+"heritage.\n"
+"        "
+msgstr ""
+
+#: .\home.html:133
+msgid "Our Vision"
+msgstr ""
+
+#: .\home.html:134
+msgid ""
+"\n"
+"        Our vision is to establish Chad as a globally recognized cultural "
+"hub, where traditions are preserved, artists are empowered, and the world is "
+"educated about our rich heritage. \n"
+"        We strive to connect the past, present, and future of Chadian "
+"culture through innovation and collaboration.\n"
+"        "
+msgstr ""
+
+#: .\home.html:143
+msgid "Our Mission"
+msgstr ""
+
+#: .\home.html:144
+msgid ""
+"\n"
+"        To preserve, promote, and present Chadian culture in a meaningful "
+"and modern way by empowering communities, educating audiences, and fostering "
+"pride in our identity.\n"
+"        "
+msgstr ""
+
+#: .\home.html:152
+msgid "Heritage & History of Chad"
+msgstr ""
+
+#: .\home.html:155
+msgid "Chad’s Historical Roots"
+msgstr ""
+
+#: .\home.html:156
+msgid ""
+"\n"
+"                Chad's history is deeply rooted in the ancient civilizations "
+"that flourished in the region. The country boasts ancient archaeological "
+"sites, including the Sao civilization ruins and prehistoric rock engravings "
+"of the Ennedi Plateau. \n"
+"                Traditional mudbrick architecture, such as the palaces of "
+"Abéché and the earthen mosques of the Sahel, reflect the country’s "
+"architectural legacy.\n"
+"                The Kanem-Bornu Empire, one of Africa’s most powerful "
+"kingdoms, thrived for centuries, influencing trade, culture, and governance. "
+"Chad is home to over 200 ethnic groups across its 1,284,000km2, each with "
+"its own unique traditions and customs, contributing to the country's diverse "
+"cultural landscape.\n"
+"                "
+msgstr ""
+
+#: .\home.html:164
+msgid "Cultural Milestones"
+msgstr ""
+
+#: .\home.html:165
+msgid ""
+"\n"
+"                Throughout history, Chad has experienced significant "
+"cultural transformations. From the rise of indigenous kingdoms and Islamic "
+"influences to the impact of colonization and independence in 1960, these "
+"milestones have shaped Chad’s identity. Today, Chad continues to celebrate "
+"its heritage through festivals, traditional ceremonies, and cultural "
+"preservation efforts.\n"
+"                "
+msgstr ""
+
+#: .\home.html:171
+msgid "Oral Traditions & Folklore"
+msgstr ""
+
+#: .\home.html:172
+msgid ""
+"\n"
+"                Oral traditions play a vital role in preserving Chad’s "
+"history. Storytelling, poetry, and folklore have been passed down through "
+"generations, keeping ancestral wisdom alive. Elders and griots (traditional "
+"storytellers) share myths, legends, and moral lessons that continue to "
+"influence Chadian society today.\n"
+"                "
+msgstr ""
+
+#: .\home.html:182
+msgid "Cuisine and Taste of Tradition"
+msgstr ""
+
+#: .\home.html:185
+msgid "Traditional Dishes & Recipes"
+msgstr ""
+
+#: .\home.html:186
+msgid ""
+"\n"
+"                Chadian cuisine is a delightful blend of African, Arab, and "
+"French influences, offering a variety of hearty and flavorful dishes. One of "
+"the most iconic meals is <span class=\"highlight\">Bouillie</span>, a "
+"traditional porridge made from millet, often enjoyed as breakfast.\n"
+"                "
+msgstr ""
+
+#: .\home.html:190
+msgid ""
+"\n"
+"                Another staple is <span class=\"highlight\">Daraba</span>, a "
+"nutritious vegetable stew cooked with okra, tomatoes, and peanuts. <span "
+"class=\"highlight\">Kisra</span>, a thin sorghum-based flatbread, is "
+"commonly served with rich sauces. Grilled meats, such as <span "
+"class=\"highlight\">Chadian-style lamb skewers</span>, are also popular "
+"across the country.\n"
+"                "
+msgstr ""
+
+#: .\home.html:196
+msgid "Food & Cultural Identity"
+msgstr ""
+
+#: .\home.html:197
+msgid ""
+"\n"
+"                Food plays a central role in Chadian cultural identity, "
+"symbolizing hospitality, community, and tradition. Meals are often shared in "
+"large groups, emphasizing the value of togetherness. Traditional dishes are "
+"deeply connected to the country's diverse ethnic heritage, with each region "
+"offering its own unique flavors and cooking techniques.\n"
+"                "
+msgstr ""
+
+#: .\home.html:201
+msgid ""
+"\n"
+"                Ingredients like millet, sorghum, fish, peanuts, and spices "
+"are commonly used in daily cooking, reflecting the country's agricultural "
+"resources and historical trade influences.\n"
+"                "
+msgstr ""
+
+#: .\home.html:207
+msgid "Chadian Food Around the World"
+msgstr ""
+
+#: .\home.html:208
+msgid ""
+"\n"
+"                While Chadian cuisine is not as widely recognized as other "
+"African culinary traditions, it is slowly gaining international "
+"appreciation. Chadian restaurants and food festivals in diaspora communities "
+"are introducing global audiences to the unique flavors of Chad.\n"
+"                "
+msgstr ""
+
+#: .\home.html:212
+msgid ""
+"\n"
+"                Additionally, Chadian chefs and food enthusiasts are using "
+"digital platforms to share traditional recipes and cooking methods with the "
+"world, helping to preserve and promote the country’s culinary heritage.\n"
+"                "
+msgstr ""
+
+#: .\home.html:222
+msgid "Tourism & Heritage Sites"
+msgstr ""
+
+#: .\home.html:225
+msgid "UNESCO & Historical Sites"
+msgstr ""
+
+#: .\home.html:226
+msgid ""
+"\n"
+"                Chad is home to remarkable natural and historical landmarks "
+"that reflect its cultural and environmental significance. One of the most "
+"famous is <span class=\"highlight\">Zakouma National Park</span>, a "
+"protected wildlife sanctuary known for its elephants, lions, and diverse "
+"ecosystems.\n"
+"                The <span class=\"highlight\">Ennedi Plateau</span>, a "
+"UNESCO World Heritage Site, is a breathtaking rock formation featuring "
+"ancient cave paintings that date back thousands of years. Another key "
+"landmark is <span class=\"highlight\">Lake Chad</span>, once one of the "
+"largest lakes in Africa, playing a crucial role in the region’s history and "
+"economy.\n"
+"                "
+msgstr ""
+
+#: .\home.html:233
+msgid "Hidden Cultural Gems"
+msgstr ""
+
+#: .\home.html:234
+msgid ""
+"\n"
+"                Beyond the well-known landmarks, Chad offers many hidden "
+"cultural treasures. The <span class=\"highlight\">Gerewol Festival</span>, "
+"celebrated by the Wodaabe people, is a spectacular event where men compete "
+"in elaborate dances and attire to attract partners.\n"
+"                In rural areas, travelers can experience traditional <span "
+"class=\"highlight\">nomadic lifestyles</span>, visit local craft markets, "
+"and engage with communities that preserve ancient customs.\n"
+"                "
+msgstr ""
+
+#: .\home.html:241
+msgid "Travel Guide for Cultural Enthusiasts"
+msgstr ""
+
+#: .\home.html:242
+msgid ""
+"\n"
+"                Exploring Chad requires cultural sensitivity and an "
+"appreciation for its traditions. Visitors are encouraged to <span "
+"class=\"highlight\">respect local customs</span>, dress modestly, and engage "
+"with communities in a meaningful way.\n"
+"                Guided tours to UNESCO sites, eco-tourism experiences, and "
+"cultural immersion programs offer a responsible way to discover Chad’s "
+"heritage.\n"
+"                "
+msgstr ""
+
+#: .\home.html:253
+msgid "Chadian Art & Literature"
+msgstr ""
+
+#: .\home.html:256
+msgid "Traditional & Contemporary Art"
+msgstr ""
+
+#: .\home.html:257
+msgid ""
+"\n"
+"                Chad has a long tradition of artistic expression, from "
+"<strong>handwoven textiles and intricate pottery</strong> to wood carvings "
+"and rock art. \n"
+"                Ancient cave paintings in the <strong>Ennedi Plateau</"
+"strong> are among the oldest artistic representations in Africa.\n"
+"                "
+msgstr ""
+
+#: .\home.html:262
+msgid ""
+"\n"
+"                In modern times, Chadian artists blend traditional themes "
+"with contemporary styles, creating works that reflect identity, resilience, "
+"and social change.\n"
+"                "
+msgstr ""
+
+#: .\home.html:268
+msgid "Chadian Storytelling & Folklore"
+msgstr ""
+
+#: .\home.html:269
+msgid ""
+"\n"
+"                Storytelling is central to Chadian culture. Passed down "
+"orally by griots (traditional storytellers), folktales, myths, and "
+"historical legends preserve knowledge across generations.\n"
+"                "
+msgstr ""
+
+#: .\home.html:275
+msgid "Notable Chadian Writers"
+msgstr ""
+
+#: .\home.html:276
+msgid ""
+"\n"
+"                Chadian literature has grown through writers like "
+"<strong>Joseph Brahim Seid</strong>, whose works explore Chad’s history and "
+"cultural identity. \n"
+"                Contemporary authors continue to share Chad’s narratives on "
+"the global stage.\n"
+"                "
+msgstr ""
+
+#: .\home.html:287
+msgid "Music & Performing Arts of Chad"
+msgstr ""
+
+#: .\home.html:290
+msgid "Traditional Instruments"
+msgstr ""
+
+#: .\home.html:291
+msgid ""
+"\n"
+"                Chad’s music features unique instruments like the kakaki "
+"(ceremonial trumpet), the balafon (African xylophone), drums, and flutes.\n"
+"                These instruments accompany songs used for ceremonies, "
+"events of death, rituals, and storytelling.\n"
+"                "
+msgstr ""
+
+#: .\home.html:298
+msgid "Cultural Dance & Theater"
+msgstr ""
+
+#: .\home.html:299
+msgid ""
+"\n"
+"                Traditional Chadian dances, such as those at the "
+"<strong>Gerewol Festival</strong>, are performed with elaborate costumes and "
+"rhythmic beats. \n"
+"                Theater performances often include masked acting and musical "
+"storytelling.\n"
+"                "
+msgstr ""
+
+#: .\home.html:306
+msgid "Modern Chadian Music"
+msgstr ""
+
+#: .\home.html:307
+msgid ""
+"\n"
+"                Chad’s contemporary artists are blending Hip-hop, Afrobeat, "
+"and indigenous sounds, addressing themes of social change and identity.\n"
+"                "
+msgstr ""
+
+#: .\home.html:317
+msgid "Podcast & Video Series: Voices of Chad"
+msgstr ""
+
+#: .\home.html:318
+msgid ""
+"Discover the stories of Chad through insightful interviews, behind-the-"
+"scenes footage, and creative showcases."
+msgstr ""
+
+#: .\home.html:321
+msgid "Interviews with Cultural Icons & Elders"
+msgstr ""
+
+#: .\home.html:322
+msgid ""
+"Preserving Chad’s oral history through conversations with historians, "
+"artists, and community leaders."
+msgstr ""
+
+#: .\home.html:323
+msgid "Listen on Spotify"
+msgstr ""
+
+#: .\home.html:326
+msgid "Behind-the-Scenes of Festivals & Events"
+msgstr ""
+
+#: .\home.html:327
+msgid ""
+"Experience the beauty of Chadian festivals and traditional ceremonies "
+"through documentary-style storytelling."
+msgstr ""
+
+#: .\home.html:328
+msgid "Watch on YouTube"
+msgstr ""
+
+#: .\home.html:331
+msgid "Spotlight on Emerging Talent"
+msgstr ""
+
+#: .\home.html:332
+msgid ""
+"Meet young Chadian creators, musicians, and filmmakers who are shaping the "
+"future of Chadian culture."
+msgstr ""
+
+#: .\home.html:333
+msgid "Watch Creators"
+msgstr ""
+
+#: .\home.html:340
+msgid "Meet the Elders: A Storytelling Feature"
+msgstr ""
+
+#: .\home.html:341
+msgid ""
+"Experience the wisdom of Chadian elders through their stories, preserved in "
+"video, audio, and written form."
+msgstr ""
+
+#: .\home.html:344
+msgid "Oral Story: The Origins of the Kanembu People"
+msgstr ""
+
+#: .\home.html:345
+msgid ""
+"Translation: \"Long ago, our ancestors settled near Lake Chad, where the "
+"Kanembu people flourished...\""
+msgstr ""
+
+#: .\home.html:346 .\home.html:351
+msgid "Listen to Audio"
+msgstr ""
+
+#: .\home.html:349
+msgid "Wisdom from a Chadian Elder"
+msgstr ""
+
+#: .\home.html:350
+msgid ""
+"Translation: \"A wise person does not rush in judgment. In our village, the "
+"elders always say...\""
+msgstr ""
+
+#: .\home.html:358
+msgid "Community & Cultural Engagement"
+msgstr ""
+
+#: .\home.html:361
+msgid "Festivals & Events"
+msgstr ""
+
+#: .\home.html:362
+msgid ""
+"\n"
+"                Chad hosts a variety of festivals and cultural events that "
+"showcase the nation’s vibrant traditions. One of the most famous "
+"celebrations is the <span class=\"highlight\">Gerewol Festival</span>, where "
+"the Wodaabe people participate in an elaborate courtship dance competition.\n"
+"                The <span class=\"highlight\">N'Djamena Biennale</span> is a "
+"major cultural event that brings together artists, musicians, and performers "
+"from across Chad and beyond.\n"
+"                "
+msgstr ""
+
+#: .\home.html:369
+msgid "Workshops & Learning Spaces"
+msgstr ""
+
+#: .\home.html:370
+msgid ""
+"\n"
+"                To preserve and pass down Chadian traditions, various "
+"workshops and learning spaces provide hands-on experiences in arts, crafts, "
+"and music. Visitors and locals can participate in activities such as <span "
+"class=\"highlight\">traditional pottery-making</span>, <span "
+"class=\"highlight\">musical instrument crafting</span>, and <span "
+"class=\"highlight\">dance workshops</span>.\n"
+"                "
+msgstr ""
+
+#: .\home.html:376
+msgid "Local & Global Partnerships"
+msgstr ""
+
+#: .\home.html:377
+msgid ""
+"\n"
+"                Cultural preservation and promotion thrive through "
+"collaboration. Chad is actively engaging with local organizations, "
+"international cultural bodies, and academic institutions to <span "
+"class=\"highlight\">document, celebrate, and innovate</span> its rich "
+"traditions.\n"
+"                "
+msgstr ""
+
+#: .\home.html:387
+msgid "Visual Journey: Gallery"
+msgstr ""
+
+#: .\home.html:388
+msgid ""
+"Explore the beauty of Chad through stunning images showcasing its "
+"landscapes, arts, people, and traditions."
+msgstr ""
+
+#: .\home.html:390
+msgid "Beautiful Landscape of Chad"
+msgstr ""
+
+#: .\home.html:391
+msgid "Traditional Chadian Artwork"
+msgstr ""
+
+#: .\home.html:392
+msgid "People of Chad in Traditional Attire"
+msgstr ""
+
+#: .\home.html:393
+msgid "Chadian Cultural Festival"
+msgstr ""
+
+#: .\home.html:394
+msgid "Traditional Dance Performance"
+msgstr ""
+
+#: .\home.html:395
+msgid "Local Market in Chad"
+msgstr ""
+
+#: .\home.html:401
+msgid "Cultural Insights & Blog"
+msgstr ""
+
+#: .\home.html:404
+msgid "Deep Dives into Chadian Traditions"
+msgstr ""
+
+#: .\home.html:405
+msgid ""
+"\n"
+"                Explore the rich traditions of Chad, from <strong>marriage "
+"customs</strong> to <strong>traditional clothing</strong> and ancient "
+"beliefs. These customs reflect the deep-rooted history and diversity of the "
+"country's many ethnic groups.\n"
+"                "
+msgstr ""
+
+#: .\home.html:409 .\home.html:417 .\home.html:425 .\home.html:460
+#: .\home.html:466 .\home.html:472
+msgid "Read More"
+msgstr ""
+
+#: .\home.html:412
+msgid "Modern Cultural Shifts"
+msgstr ""
+
+#: .\home.html:413
+msgid ""
+"\n"
+"                As Chad embraces modernization, its culture is evolving. "
+"Discover how traditional and contemporary influences blend, shaping the way "
+"Chadians live, dress, and celebrate today.\n"
+"                "
+msgstr ""
+
+#: .\home.html:420
+msgid "Interviews with Artists, Musicians, & Historians"
+msgstr ""
+
+#: .\home.html:421
+msgid ""
+"\n"
+"                Meet the cultural pioneers preserving and promoting Chadian "
+"heritage. Read exclusive interviews with <strong>artists, musicians, and "
+"historians</strong> who are shaping the future of Chad’s cultural identity.\n"
+"                "
+msgstr ""
+
+#: .\home.html:432
+msgid "Chadian Proverbs & Wisdom"
+msgstr ""
+
+#: .\home.html:435
+msgid "Traditional Sayings & Meanings"
+msgstr ""
+
+#: .\home.html:436
+msgid "The river that forgets its source will soon dry up."
+msgstr ""
+
+#: .\home.html:437 .\home.html:442 .\home.html:444 .\home.html:446
+msgid "Meaning"
+msgstr ""
+
+#: .\home.html:437
+msgid "Never forget your roots, heritage, or where you come from."
+msgstr ""
+
+#: .\home.html:440
+msgid "Proverbs by Region"
+msgstr ""
+
+#: .\home.html:441
+msgid "Kanembu Proverb"
+msgstr ""
+
+#: .\home.html:441
+msgid "A tree does not grow taller than the one that gave it shade."
+msgstr ""
+
+#: .\home.html:442
+msgid "Respect and honor those who have supported and guided you."
+msgstr ""
+
+#: .\home.html:443
+msgid "Sara Proverb"
+msgstr ""
+
+#: .\home.html:443
+msgid "A lion’s strength is not in its roar, but in its actions."
+msgstr ""
+
+#: .\home.html:444
+msgid "True power is demonstrated through deeds, not words."
+msgstr ""
+
+#: .\home.html:445
+msgid "Arab Chadian Proverb"
+msgstr ""
+
+#: .\home.html:445
+msgid "A traveler with no destination is like a bird without wings."
+msgstr ""
+
+#: .\home.html:446
+msgid "One must have purpose and direction in life."
+msgstr ""
+
+#: .\home.html:453
+msgid "Featured Chadian Artists & Creatives"
+msgstr ""
+
+#: .\home.html:454
+msgid ""
+"Discover the talented painters, musicians, writers, and cultural icons who "
+"are shaping Chad’s artistic and creative landscape."
+msgstr ""
+
+#: .\home.html:457
+msgid "Chadian Painter"
+msgstr ""
+
+#: .\home.html:458
+msgid "Ahmed Djibrine"
+msgstr ""
+
+#: .\home.html:459
+msgid ""
+"A renowned Chadian painter whose artwork reflects the rich history and "
+"diverse cultures of Chad."
+msgstr ""
+
+#: .\home.html:463
+msgid "Chadian Musician"
+msgstr ""
+
+#: .\home.html:464
+msgid "Ngass David"
+msgstr ""
+
+#: .\home.html:465
+msgid ""
+"A talented singer blending traditional Chadian rhythms with modern Afrobeat "
+"influences."
+msgstr ""
+
+#: .\home.html:469
+msgid "Chadian Writer"
+msgstr ""
+
+#: .\home.html:470
+msgid "Rais Kim"
+msgstr ""
+
+#: .\home.html:471
+msgid ""
+"An acclaimed writer known for his novels that explore Chadian history, "
+"politics, and identity."
+msgstr ""
+
+#: .\home.html:479
+msgid "Interactive Cultural Map of Chad"
+msgstr ""
+
+#: .\home.html:480
+msgid ""
+"Click on a region to learn more about its traditions, ethnic groups, and "
+"cultural highlights."
+msgstr ""
+
+#: .\home.html:481
+msgid "Interactive Map of Chad"
+msgstr ""
+
+#: .\home.html:483
+msgid "N\\"
+msgstr ""
+
+#: .\home.html:484 .\home.html:764
+msgid "Lac Region"
+msgstr ""
+
+#: .\home.html:485 .\home.html:768
+msgid "Ennedi"
+msgstr ""
+
+#: .\home.html:488
+msgid "Region Name"
+msgstr ""
+
+#: .\home.html:489
+msgid "Click on a region to explore its culture and traditions."
+msgstr ""
+
+#: .\home.html:495
+msgid "Cultural Innovation & Future of Chadian Heritage"
+msgstr ""
+
+#: .\home.html:498
+msgid "Chadian Culture in the Digital Age"
+msgstr ""
+
+#: .\home.html:499
+msgid ""
+"\n"
+"                The rise of technology is transforming how Chadian culture "
+"is preserved and shared. Social media platforms, digital archives, and "
+"streaming services are giving artists and historians the tools to showcase "
+"traditions to a global audience.\n"
+"                "
+msgstr ""
+
+#: .\home.html:503
+msgid ""
+"\n"
+"                Young Chadians are using <strong>YouTube, TikTok, and "
+"Instagram</strong> to promote traditional music, fashion, and languages, "
+"making culture more accessible to the younger generation.\n"
+"                "
+msgstr ""
+
+#: .\home.html:509
+msgid "AI & Virtual Reality in Cultural Preservation"
+msgstr ""
+
+#: .\home.html:510
+msgid ""
+"\n"
+"                Artificial Intelligence (AI) and Virtual Reality (VR) are "
+"opening new doors for cultural preservation. AI-driven <strong>language "
+"translation tools</strong> help document indigenous Chadian languages, "
+"ensuring they are not lost over time.\n"
+"                "
+msgstr ""
+
+#: .\home.html:514
+msgid ""
+"\n"
+"                Virtual reality experiences allow people to explore "
+"<strong>historical sites, festivals, and traditional ceremonies</strong> "
+"from anywhere in the world.\n"
+"                "
+msgstr ""
+
+#: .\home.html:520
+msgid "Diaspora’s Role in Cultural Promotion"
+msgstr ""
+
+#: .\home.html:521
+msgid ""
+"\n"
+"                The Chadian diaspora plays a crucial role in "
+"<strong>spreading and preserving Chadian culture</strong>. Through "
+"<strong>film, literature, music, and community events</strong>, Chadians "
+"living abroad are helping introduce their traditions to international "
+"audiences.\n"
+"                "
+msgstr ""
+
+#: .\home.html:531
+msgid "E-Learning & Cultural Resources"
+msgstr ""
+
+#: .\home.html:532
+msgid ""
+"Access courses, e-books, and language guides to explore Chad’s rich culture "
+"and traditions."
+msgstr ""
+
+#: .\home.html:535
+msgid "Online Courses & Workshops"
+msgstr ""
+
+#: .\home.html:536
+msgid ""
+"Learn Chadian arts, traditional music, and cultural practices through "
+"interactive courses."
+msgstr ""
+
+#: .\home.html:537
+msgid "Explore Courses"
+msgstr ""
+
+#: .\home.html:540
+msgid "Downloadable E-books & Research Materials"
+msgstr ""
+
+#: .\home.html:541
+msgid "Access historical books, research papers, and cultural studies on Chad."
+msgstr ""
+
+#: .\home.html:542
+msgid "Download E-books"
+msgstr ""
+
+#: .\home.html:545
+msgid "Chadian Language Guide"
+msgstr ""
+
+#: .\home.html:546
+msgid ""
+"Learn key phrases in Sara, Kanembu, Arabic, and other Chadian languages."
+msgstr ""
+
+#: .\home.html:547
+msgid "Explore Language Guide"
+msgstr ""
+
+#: .\home.html:554
+msgid "Digital Art & NFTs: The Future of Chadian Creativity"
+msgstr ""
+
+#: .\home.html:555
+msgid ""
+"Chadian artists are exploring new frontiers in the digital world. Through "
+"NFTs, they are showcasing and selling their artwork globally while "
+"preserving traditional art for future generations."
+msgstr ""
+
+#: .\home.html:558
+msgid "Chadian NFT Art"
+msgstr ""
+
+#: .\home.html:559
+msgid "Chadian Art in the NFT Space"
+msgstr ""
+
+#: .\home.html:560
+msgid ""
+"Support Chadian artists by purchasing unique digital artworks inspired by "
+"traditional and modern themes."
+msgstr ""
+
+#: .\home.html:561
+msgid "Buy on OpenSea"
+msgstr ""
+
+#: .\home.html:564
+msgid "Digital Archive of Chadian Art"
+msgstr ""
+
+#: .\home.html:565
+msgid "Digitally Archiving Traditional Art"
+msgstr ""
+
+#: .\home.html:566
+msgid ""
+"Efforts are being made to digitize and archive Chadian paintings, "
+"sculptures, and textiles for future generations."
+msgstr ""
+
+#: .\home.html:567
+msgid "Explore Archive"
+msgstr ""
+
+#: .\home.html:574
+msgid "Experience Chad: Virtual Cultural Tour"
+msgstr ""
+
+#: .\home.html:575
+msgid ""
+"Explore Chad’s rich heritage through immersive 360° virtual tours and "
+"interactive AR experiences. Take a multimedia journey through Chad’s "
+"heritage, no passport required."
+msgstr ""
+
+#: .\home.html:578
+msgid "360° Tour: Gerewol Festival"
+msgstr ""
+
+#: .\home.html:579
+msgid ""
+"Step into the world of the Gerewol Festival, a breathtaking cultural event "
+"featuring dance, music, and tradition."
+msgstr ""
+
+#: .\home.html:580
+msgid "Start 360° Tour"
+msgstr ""
+
+#: .\home.html:583
+msgid "Explore Ancient Chad"
+msgstr ""
+
+#: .\home.html:584
+msgid ""
+"Take a virtual tour of Chad’s historical landmarks, including the Ennedi "
+"Plateau and ancient rock art sites."
+msgstr ""
+
+#: .\home.html:585
+msgid "Explore Now"
+msgstr ""
+
+#: .\home.html:588
+msgid "Augmented Reality: Chadian Artifacts"
+msgstr ""
+
+#: .\home.html:589
+msgid ""
+"Use AR to interact with traditional Chadian artifacts, sculptures, and "
+"ancient manuscripts."
+msgstr ""
+
+#: .\home.html:590
+msgid "Try AR Experience"
+msgstr ""
+
+#: .\home.html:597
+msgid "Membership & Community Portal"
+msgstr ""
+
+#: .\home.html:598
+msgid ""
+"Become part of a growing community dedicated to preserving and promoting "
+"Chadian culture."
+msgstr ""
+
+#: .\home.html:601
+msgid "Exclusive Member Access"
+msgstr ""
+
+#: .\home.html:602
+msgid ""
+"Join a network of cultural enthusiasts, researchers, and artists for access "
+"to exclusive content and events."
+msgstr ""
+
+#: .\home.html:603
+msgid "Join Now"
+msgstr ""
+
+#: .\home.html:606
+msgid "Discussion Forums"
+msgstr ""
+
+#: .\home.html:607
+msgid ""
+"Exchange ideas, share research, and collaborate with other members in our "
+"cultural discussion forums."
+msgstr ""
+
+#: .\home.html:608
+msgid "Visit Forum"
+msgstr ""
+
+#: .\home.html:611
+msgid "Monthly Newsletters"
+msgstr ""
+
+#: .\home.html:612
+msgid ""
+"Stay updated on Chadian culture, events, and featured artists with our "
+"exclusive monthly newsletter."
+msgstr ""
+
+#: .\home.html:613
+msgid "Subscribe Now"
+msgstr ""
+
+#: .\home.html:620
+msgid "Test Your Knowledge: Interactive Quiz"
+msgstr ""
+
+#: .\home.html:621
+msgid ""
+"Answer these fun questions about Chadian history, arts, and traditions and "
+"earn badges!"
+msgstr ""
+
+#: .\home.html:623
+msgid "What is the capital of Chad?"
+msgstr ""
+
+#: .\home.html:625
+msgid "Lagos"
+msgstr ""
+
+#: .\home.html:626
+msgid "N'Djamena"
+msgstr ""
+
+#: .\home.html:627
+msgid "Bamako"
+msgstr ""
+
+#: .\home.html:628
+msgid "Sarh"
+msgstr ""
+
+#: .\home.html:630
+msgid "What is the national language of Chad?"
+msgstr ""
+
+#: .\home.html:632 .\tchadmaculture\settings.py:31
+msgid "French"
+msgstr ""
+
+#: .\home.html:633 .\tchadmaculture\settings.py:32
+msgid "Arabic"
+msgstr ""
+
+#: .\home.html:634
+msgid "Sara"
+msgstr ""
+
+#: .\home.html:635
+msgid "Arabic and French"
+msgstr ""
+
+#: .\home.html:637
+msgid "Who or what is 'Toumaï' in Chadian cultural and scientific history?"
+msgstr ""
+
+#: .\home.html:639
+msgid "A traditional Chadian dance"
+msgstr ""
+
+#: .\home.html:640
+msgid "A legendary warrior of the Toubou people"
+msgstr ""
+
+#: .\home.html:641
+msgid "The oldest known human ancestor discovered in Chad"
+msgstr ""
+
+#: .\home.html:642
+msgid "A sacred mountain in southern Chad"
+msgstr ""
+
+#: .\home.html:644
+msgid "Submit Answer"
+msgstr ""
+
+#: .\home.html:646
+msgid "Congratulations! You've earned the 'Chad Expert' badge!"
+msgstr ""
+
+#: .\home.html:652
+msgid "Chadian Cultural Marketplace"
+msgstr ""
+
+#: .\home.html:653
+msgid "Discover and support local Chadian artisans, musicians, and filmmakers."
+msgstr ""
+
+#: .\home.html:654
+msgid "Shop for Authentic Chadian Crafts, Books & Art"
+msgstr ""
+
+#: .\home.html:657
+msgid "Handmade Chadian Craft"
+msgstr ""
+
+#: .\home.html:658
+msgid "Handmade Chadian Basket"
+msgstr ""
+
+#: .\home.html:659
+msgid "Beautifully woven baskets by Chadian artisans, perfect for home decor."
+msgstr ""
+
+#: .\home.html:660 .\home.html:666 .\home.html:672
+msgid "Buy Now"
+msgstr ""
+
+#: .\home.html:663
+msgid "Chadian Literature"
+msgstr ""
+
+#: .\home.html:664
+msgid "Voices of Chad - Book"
+msgstr ""
+
+#: .\home.html:665
+msgid "An insightful book exploring the rich cultural history of Chad."
+msgstr ""
+
+#: .\home.html:669
+msgid "Chadian Art"
+msgstr ""
+
+#: .\home.html:670
+msgid "Traditional Chadian Painting"
+msgstr ""
+
+#: .\home.html:671
+msgid "Vibrant artwork reflecting Chad’s landscapes and traditions."
+msgstr ""
+
+#: .\home.html:675
+msgid "Music & Film Streaming"
+msgstr ""
+
+#: .\home.html:678
+msgid "Chadian Music Album"
+msgstr ""
+
+#: .\home.html:679
+msgid "Chadian Rhythms"
+msgstr ""
+
+#: .\home.html:680
+msgid "A collection of traditional and modern Chadian music."
+msgstr ""
+
+#: .\home.html:681
+msgid "Listen Now"
+msgstr ""
+
+#: .\home.html:684
+msgid "Chadian Documentary"
+msgstr ""
+
+#: .\home.html:685
+msgid "Chad: A Cultural Journey"
+msgstr ""
+
+#: .\home.html:686
+msgid "A documentary exploring Chad’s rich cultural heritage."
+msgstr ""
+
+#: .\home.html:687
+msgid "Watch Now"
+msgstr ""
+
+#: .\home.html:694
+msgid "Get Involved in Preserving Chadian Culture"
+msgstr ""
+
+#: .\home.html:695
+msgid ""
+"Play a role in keeping Chad’s rich cultural heritage alive by volunteering, "
+"donating, or supporting artists and initiatives."
+msgstr ""
+
+#: .\home.html:698
+msgid "Volunteer & Collaborate"
+msgstr ""
+
+#: .\home.html:699
+msgid ""
+"Join cultural projects, assist in research, or help document Chadian "
+"traditions for future generations."
+msgstr ""
+
+#: .\home.html:700
+msgid "Join as a Volunteer"
+msgstr ""
+
+#: .\home.html:703
+msgid "Donate to Cultural Initiatives"
+msgstr ""
+
+#: .\home.html:704
+msgid ""
+"Your contributions help fund cultural preservation projects, support local "
+"artists, and document traditional heritage."
+msgstr ""
+
+#: .\home.html:705
+msgid "Donate Now"
+msgstr ""
+
+#: .\home.html:708
+msgid "Support Chadian Artists"
+msgstr ""
+
+#: .\home.html:709
+msgid ""
+"Discover and sponsor talented artists, musicians, and writers to ensure "
+"Chadian culture thrives."
+msgstr ""
+
+#: .\home.html:710
+msgid "Support an Artist"
+msgstr ""
+
+#: .\home.html:717
+msgid "Contact & Collaborate"
+msgstr ""
+
+#: .\home.html:718
+msgid ""
+"Connect with us to contribute, collaborate, or learn more about Chadian "
+"culture."
+msgstr ""
+
+#: .\home.html:721
+msgid "Your Name"
+msgstr ""
+
+#: .\home.html:725
+msgid "Your Email"
+msgstr ""
+
+#: .\home.html:729
+msgid "Your Message"
+msgstr ""
+
+#: .\home.html:732
+msgid "Send Message"
+msgstr ""
+
+#: .\home.html:740
+msgid "Contact Us"
+msgstr ""
+
+#: .\home.html:741
+msgid "Email: info@tchadmaculture.com"
+msgstr ""
+
+#: .\home.html:742
+msgid "Phone: +235 64 74 76 26"
+msgstr ""
+
+#: .\home.html:743
+msgid "Address: N'Djamena, Chad"
+msgstr ""
+
+#: .\home.html:746
+msgid "Follow Us"
+msgstr ""
+
+#: .\home.html:748
+msgid "Facebook"
+msgstr ""
+
+#: .\home.html:749
+msgid "Instagram"
+msgstr ""
+
+#: .\home.html:750
+msgid "Twitter"
+msgstr ""
+
+#: .\home.html:760
+msgid "N\\'Djamena"
+msgstr ""
+
+#: .\home.html:761
+msgid "The capital city, a vibrant hub of Chadian culture and history."
+msgstr ""
+
+#: .\home.html:765
+msgid "Home to Lake Chad, a vital cultural and economic landmark."
+msgstr ""
+
+#: .\home.html:769
+msgid "Known for its stunning rock formations and ancient cave paintings."
+msgstr ""
+
+#: .\home.html:790
+msgid "You got"
+msgstr ""
+
+#: .\home.html:790
+msgid "out of 3 correct!"
 msgstr ""
 
 #: .\tchadmaculture\settings.py:30
 msgid "English"
 msgstr ""
 
-#: .\tchadmaculture\settings.py:31
-msgid "French"
-msgstr ""
-
-#: .\tchadmaculture\settings.py:32
-msgid "Arabic"
+#: .\tchadmaculture\settings.py:33
+msgid "Spanish"
 msgstr ""
