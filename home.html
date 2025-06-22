@@ -91,7 +91,7 @@
                     <select id="language-select" name="language" onchange="this.form.submit()">
                         {% get_available_languages as LANGUAGES %}
                         {% for lang in LANGUAGES %}
-                            <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                            <option value="{{ lang.0 }}" {% if lang.0 = LANGUAGE_CODE %}selected{% endif %}>
                                 {% if lang.0 == 'en' %}🇬🇧{% endif %}
                                 {% if lang.0 == 'fr' %}🇫🇷{% endif %}
                                 {% if lang.0 == 'ar' %}🇸🇦{% endif %}
