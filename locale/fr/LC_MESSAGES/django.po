@@ -32,3 +32,39 @@ msgstr ""
 #: .\tchadmaculture\settings.py:32
 msgid "Arabic"
 msgstr ""
+
+#: .\tchadmaculture\settings.py:33
+msgid "Spanish"
+msgstr ""
+
+#: home.html: 12
+msgid "Tchad Ma Culture"
+msgstr "Tchad Ma Culture"
+
+#: home.html: 81
+msgid "About"
+msgstr "À propos"
+
+#: home.html: 82
+msgid "History & Heritage"
+msgstr "Histoire & Patrimoine"
+
+#: home.html: 83
+msgid "Cuisine and Taste of Chad"
+msgstr "Cuisine et Goût du Tchad"
+
+#: home.html: 84
+msgid "Tourism and Heritage Sites"
+msgstr "Tourisme et Sites Patrimoniaux"
+
+#: home.html: 85
+msgid "Music & Performing Arts"
+msgstr "Musique & Arts de la Scène"
+
+#: home.html: 86
+msgid "Gallery"
+msgstr "Galerie"
+
+#: home.html: 87
+msgid "contact"
+msgstr "contact"
