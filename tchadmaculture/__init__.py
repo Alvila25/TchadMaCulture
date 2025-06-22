@@ -1,1 +1,1 @@
-$null 
+# Leave this file empty
