@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-{% extends "base.html" %}
-{% load static %}
-{% load i18n %}
-
     {% blck head %}
     <head>
     <meta charset="UTF-8">
@@ -68,26 +64,27 @@
             .section { padding: 2rem 1rem; }
         }
     </style>
-</head>
-{% endlock %}
-<body>
-    <!-- Navigation Bar -->
+    </head>
+    {% endlock %}
+
+    {% block body %}
+    <body>
     <header class="nav-header">
         <div class="nav-container">
-            <h1 id="site-title" data-lang="site_title">Chadian Cultural Heritage</h1>
+            <h1>{% trans "Chadian Cultural Heritage" %}</h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#about" data-lang="menu_about">About</a></li>
-                    <li><a href="#history" data-lang="menu_history">History & Heritage</a></li>
-                    <li><a href="#art" data-lang="menu_art">Cuisine and Taste of Chad</a></li>
-                    <li><a href="#art" data-lang="menu_art">Tourism and Heritage Sites</a></li>
-                    <li><a href="#music" data-lang="menu_music">Music & Performing Arts</a></li>
-                    <li><a href="#gallery" data-lang="menu_gallery">Gallery</a></li>
-                    <li><a href="#contact" data-lang="menu_contact">Contact</a></li>
+                    <li><a href="#about">{% trans "About" %}</a></li>
+                    <li><a href="#history">{% trans "History & Heritage" %}</a></li>
+                    <li><a href="#art">{% trans "Cuisine and Taste of Chad" %}</a></li>
+                    <li><a href="#art">{% trans "Tourism and Heritage Sites" %}</a></li>
+                    <li><a href="#music">{% trans "Music & Performing Arts" %}</a></li>
+                    <li><a href="#gallery">{% trans "Gallery" %}</a></li>
+                    <li><a href="#contact">{% trans "Contact" %}</a></li>
                 </ul>
             </nav>
             <div class="language-switcher">
-                <label for="language-select">Choose Language:</label>
+                <label for="language-select">Language:</label>
                 <select id="language-select">
                     <option value="en">🇬🇧 English</option>
                     <option value="fr">🇫🇷 Français</option>
@@ -96,6 +93,7 @@
             </div>
         </div>
     </header>
+    {% endblock %}
 
     <!-- Hero Header -->
     <header class="hero">
