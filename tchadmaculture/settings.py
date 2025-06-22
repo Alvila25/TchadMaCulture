@@ -24,7 +24,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
 ]
 
-LANGUAGE_CODE = 'fr'  # Default site language
+LANGUAGE_CODE = 'en'  # Default site language
 
 LANGUAGES = [
     ('en', _('English')),
