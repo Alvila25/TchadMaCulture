@@ -1,14 +1,8 @@
-#!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
 import os
 import sys
 
-# Ensure the project root is in the Python path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
 def main():
-    """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'TchadMaCulture.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tchadmaculture.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
