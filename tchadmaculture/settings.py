@@ -30,6 +30,7 @@ LANGUAGES = [
     ('en', _('English')),
     ('fr', _('French')),
     ('ar', _('Arabic')),
+    ('es', _('Spanish)),
 ]
 
 LOCALE_PATHS = [
