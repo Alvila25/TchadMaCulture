@@ -1,17 +1,24 @@
-from django.utils.translation import gettext_lazy as _
+import os
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DEBUG = True  # Set to False for production after testing
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
+        ...
+    },
+]
 LANGUAGES = [
-    ('en', _('English')),
-    ('fr', _('French')),
-    ('ar', _('Arabic')),
-    ('es', _('Spanish')),
+    ('en', 'English'),
+    ('fr', 'French'),
+    ('ar', 'Arabic'),
+    ('es', 'Spanish'),
 ]
-LANGUAGE_CODE = 'en'  # Default language
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 USE_I18N = True
-USE_L10N = True
-LOCALE_PATHS = [BASE_DIR / 'locale']
-MIDDLEWARE = [
-    # ...
-    'django.middleware.locale.LocaleMiddleware',
-    # ...
-]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticbuild')
