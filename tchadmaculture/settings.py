@@ -16,8 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Add your apps here
-    # 'yourapp',
+    'tchad_app',  # Add your app
 ]
 
 # Middleware
@@ -33,7 +32,7 @@ MIDDLEWARE = [
 ]
 
 # URL Configuration
-ROOT_URLCONF = 'yourproject.urls'  # Replace 'yourproject' with your actual project name
+ROOT_URLCONF = 'tchad_culture.urls'  # Replace with your project name
 
 # Templates
 TEMPLATES = [
@@ -47,16 +46,17 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'yourapp.context_processors.current_language',  # Your custom lang context
+                'django.template.context_processors.i18n',  # Added for i18n
+                # 'yourapp.context_processors.current_language',  # Remove or implement
             ],
         },
     },
 ]
 
 # WSGI
-WSGI_APPLICATION = 'yourproject.wsgi.application'
+WSGI_APPLICATION = 'tchad_culture.wsgi.application'  # Replace with your project name
 
-# Database (use your preferred configuration)
+# Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -66,19 +66,16 @@ DATABASES = {
 
 # Internationalization
 LANGUAGE_CODE = 'en'  # Default language
-
 LANGUAGES = [
     ('en', 'English'),
     ('fr', 'French'),
     ('ar', 'Arabic'),
     ('es', 'Spanish'),
 ]
-
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
-
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),
 ]
