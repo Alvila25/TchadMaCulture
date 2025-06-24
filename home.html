@@ -70,40 +70,44 @@
     </style>
 </head>
 <body>
-    <header class="nav-header">
-        <div class="nav-container">
-            <h1>{% trans "Chadian Cultural Heritage" %}</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">{% trans "About" %}</a></li>
-                    <li><a href="#history">{% trans "History & Heritage" %}</a></li>
-                    <li><a href="#cuisine">{% trans "Cuisine and Taste of Chad" %}</a></li>
-                    <li><a href="#tourism">{% trans "Tourism and Heritage Sites" %}</a></li>
-                    <li><a href="#music">{% trans "Music & Performing Arts" %}</a></li>
-                    <li><a href="#gallery">{% trans "Gallery" %}</a></li>
-                    <li><a href="#contact">{% trans "Contact" %}</a></li>
-                </ul>
-            </nav>
-            <div class="language-switcher">
-                <label for="language-select">{% trans "Language" %}:</label>
-                <form action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <select id="language-select" name="language" onchange="this.form.submit()">
-                        {% get_available_languages as LANGUAGES %}
-                        {% for lang in LANGUAGES %}
-                            <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
-                                {% if lang.0 == 'en' %}🇬🇧{% endif %}
-                                {% if lang.0 == 'fr' %}🇫🇷{% endif %}
-                                {% if lang.0 == 'ar' %}🇸🇦{% endif %}
-                                {% if lang.0 == 'es' %}🇪🇸{% endif %}
-                                {{ lang.1 }}
-                            </option>
-                        {% endfor %}
-                    </select>
-                </form>
-            </div>
-        </div>
-    </header>
+{% load i18n %}
+
+<header class="nav-header">
+  <div class="nav-container">
+    <h1>{% trans "Chadian Cultural Heritage" %}</h1>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">{% trans "About" %}</a></li>
+        <li><a href="#history">{% trans "History & Heritage" %}</a></li>
+        <li><a href="#cuisine">{% trans "Cuisine and Taste of Chad" %}</a></li>
+        <li><a href="#tourism">{% trans "Tourism and Heritage Sites" %}</a></li>
+        <li><a href="#music">{% trans "Music & Performing Arts" %}</a></li>
+        <li><a href="#gallery">{% trans "Gallery" %}</a></li>
+        <li><a href="#contact">{% trans "Contact" %}</a></li>
+      </ul>
+    </nav>
+
+    <div class="language-switcher">
+      <label for="language-select">{% trans "Language" %}:</label>
+      <form action="{% url 'set_language' %}" method="post">
+        {% csrf_token %}
+        {% get_available_languages as LANGUAGES %}
+        <select id="language-select" name="language" onchange="this.form.submit()" autocomplete="off">
+          {% for lang in LANGUAGES %}
+            <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+              {% if lang.0 == 'en' %}🇬🇧{% endif %}
+              {% if lang.0 == 'fr' %}🇫🇷{% endif %}
+              {% if lang.0 == 'ar' %}🇸🇦{% endif %}
+              {% if lang.0 == 'es' %}🇪🇸{% endif %}
+              {{ lang.1 }}
+            </option>
+          {% endfor %}
+        </select>
+      </form>
+    </div>
+  </div>
+</header>
 
     <!-- Hero Header -->
     <header class="hero">
