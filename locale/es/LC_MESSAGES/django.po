@@ -19,69 +19,69 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
 "1 : 2;\n"
 
-#: .\home.html:7
+#: .\templates\home.html:7
 msgid "Tchad Ma Culture"
 msgstr ""
 
-#: .\home.html:75
+#: .\templates\home.html:75
 msgid "Chadian Cultural Heritage"
 msgstr ""
 
-#: .\home.html:78
+#: .\templates\home.html:78
 msgid "About"
 msgstr ""
 
-#: .\home.html:79
+#: .\templates\home.html:79
 msgid "History & Heritage"
 msgstr ""
 
-#: .\home.html:80
+#: .\templates\home.html:80
 msgid "Cuisine and Taste of Chad"
 msgstr ""
 
-#: .\home.html:81
+#: .\templates\home.html:81
 msgid "Tourism and Heritage Sites"
 msgstr ""
 
-#: .\home.html:82
+#: .\templates\home.html:82
 msgid "Music & Performing Arts"
 msgstr ""
 
-#: .\home.html:83
+#: .\templates\home.html:83
 msgid "Gallery"
 msgstr ""
 
-#: .\home.html:84
+#: .\templates\home.html:84
 msgid "Contact"
 msgstr ""
 
-#: .\home.html:88
+#: .\templates\home.html:88
 msgid "Language"
 msgstr ""
 
-#: .\home.html:111
+#: .\templates\home.html:111
 msgid "Celebrate and Preserve Chadian Culture"
 msgstr ""
 
-#: .\home.html:112
+#: .\templates\home.html:112
 msgid ""
 "Explore Chad’s rich cultural heritage, engage with local traditions, and "
 "contribute to preserving our history."
 msgstr ""
 
-#: .\home.html:113
+#: .\templates\home.html:113
 msgid "Join Us"
 msgstr ""
 
-#: .\home.html:116
+#: .\templates\home.html:116
 msgid "Chadian cultural representation"
 msgstr ""
 
-#: .\home.html:122
+#: .\templates\home.html:122
 msgid "About Chad"
 msgstr ""
 
-#: .\home.html:123
+#: .\templates\home.html:123
 msgid ""
 "\n"
 "         Chad My Culture is a digital platform dedicated to exploring and "
