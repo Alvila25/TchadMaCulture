@@ -1,14 +1,17 @@
-from django.conf.urls.i18n import i18n_patterns
-from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls.i18n import i18n_patterns
+from django.urls import path, include
 
 urlpatterns = [
-    path('i18n/', include('django.conf.urls.i18n')),  # Language switch endpoint
+    # Language switch POST endpoint (used by Django’s set_language view)
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
 
 urlpatterns += i18n_patterns(
-    path('', include('yourapp.urls')),  # Replace 'yourapp'
+    # Your app URLs here, e.g.:
+    path('', include('yourapp.urls')),
+    # Add other apps here if needed
 )
 
 if settings.DEBUG:
