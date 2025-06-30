@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% trans 'Explore Chadian culture and heritage' %}">
     <title>{% block head %}{% trans "Tchad Ma Culture" %}{% endblock %}</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -60,6 +61,11 @@
         [dir="rtl"] .nav-links { flex-direction: row-reverse; }
         [dir="rtl"] .section { text-align: right; }
         [dir="rtl"] .contact-form label { text-align: right; }
+        [dir="rtl"] .heritage-list, [dir="rtl"] .taste-list, [dir="rtl"] .tourism-list, [dir="rtl"] .gallery, [dir="rtl"] .blog-list, [dir="rtl"] .proverb-list, [dir="rtl"] .artist-list {
+            direction: rtl;
+        }
+        [dir="rtl"] .hero-container { text-align: right; }
+        [dir="rtl"] .language-switcher { flex-direction: row-reverse; }
         /* Media Queries */
         @media (max-width: 768px) {
             .nav-links { flex-direction: column; gap: 0.5rem; }
@@ -70,44 +76,37 @@
     </style>
 </head>
 <body>
-{% load i18n %}
-
-<header class="nav-header">
-  <div class="nav-container">
-    <h1>{% trans "Chadian Cultural Heritage" %}</h1>
-    
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">{% trans "About" %}</a></li>
-        <li><a href="#history">{% trans "History & Heritage" %}</a></li>
-        <li><a href="#cuisine">{% trans "Cuisine and Taste of Chad" %}</a></li>
-        <li><a href="#tourism">{% trans "Tourism and Heritage Sites" %}</a></li>
-        <li><a href="#music">{% trans "Music & Performing Arts" %}</a></li>
-        <li><a href="#gallery">{% trans "Gallery" %}</a></li>
-        <li><a href="#contact">{% trans "Contact" %}</a></li>
-      </ul>
-    </nav>
-
-    <div class="language-switcher">
-      <label for="language-select">{% trans "Language" %}:</label>
-      <form action="{% url 'set_language' %}" method="post">
-        {% csrf_token %}
-        {% get_available_languages as LANGUAGES %}
-        <select id="language-select" name="language" onchange="this.form.submit()" autocomplete="off">
-          {% for lang in LANGUAGES %}
-            <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
-              {% if lang.0 == 'en' %}🇬🇧{% endif %}
-              {% if lang.0 == 'fr' %}🇫🇷{% endif %}
-              {% if lang.0 == 'ar' %}🇸🇦{% endif %}
-              {% if lang.0 == 'es' %}🇪🇸{% endif %}
-              {{ lang.1 }}
-            </option>
-          {% endfor %}
-        </select>
-      </form>
-    </div>
-  </div>
-</header>
+    <header class="nav-header">
+        <div class="nav-container">
+            <h1>{% trans "Chadian Cultural Heritage" %}</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">{% trans "About" %}</a></li>
+                    <li><a href="#history">{% trans "History & Heritage" %}</a></li>
+                    <li><a href="#cuisine">{% trans "Cuisine and Taste of Chad" %}</a></li>
+                    <li><a href="#tourism">{% trans "Tourism and Heritage Sites" %}</a></li>
+                    <li><a href="#music">{% trans "Music & Performing Arts" %}</a></li>
+                    <li><a href="#gallery">{% trans "Gallery" %}</a></li>
+                    <li><a href="#contact">{% trans "Contact" %}</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <label for="language-select">{% trans "Select Language" %}</label>
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ request.path }}">
+                    <select id="language-select" name="language" onchange="this.form.submit()" autocomplete="off" aria-label="{% trans 'Select your preferred language' %}">
+                        {% get_available_languages as LANGUAGES %}
+                        {% for lang in LANGUAGES %}
+                            <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                                {{ lang.0|upper }} - {{ lang.1 }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </form>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Header -->
     <header class="hero">
@@ -117,7 +116,7 @@
             <button class="button" aria-label="{% trans 'Join Us' %}">{% trans "Join Us" %}</button>
         </div>
         <div class="hero-image">
-            <img src="./images/nation-place-chad.jpg" alt="{% trans 'Chadian cultural representation' %}" loading="lazy">
+            <img src="./images/nation-place-chad.jpg" alt="{% trans 'Cultural representation of Chad featuring traditional elements' %}" loading="lazy">
         </div>
     </header>
 
@@ -391,12 +390,12 @@
         <h2>{% trans "Visual Journey: Gallery" %}</h2>
         <p>{% trans "Explore the beauty of Chad through stunning images showcasing its landscapes, arts, people, and traditions." %}</p>
         <div class="gallery">
-            <img src="./images/chad-landscape.jpg" alt="{% trans 'Beautiful Landscape of Chad' %}">
-            <img src="./images/chad-art.jpg" alt="{% trans 'Traditional Chadian Artwork' %}">
-            <img src="./images/chad-people.jpg" alt="{% trans 'People of Chad in Traditional Attire' %}">
-            <img src="./images/chad-festival.jpg" alt="{% trans 'Chadian Cultural Festival' %}">
-            <img src="./images/chad-dance.jpg" alt="{% trans 'Traditional Dance Performance' %}">
-            <img src="./images/chad-market.jpg" alt="{% trans 'Local Market in Chad' %}">
+            <img src="./images/chad-landscape.jpg" alt="{% trans 'Beautiful landscape of Chad' %}" loading="lazy">
+            <img src="./images/chad-art.jpg" alt="{% trans 'Traditional Chadian artwork' %}" loading="lazy">
+            <img src="./images/chad-people.jpg" alt="{% trans 'People of Chad in traditional attire' %}" loading="lazy">
+            <img src="./images/chad-festival.jpg" alt="{% trans 'Chadian cultural festival' %}" loading="lazy">
+            <img src="./images/chad-dance.jpg" alt="{% trans 'Traditional Chadian dance performance' %}" loading="lazy">
+            <img src="./images/chad-market.jpg" alt="{% trans 'Local market in Chad' %}" loading="lazy">
         </div>
     </section>
 
@@ -458,19 +457,19 @@
         <p>{% trans "Discover the talented painters, musicians, writers, and cultural icons who are shaping Chad’s artistic and creative landscape." %}</p>
         <div class="artist-list">
             <div class="artist-card">
-                <img src="./images/artist1.jpg" alt="{% trans 'Chadian Painter' %}">
+                <img src="./images/artist1.jpg" alt="{% trans 'Painting by Chadian artist Ahmed Djibrine' %}" loading="lazy">
                 <h3>{% trans "Ahmed Djibrine" %}</h3>
                 <p>{% trans "A renowned Chadian painter whose artwork reflects the rich history and diverse cultures of Chad." %}</p>
                 <a href="#" class="read-more">{% trans "Read More" %}</a>
             </div>
             <div class="artist-card">
-                <img src="./images/artist2.jpg" alt="{% trans 'Chadian Musician' %}">
+                <img src="./images/artist2.jpg" alt="{% trans 'Performance by Chadian musician Ngass David' %}" loading="lazy">
                 <h3>{% trans "Ngass David" %}</h3>
                 <p>{% trans "A talented singer blending traditional Chadian rhythms with modern Afrobeat influences." %}</p>
                 <a href="#" class="read-more">{% trans "Read More" %}</a>
             </div>
             <div class="artist-card">
-                <img src="./images/artist3.jpg" alt="{% trans 'Chadian Writer' %}">
+                <img src="./images/artist3.jpg" alt="{% trans 'Portrait of Chadian writer Rais Kim' %}" loading="lazy">
                 <h3>{% trans "Rais Kim" %}</h3>
                 <p>{% trans "An acclaimed writer known for his novels that explore Chadian history, politics, and identity." %}</p>
                 <a href="#" class="read-more">{% trans "Read More" %}</a>
@@ -482,7 +481,7 @@
     <section id="map" class="section">
         <h2>{% trans "Interactive Cultural Map of Chad" %}</h2>
         <p>{% trans "Click on a region to learn more about its traditions, ethnic groups, and cultural highlights." %}</p>
-        <img id="chad-map" src="./images/chad-map.png" alt="{% trans 'Interactive Map of Chad' %}" usemap="#chad-regions">
+        <img id="chad-map" src="./images/chad-map.png" alt="{% trans 'Interactive cultural map of Chad' %}" usemap="#chad-regions" loading="lazy">
         <map name="chad-regions">
             <area shape="rect" coords="100,50,200,150" href="#" alt="{% trans 'N\'Djamena' %}" onclick="showInfo('ndjamena');">
             <area shape="rect" coords="250,100,350,200" href="#" alt="{% trans 'Lac Region' %}" onclick="showInfo('lac');">
@@ -559,13 +558,13 @@
         <p>{% trans "Chadian artists are exploring new frontiers in the digital world. Through NFTs, they are showcasing and selling their artwork globally while preserving traditional art for future generations." %}</p>
         <div class="nft-list">
             <div class="nft-card">
-                <img src="./images/nft1.jpg" alt="{% trans 'Chadian NFT Art' %}">
+                <img src="./images/nft1.jpg" alt="{% trans 'Chadian NFT artwork' %}" loading="lazy">
                 <h3>{% trans "Chadian Art in the NFT Space" %}</h3>
                 <p>{% trans "Support Chadian artists by purchasing unique digital artworks inspired by traditional and modern themes." %}</p>
                 <a href="#" class="buy-btn">{% trans "Buy on OpenSea" %}</a>
             </div>
             <div class="nft-card">
-                <img src="./images/nft2.jpg" alt="{% trans 'Digital Archive of Chadian Art' %}">
+                <img src="./images/nft2.jpg" alt="{% trans 'Digital archive of Chadian traditional art' %}" loading="lazy">
                 <h3>{% trans "Digitally Archiving Traditional Art" %}</h3>
                 <p>{% trans "Efforts are being made to digitize and archive Chadian paintings, sculptures, and textiles for future generations." %}</p>
                 <a href="#" class="explore-btn">{% trans "Explore Archive" %}</a>
@@ -626,28 +625,28 @@
         <div class="quiz-container">
             <div class="question" id="question1">{% trans "What is the capital of Chad?" %}</div>
             <div class="options">
-                <label><input type="radio" name="quiz1" value="A">{% trans "Lagos" %}</label>
-                <label><input type="radio" name="quiz1" value="B">{% trans "N'Djamena" %}</label>
-                <label><input type="radio" name="quiz1" value="C">{% trans "Bamako" %}</label>
-                <label><input type="radio" name="quiz1" value="D">{% trans "Sarh" %}</label>
+                <label><input type="radio" name="quiz1" value="A" aria-label="{% trans 'Lagos' %}">{% trans "Lagos" %}</label>
+                <label><input type="radio" name="quiz1" value="B" aria-label="{% trans 'N\'Djamena' %}">{% trans "N'Djamena" %}</label>
+                <label><input type="radio" name="quiz1" value="C" aria-label="{% trans 'Bamako' %}">{% trans "Bamako" %}</label>
+                <label><input type="radio" name="quiz1" value="D" aria-label="{% trans 'Sarh' %}">{% trans "Sarh" %}</label>
             </div>
             <div class="question" id="question2">{% trans "What is the national language of Chad?" %}</div>
             <div class="options">
-                <label><input type="radio" name="quiz2" value="A">{% trans "French" %}</label>
-                <label><input type="radio" name="quiz2" value="B">{% trans "Arabic" %}</label>
-                <label><input type="radio" name="quiz2" value="C">{% trans "Sara" %}</label>
-                <label><input type="radio" name="quiz2" value="D">{% trans "Arabic and French" %}</label>
+                <label><input type="radio" name="quiz2" value="A" aria-label="{% trans 'French' %}">{% trans "French" %}</label>
+                <label><input type="radio" name="quiz2" value="B" aria-label="{% trans 'Arabic' %}">{% trans "Arabic" %}</label>
+                <label><input type="radio" name="quiz2" value="C" aria-label="{% trans 'Sara' %}">{% trans "Sara" %}</label>
+                <label><input type="radio" name="quiz2" value="D" aria-label="{% trans 'Arabic and French' %}">{% trans "Arabic and French" %}</label>
             </div>
             <div class="question" id="question3">{% trans "Who or what is 'Toumaï' in Chadian cultural and scientific history?" %}</div>
             <div class="options">
-                <label><input type="radio" name="quiz3" value="A">{% trans "A traditional Chadian dance" %}</label>
-                <label><input type="radio" name="quiz3" value="B">{% trans "A legendary warrior of the Toubou people" %}</label>
-                <label><input type="radio" name="quiz3" value="C">{% trans "The oldest known human ancestor discovered in Chad" %}</label>
-                <label><input type="radio" name="quiz3" value="D">{% trans "A sacred mountain in southern Chad" %}</label>
+                <label><input type="radio" name="quiz3" value="A" aria-label="{% trans 'A traditional Chadian dance' %}">{% trans "A traditional Chadian dance" %}</label>
+                <label><input type="radio" name="quiz3" value="B" aria-label="{% trans 'A legendary warrior of the Toubou people' %}">{% trans "A legendary warrior of the Toubou people" %}</label>
+                <label><input type="radio" name="quiz3" value="C" aria-label="{% trans 'The oldest known human ancestor discovered in Chad' %}">{% trans "The oldest known human ancestor discovered in Chad" %}</label>
+                <label><input type="radio" name="quiz3" value="D" aria-label="{% trans 'A sacred mountain in southern Chad' %}">{% trans "A sacred mountain in southern Chad" %}</label>
             </div>
-            <button class="submit-btn" onclick="checkAnswer()">{% trans "Submit Answer" %}</button>
+            <button class="submit-btn" onclick="checkAnswer()" aria-label="{% trans 'Submit quiz answers' %}">{% trans "Submit Answer" %}</button>
             <div class="result" id="result"></div>
-            <div class="badge" id="badge">{% trans "Congratulations! You've earned the 'Chad Expert' badge!" %}</div>
+            <div class="badge" id="badge" style="display: none;">{% trans "Congratulations! You've earned the 'Chad Expert' badge!" %}</div>
         </div>
     </section>
 
@@ -658,19 +657,19 @@
         <h3>{% trans "Shop for Authentic Chadian Crafts, Books & Art" %}</h3>
         <div class="product-list">
             <div class="product-card">
-                <img src="./images/craft1.jpg" alt="{% trans 'Handmade Chadian Craft' %}">
+                <img src="./images/craft1.jpg" alt="{% trans 'Handmade Chadian woven basket' %}" loading="lazy">
                 <h3>{% trans "Handmade Chadian Basket" %}</h3>
                 <p>{% trans "Beautifully woven baskets by Chadian artisans, perfect for home decor." %}</p>
                 <a href="#" class="buy-btn">{% trans "Buy Now" %}</a>
             </div>
             <div class="product-card">
-                <img src="./images/book1.jpg" alt="{% trans 'Chadian Literature' %}">
+                <img src="./images/book1.jpg" alt="{% trans 'Book on Chadian cultural history' %}" loading="lazy">
                 <h3>{% trans "Voices of Chad - Book" %}</h3>
                 <p>{% trans "An insightful book exploring the rich cultural history of Chad." %}</p>
                 <a href="#" class="buy-btn">{% trans "Buy Now" %}</a>
             </div>
             <div class="product-card">
-                <img src="./images/painting1.jpg" alt="{% trans 'Chadian Art' %}">
+                <img src="./images/painting1.jpg" alt="{% trans 'Traditional Chadian painting' %}" loading="lazy">
                 <h3>{% trans "Traditional Chadian Painting" %}</h3>
                 <p>{% trans "Vibrant artwork reflecting Chad’s landscapes and traditions." %}</p>
                 <a href="#" class="buy-btn">{% trans "Buy Now" %}</a>
@@ -679,13 +678,13 @@
         <h3>{% trans "Music & Film Streaming" %}</h3>
         <div class="media-list">
             <div class="media-card">
-                <img src="./images/music1.jpg" alt="{% trans 'Chadian Music Album' %}">
+                <img src="./images/music1.jpg" alt="{% trans 'Album cover of Chadian music collection' %}" loading="lazy">
                 <h3>{% trans "Chadian Rhythms" %}</h3>
                 <p>{% trans "A collection of traditional and modern Chadian music." %}</p>
                 <a href="#" class="stream-btn">{% trans "Listen Now" %}</a>
             </div>
             <div class="media-card">
-                <img src="./images/film1.jpg" alt="{% trans 'Chadian Documentary' %}">
+                <img src="./images/film1.jpg" alt="{% trans 'Poster for Chadian cultural documentary' %}" loading="lazy">
                 <h3>{% trans "Chad: A Cultural Journey" %}</h3>
                 <p>{% trans "A documentary exploring Chad’s rich cultural heritage." %}</p>
                 <a href="#" class="stream-btn">{% trans "Watch Now" %}</a>
@@ -723,17 +722,17 @@
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
             <div>
                 <label for="contact-name">{% trans "Your Name" %}</label>
-                <input type="text" id="contact-name" name="name" autocomplete="name" required>
+                <input type="text" id="contact-name" name="name" autocomplete="name" required aria-label="{% trans 'Enter your name' %}">
             </div>
             <div>
                 <label for="contact-email">{% trans "Your Email" %}</label>
-                <input type="email" id="contact-email" name="email" autocomplete="email" required>
+                <input type="email" id="contact-email" name="email" autocomplete="email" required aria-label="{% trans 'Enter your email address' %}">
             </div>
             <div>
                 <label for="contact-message">{% trans "Your Message" %}</label>
-                <textarea id="contact-message" name="message" rows="5" autocomplete="off" required></textarea>
+                <textarea id="contact-message" name="message" rows="5" autocomplete="off" required aria-label="{% trans 'Enter your message' %}"></textarea>
             </div>
-            <button type="submit">{% trans "Send Message" %}</button>
+            <button type="submit" aria-label="{% trans 'Send your message' %}">{% trans "Send Message" %}</button>
         </form>
     </section>
 
@@ -742,9 +741,9 @@
         <div class="footer-content">
             <div class="contact-info">
                 <h4>{% trans "Contact Us" %}</h4>
-                <p>{% trans "Email: info@tchadmaculture.com" %}</p>
-                <p>{% trans "Phone: +235 64 74 76 26" %}</p>
-                <p>{% trans "Address: N'Djamena, Chad" %}</p>
+                <p>{% trans "Email" %}: {% trans "info@tchadmaculture.com" %}</p>
+                <p>{% trans "Phone" %}: {% trans "+235 64 74 76 26" %}</p>
+                <p>{% trans "Address" %}: {% trans "N'Djamena, Chad" %}</p>
             </div>
             <div class="social-media">
                 <h4>{% trans "Follow Us" %}</h4>
@@ -757,20 +756,21 @@
         </div>
     </footer>
 
+    <script src="{% url 'javascript-catalog' %}"></script>
     <script>
         function showInfo(region) {
             const regions = {
                 'ndjamena': {
-                    title: '{% trans "N\'Djamena" %}',
-                    info: '{% trans "The capital city, a vibrant hub of Chadian culture and history." %}'
+                    title: gettext("N'Djamena"),
+                    info: gettext("The capital city, a vibrant hub of Chadian culture and history.")
                 },
                 'lac': {
-                    title: '{% trans "Lac Region" %}',
-                    info: '{% trans "Home to Lake Chad, a vital cultural and economic landmark." %}'
+                    title: gettext("Lac Region"),
+                    info: gettext("Home to Lake Chad, a vital cultural and economic landmark.")
                 },
                 'ennedi': {
-                    title: '{% trans "Ennedi" %}',
-                    info: '{% trans "Known for its stunning rock formations and ancient cave paintings." %}'
+                    title: gettext("Ennedi"),
+                    info: gettext("Known for its stunning rock formations and ancient cave paintings.")
                 }
             };
             document.getElementById('region-title').innerText = regions[region].title;
@@ -791,11 +791,12 @@
                 }
             }
             const result = document.getElementById('result');
-            result.innerText = `{% trans "You got" %} ${score} {% trans "out of 3 correct!" %}`;
+            result.innerText = interpolate(gettext("You got %s out of 3 correct!"), [score]);
+            const badge = document.getElementById('badge');
             if (score === 3) {
-                document.getElementById('badge').style.display = 'block';
+                badge.style.display = 'block';
             } else {
-                document.getElementById('badge').style.display = 'none';
+                badge.style.display = 'none';
             }
         }
     </script>
