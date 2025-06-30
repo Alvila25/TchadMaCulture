@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TchadMaCulture 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-22 23:17+0300\n"
-"PO-Revision-Date: 2025-06-23 14:00+0300\n"
+"POT-Creation-Date: 2025-06-30 16:00+0300\n"
+"PO-Revision-Date: 2025-06-30 16:00+0300\n"
 "Last-Translator: Automated Translator <info@tchadmaculture.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "Language: fr\n"
@@ -15,64 +15,1078 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\home.html:7
+#: templates/index.html:7
 msgid "Tchad Ma Culture"
 msgstr "Tchad Ma Culture"
 
-#: .\home.html:75
+#: templates/index.html:8
+msgid "Explore Chadian culture and heritage"
+msgstr "Explorez la culture et le patrimoine tchadien"
+
+#: templates/index.html:75
 msgid "Chadian Cultural Heritage"
 msgstr "Patrimoine culturel tchadien"
 
-#: .\home.html:78
+#: templates/index.html:78
 msgid "About"
 msgstr "À propos"
 
-#: .\home.html:79
+#: templates/index.html:79
 msgid "History & Heritage"
 msgstr "Histoire et patrimoine"
 
-#: .\home.html:80
+#: templates/index.html:80
 msgid "Cuisine and Taste of Chad"
 msgstr "Cuisine et saveurs du Tchad"
 
-#: .\home.html:81
+#: templates/index.html:81
 msgid "Tourism and Heritage Sites"
 msgstr "Tourisme et sites patrimoniaux"
 
-#: .\home.html:82
+#: templates/index.html:82
 msgid "Music & Performing Arts"
 msgstr "Musique et arts de la scène"
 
-#: .\home.html:83
+#: templates/index.html:83
 msgid "Gallery"
 msgstr "Galerie"
 
-#: .\home.html:84
+#: templates/index.html:84
 msgid "Contact"
 msgstr "Contact"
 
-#: .\home.html:88
-msgid "Language"
-msgstr "Langue"
+#: templates/index.html:88
+msgid "Select Language"
+msgstr "Choisir la langue"
 
-#: .\home.html:111
+#: templates/index.html:90
+msgid "Select your preferred language"
+msgstr "Sélectionnez votre langue préférée"
+
+#: templates/index.html:111
 msgid "Celebrate and Preserve Chadian Culture"
 msgstr "Célébrer et préserver la culture tchadienne"
 
-#: .\home.html:112
+#: templates/index.html:112
 msgid "Explore Chad’s rich cultural heritage, engage with local traditions, and contribute to preserving our history."
 msgstr "Explorez le riche patrimoine culturel du Tchad, engagez-vous avec les traditions locales et contribuez à préserver notre histoire."
 
-#: .\home.html:113
+#: templates/index.html:113
 msgid "Join Us"
 msgstr "Rejoignez-nous"
 
-#: .\home.html:116
-msgid "Chadian cultural representation"
-msgstr "Représentation culturelle tchadienne"
+#: templates/index.html:116
+msgid "Cultural representation of Chad featuring traditional elements"
+msgstr "Représentation culturelle du Tchad avec des éléments traditionnels"
 
-#: .\home.html:122
+#: templates/index.html:122
 msgid "About Chad"
 msgstr "À propos du Tchad"
 
-# Add more translations as needed or use translate_po.py
+#: templates/index.html:124
+msgid "Chad My Culture is a digital platform dedicated to exploring and sharing the cultural richness of Chad. We celebrate the diversity of our people through stories, traditions, art, language, and music. Our goal is to create an accessible, engaging space where Chadians and global audiences can connect with the depth and beauty of Chadian heritage."
+msgstr "Tchad Ma Culture est une plateforme numérique dédiée à l'exploration et au partage de la richesse culturelle du Tchad. Nous célébrons la diversité de notre peuple à travers des histoires, des traditions, de l'art, des langues et de la musique. Notre objectif est de créer un espace accessible et engageant où les Tchadiens et les publics mondiaux peuvent se connecter avec la profondeur et la beauté du patrimoine tchadien."
+
+#: templates/index.html:129
+msgid "Our Vision"
+msgstr "Notre vision"
+
+#: templates/index.html:131
+msgid "Our vision is to establish Chad as a globally recognized cultural hub, where traditions are preserved, artists are empowered, and the world is educated about our rich heritage. We strive to connect the past, present, and future of Chadian culture through innovation and collaboration."
+msgstr "Notre vision est de faire du Tchad un centre culturel mondialement reconnu, où les traditions sont préservées, les artistes sont valorisés et le monde est informé de notre riche patrimoine. Nous nous efforçons de relier le passé, le présent et l'avenir de la culture tchadienne par l'innovation et la collaboration."
+
+#: templates/index.html:136
+msgid "Our Mission"
+msgstr "Notre mission"
+
+#: templates/index.html:138
+msgid "To preserve, promote, and present Chadian culture in a meaningful and modern way by empowering communities, educating audiences, and fostering pride in our identity."
+msgstr "Préserver, promouvoir et présenter la culture tchadienne de manière significative et moderne en autonomisant les communautés, en éduquant les publics et en renforçant la fierté de notre identité."
+
+#: templates/index.html:143
+msgid "Heritage & History of Chad"
+msgstr "Patrimoine et histoire du Tchad"
+
+#: templates/index.html:146
+msgid "Chad’s Historical Roots"
+msgstr "Les racines historiques du Tchad"
+
+#: templates/index.html:148
+msgid "Chad's history is deeply rooted in the ancient civilizations that flourished in the region. The country boasts ancient archaeological sites, including the Sao civilization ruins and prehistoric rock engravings of the Ennedi Plateau. Traditional mudbrick architecture, such as the palaces of Abéché and the earthen mosques of the Sahel, reflect the country’s architectural legacy. The Kanem-Bornu Empire, one of Africa’s most powerful kingdoms, thrived for centuries, influencing trade, culture, and governance. Chad is home to over 200 ethnic groups across its 1,284,000km2, each with its own unique traditions and customs, contributing to the country's diverse cultural landscape."
+msgstr "L'histoire du Tchad est profondément enracinée dans les anciennes civilisations qui ont prospéré dans la région. Le pays possède des sites archéologiques anciens, y compris les ruines de la civilisation Sao et les gravures rupestres préhistoriques du plateau d'Ennedi. L'architecture traditionnelle en briques de boue, comme les palais d'Abéché et les mosquées en terre du Sahel, reflète l'héritage architectural du pays. L'Empire Kanem-Bornu, l'un des royaumes les plus puissants d'Afrique, a prospéré pendant des siècles, influençant le commerce, la culture et la gouvernance. Le Tchad abrite plus de 200 groupes ethniques sur ses 1 284 000 km², chacun avec ses propres traditions et coutumes uniques, contribuant au paysage culturel diversifié du pays."
+
+#: templates/index.html:153
+msgid "Cultural Milestones"
+msgstr "Étapes culturelles"
+
+#: templates/index.html:155
+msgid "Throughout history, Chad has experienced significant cultural transformations. From the rise of indigenous kingdoms and Islamic influences to the impact of colonization and independence in 1960, these milestones have shaped Chad’s identity. Today, Chad continues to celebrate its heritage through festivals, traditional ceremonies, and cultural preservation efforts."
+msgstr "Tout au long de l'histoire, le Tchad a connu des transformations culturelles significatives. De l'essor des royaumes indigènes et des influences islamiques à l'impact de la colonisation et de l'indépendance en 1960, ces étapes ont façonné l'identité du Tchad. Aujourd'hui, le Tchad continue de célébrer son patrimoine à travers des festivals, des cérémonies traditionnelles et des efforts de préservation culturelle."
+
+#: templates/index.html:160
+msgid "Oral Traditions & Folklore"
+msgstr "Traditions orales et folklore"
+
+#: templates/index.html:162
+msgid "Oral traditions play a vital role in preserving Chad’s history. Storytelling, poetry, and folklore have been passed down through generations, keeping ancestral wisdom alive. Elders and griots (traditional storytellers) share myths, legends, and moral lessons that continue to influence Chadian society today."
+msgstr "Les traditions orales jouent un rôle essentiel dans la préservation de l'histoire du Tchad. Les récits, la poésie et le folklore ont été transmis de génération en génération, maintenant la sagesse ancestrale vivante. Les aînés et les griots (conteurs traditionnels) partagent des mythes, des légendes et des leçons morales qui continuent d'influencer la société tchadienne aujourd'hui."
+
+#: templates/index.html:169
+msgid "Cuisine and Taste of Tradition"
+msgstr "Cuisine et saveurs traditionnelles"
+
+#: templates/index.html:172
+msgid "Traditional Dishes & Recipes"
+msgstr "Plats et recettes traditionnels"
+
+#: templates/index.html:174
+msgid "Chadian cuisine is a delightful blend of African, Arab, and French influences, offering a variety of hearty and flavorful dishes. One of the most iconic meals is <span class=\"highlight\">Bouillie</span>, a traditional porridge made from millet, often enjoyed as breakfast."
+msgstr "La cuisine tchadienne est un mélange délicieux d'influences africaines, arabes et françaises, offrant une variété de plats copieux et savoureux. L'un des repas les plus emblématiques est la <span class=\"highlight\">Bouillie</span>, une bouillie traditionnelle faite de mil, souvent dégustée au petit-déjeuner."
+
+#: templates/index.html:177
+msgid "Another staple is <span class=\"highlight\">Daraba</span>, a nutritious vegetable stew cooked with okra, tomatoes, and peanuts. <span class=\"highlight\">Kisra</span>, a thin sorghum-based flatbread, is commonly served with rich sauces. Grilled meats, such as <span class=\"highlight\">Chadian-style lamb skewers</span>, are also popular across the country."
+msgstr "Un autre plat de base est le <span class=\"highlight\">Daraba</span>, un ragoût de légumes nutritif cuit avec du gombo, des tomates et des arachides. Le <span class=\"highlight\">Kisra</span>, un pain plat fin à base de sorgho, est couramment servi avec des sauces riches. Les viandes grillées, comme les <span class=\"highlight\">brochettes d'agneau à la tchadienne</span>, sont également populaires à travers le pays."
+
+#: templates/index.html:182
+msgid "Food & Cultural Identity"
+msgstr "Cuisine et identité culturelle"
+
+#: templates/index.html:184
+msgid "Food plays a central role in Chadian cultural identity, symbolizing hospitality, community, and tradition. Meals are often shared in large groups, emphasizing the value of togetherness. Traditional dishes are deeply connected to the country's diverse ethnic heritage, with each region offering its own unique flavors and cooking techniques."
+msgstr "La nourriture joue un rôle central dans l'identité culturelle tchadienne, symbolisant l'hospitalité, la communauté et la tradition. Les repas sont souvent partagés en grands groupes, soulignant l'importance du vivre-ensemble. Les plats traditionnels sont profondément liés à l'héritage ethnique diversifié du pays, chaque région offrant ses propres saveurs et techniques de cuisine uniques."
+
+#: templates/index.html:187
+msgid "Ingredients like millet, sorghum, fish, peanuts, and spices are commonly used in daily cooking, reflecting the country's agricultural resources and historical trade influences."
+msgstr "Des ingrédients comme le mil, le sorgho, le poisson, les arachides et les épices sont couramment utilisés dans la cuisine quotidienne, reflétant les ressources agricoles du pays et les influences commerciales historiques."
+
+#: templates/index.html:192
+msgid "Chadian Food Around the World"
+msgstr "La cuisine tchadienne dans le monde"
+
+#: templates/index.html:194
+msgid "While Chadian cuisine is not as widely recognized as other African culinary traditions, it is slowly gaining international appreciation. Chadian restaurants and food festivals in diaspora communities are introducing global audiences to the unique flavors of Chad."
+msgstr "Bien que la cuisine tchadienne ne soit pas aussi largement reconnue que d'autres traditions culinaires africaines, elle gagne lentement une reconnaissance internationale. Les restaurants tchadiens et les festivals culinaires dans les communautés de la diaspora introduisent les saveurs uniques du Tchad à un public mondial."
+
+#: templates/index.html:197
+msgid "Additionally, Chadian chefs and food enthusiasts are using digital platforms to share traditional recipes and cooking methods with the world, helping to preserve and promote the country’s culinary heritage."
+msgstr "De plus, les chefs tchadiens et les passionnés de cuisine utilisent des plateformes numériques pour partager des recettes traditionnelles et des méthodes de cuisson avec le monde, contribuant à préserver et promouvoir le patrimoine culinaire du pays."
+
+#: templates/index.html:204
+msgid "Tourism & Heritage Sites"
+msgstr "Tourisme et sites patrimoniaux"
+
+#: templates/index.html:207
+msgid "UNESCO & Historical Sites"
+msgstr "Sites UNESCO et historiques"
+
+#: templates/index.html:209
+msgid "Chad is home to remarkable natural and historical landmarks that reflect its cultural and environmental significance. One of the most famous is <span class=\"highlight\">Zakouma National Park</span>, a protected wildlife sanctuary known for its elephants, lions, and diverse ecosystems. The <span class=\"highlight\">Ennedi Plateau</span>, a UNESCO World Heritage Site, is a breathtaking rock formation featuring ancient cave paintings that date back thousands of years. Another key landmark is <span class=\"highlight\">Lake Chad</span>, once one of the largest lakes in Africa, playing a crucial role in the region’s history and economy."
+msgstr "Le Tchad abrite des monuments naturels et historiques remarquables qui reflètent son importance culturelle et environnementale. L'un des plus célèbres est le <span class=\"highlight\">Parc national de Zakouma</span>, un sanctuaire de faune protégé connu pour ses éléphants, lions et écosystèmes diversifiés. Le <span class=\"highlight\">Plateau d'Ennedi</span>, un site du patrimoine mondial de l'UNESCO, est une formation rocheuse à couper le souffle présentant des peintures rupestres anciennes datant de milliers d'années. Un autre site clé est le <span class=\"highlight\">Lac Tchad</span>, autrefois l'un des plus grands lacs d'Afrique, jouant un rôle crucial dans l'histoire et l'économie de la région."
+
+#: templates/index.html:214
+msgid "Hidden Cultural Gems"
+msgstr "Joyaux culturels cachés"
+
+#: templates/index.html:216
+msgid "Beyond the well-known landmarks, Chad offers many hidden cultural treasures. The <span class=\"highlight\">Gerewol Festival</span>, celebrated by the Wodaabe people, is a spectacular event where men compete in elaborate dances and attire to attract partners. In rural areas, travelers can experience traditional <span class=\"highlight\">nomadic lifestyles</span>, visit local craft markets, and engage with communities that preserve ancient customs."
+msgstr "Au-delà des monuments bien connus, le Tchad offre de nombreux trésors culturels cachés. Le <span class=\"highlight\">Festival Gerewol</span>, célébré par le peuple Wodaabe, est un événement spectaculaire où les hommes concourent dans des danses et des tenues élaborées pour attirer des partenaires. Dans les zones rurales, les voyageurs peuvent découvrir des <span class=\"highlight\">modes de vie nomades traditionnels</span>, visiter des marchés artisanaux locaux et interagir avec des communautés qui préservent les coutumes anciennes."
+
+#: templates/index.html:221
+msgid "Travel Guide for Cultural Enthusiasts"
+msgstr "Guide de voyage pour les passionnés de culture"
+
+#: templates/index.html:223
+msgid "Exploring Chad requires cultural sensitivity and an appreciation for its traditions. Visitors are encouraged to <span class=\"highlight\">respect local customs</span>, dress modestly, and engage with communities in a meaningful way. Guided tours to UNESCO sites, eco-tourism experiences, and cultural immersion programs offer a responsible way to discover Chad’s heritage."
+msgstr "Explorer le Tchad nécessite une sensibilité culturelle et une appréciation de ses traditions. Les visiteurs sont encouragés à <span class=\"highlight\">respecter les coutumes locales</span>, s'habiller modestement et s'engager avec les communautés de manière significative. Les visites guidées des sites UNESCO, les expériences d'écotourisme et les programmes d'immersion culturelle offrent une manière responsable de découvrir le patrimoine du Tchad."
+
+#: templates/index.html:230
+msgid "Chadian Art & Literature"
+msgstr "Art et littérature tchadienne"
+
+#: templates/index.html:233
+msgid "Traditional & Contemporary Art"
+msgstr "Art traditionnel et contemporain"
+
+#: templates/index.html:235
+msgid "Chad has a long tradition of artistic expression, from <strong>handwoven textiles and intricate pottery</strong> to wood carvings and rock art. Ancient cave paintings in the <strong>Ennedi Plateau</strong> are among the oldest artistic representations in Africa."
+msgstr "Le Tchad a une longue tradition d'expression artistique, allant des <strong>textiles tissés à la main et poteries complexes</strong> aux sculptures sur bois et à l'art rupestre. Les peintures rupestres anciennes du <strong>Plateau d'Ennedi</strong> comptent parmi les plus anciennes représentations artistiques en Afrique."
+
+#: templates/index.html:238
+msgid "In modern times, Chadian artists blend traditional themes with contemporary styles, creating works that reflect identity, resilience, and social change."
+msgstr "À l'époque moderne, les artistes tchadiens mélangent des thèmes traditionnels avec des styles contemporains, créant des œuvres qui reflètent l'identité, la résilience et le changement social."
+
+#: templates/index.html:243
+msgid "Chadian Storytelling & Folklore"
+msgstr "Contes et folklore tchadien"
+
+#: templates/index.html:245
+msgid "Storytelling is central to Chadian culture. Passed down orally by griots (traditional storytellers), folktales, myths, and historical legends preserve knowledge across generations."
+msgstr "La narration est au cœur de la culture tchadienne. Transmis oralement par les griots (conteurs traditionnels), les contes populaires, les mythes et les légendes historiques préservent le savoir à travers les générations."
+
+#: templates/index.html:250
+msgid "Notable Chadian Writers"
+msgstr "Écrivains tchadiens notables"
+
+#: templates/index.html:252
+msgid "Chadian literature has grown through writers like <strong>Joseph Brahim Seid</strong>, whose works explore Chad’s history and cultural identity. Contemporary authors continue to share Chad’s narratives on the global stage."
+msgstr "La littérature tchadienne s'est développée grâce à des écrivains comme <strong>Joseph Brahim Seid</strong>, dont les œuvres explorent l'histoire et l'identité culturelle du Tchad. Les auteurs contemporains continuent de partager les récits du Tchad sur la scène mondiale."
+
+#: templates/index.html:259
+msgid "Music & Performing Arts of Chad"
+msgstr "Musique et arts de la scène du Tchad"
+
+#: templates/index.html:262
+msgid "Traditional Instruments"
+msgstr "Instruments traditionnels"
+
+#: templates/index.html:264
+msgid "Chad’s music features unique instruments like the kakaki (ceremonial trumpet), the balafon (African xylophone), drums, and flutes. These instruments accompany songs used for ceremonies, events of death, rituals, and storytelling."
+msgstr "La musique tchadienne utilise des instruments uniques comme le kakaki (trompette cérémonielle), le balafon (xylophone africain), les tambours et les flûtes. Ces instruments accompagnent les chants utilisés pour les cérémonies, les événements funéraires, les rituels et la narration."
+
+#: templates/index.html:269
+msgid "Cultural Dance & Theater"
+msgstr "Danse et théâtre culturels"
+
+#: templates/index.html:271
+msgid "Traditional Chadian dances, such as those at the <strong>Gerewol Festival</strong>, are performed with elaborate costumes and rhythmic beats. Theater performances often include masked acting and musical storytelling."
+msgstr "Les danses traditionnelles tchadiennes, comme celles du <strong>Festival Gerewol</strong>, sont exécutées avec des costumes élaborés et des rythmes cadencés. Les représentations théâtrales incluent souvent du jeu masqué et des récits musicaux."
+
+#: templates/index.html:276
+msgid "Modern Chadian Music"
+msgstr "Musique tchadienne moderne"
+
+#: templates/index.html:278
+msgid "Chad’s contemporary artists are blending Hip-hop, Afrobeat, and indigenous sounds, addressing themes of social change and identity."
+msgstr "Les artistes contemporains du Tchad mélangent le hip-hop, l'afrobeat et les sons indigènes, abordant des thèmes de changement social et d'identité."
+
+#: templates/index.html:285
+msgid "Podcast & Video Series: Voices of Chad"
+msgstr "Podcast et séries vidéo : Voix du Tchad"
+
+#: templates/index.html:286
+msgid "Discover the stories of Chad through insightful interviews, behind-the-scenes footage, and creative showcases."
+msgstr "Découvrez les histoires du Tchad à travers des interviews perspicaces, des images en coulisses et des vitrines créatives."
+
+#: templates/index.html:289
+msgid "Interviews with Cultural Icons & Elders"
+msgstr "Interviews avec des icônes culturelles et des aînés"
+
+#: templates/index.html:290
+msgid "Preserving Chad’s oral history through conversations with historians, artists, and community leaders."
+msgstr "Préserver l'histoire orale du Tchad à travers des conversations avec des historiens, des artistes et des leaders communautaires."
+
+#: templates/index.html:291
+msgid "Listen on Spotify"
+msgstr "Écouter sur Spotify"
+
+#: templates/index.html:295
+msgid "Behind-the-Scenes of Festivals & Events"
+msgstr "En coulisses des festivals et événements"
+
+#: templates/index.html:296
+msgid "Experience the beauty of Chadian festivals and traditional ceremonies through documentary-style storytelling."
+msgstr "Découvrez la beauté des festivals tchadiens et des cérémonies traditionnelles à travers une narration de style documentaire."
+
+#: templates/index.html:297
+msgid "Watch on YouTube"
+msgstr "Regarder sur YouTube"
+
+#: templates/index.html:301
+msgid "Spotlight on Emerging Talent"
+msgstr "Projecteur sur les talents émergents"
+
+#: templates/index.html:302
+msgid "Meet young Chadian creators, musicians, and filmmakers who are shaping the future of Chadian culture."
+msgstr "Rencontrez les jeunes créateurs, musiciens et cinéastes tchadiens qui façonnent l'avenir de la culture tchadienne."
+
+#: templates/index.html:303
+msgid "Watch Creators"
+msgstr "Regarder les créateurs"
+
+#: templates/index.html:310
+msgid "Meet the Elders: A Storytelling Feature"
+msgstr "Rencontrez les aînés : Une fonction de narration"
+
+#: templates/index.html:311
+msgid "Experience the wisdom of Chadian elders through their stories, preserved in video, audio, and written form."
+msgstr "Découvrez la sagesse des aînés tchadiens à travers leurs histoires, préservées sous forme de vidéos, d'audios et de textes écrits."
+
+#: templates/index.html:314
+msgid "Oral Story: The Origins of the Kanembu People"
+msgstr "Histoire orale : Les origines du peuple Kanembu"
+
+#: templates/index.html:315
+msgid "Translation: \"Long ago, our ancestors settled near Lake Chad, where the Kanembu people flourished...\""
+msgstr "Traduction : « Il y a longtemps, nos ancêtres se sont installés près du lac Tchad, où le peuple Kanembu a prospéré... »"
+
+#: templates/index.html:316
+msgid "Listen to Audio"
+msgstr "Écouter l'audio"
+
+#: templates/index.html:320
+msgid "Wisdom from a Chadian Elder"
+msgstr "Sagesse d'un aîné tchadien"
+
+#: templates/index.html:321
+msgid "Translation: \"A wise person does not rush in judgment. In our village, the elders always say...\""
+msgstr "Traduction : « Une personne sage ne se précipite pas dans le jugement. Dans notre village, les aînés disent toujours... »"
+
+#: templates/index.html:329
+msgid "Community & Cultural Engagement"
+msgstr "Engagement communautaire et culturel"
+
+#: templates/index.html:332
+msgid "Festivals & Events"
+msgstr "Festivals et événements"
+
+#: templates/index.html:334
+msgid "Chad hosts a variety of festivals and cultural events that showcase the nation’s vibrant traditions. One of the most famous celebrations is the <span class=\"highlight\">Gerewol Festival</span>, where the Wodaabe people participate in an elaborate courtship dance competition. The <span class=\"highlight\">N'Djamena Biennale</span> is a major cultural event that brings together artists, musicians, and performers from across Chad and beyond."
+msgstr "Le Tchad organise une variété de festivals et d'événements culturels qui mettent en valeur les traditions vibrantes de la nation. L'une des célébrations les plus célèbres est le <span class=\"highlight\">Festival Gerewol</span>, où le peuple Wodaabe participe à une compétition de danse de cour élaborée. La <span class=\"highlight\">Biennale de N'Djamena</span> est un événement culturel majeur qui réunit des artistes, des musiciens et des interprètes du Tchad et d'ailleurs."
+
+#: templates/index.html:339
+msgid "Workshops & Learning Spaces"
+msgstr "Ateliers et espaces d'apprentissage"
+
+#: templates/index.html:341
+msgid "To preserve and pass down Chadian traditions, various workshops and learning spaces provide hands-on experiences in arts, crafts, and music. Visitors and locals can participate in activities such as <span class=\"highlight\">traditional pottery-making</span>, <span class=\"highlight\">musical instrument crafting</span>, and <span class=\"highlight\">dance workshops</span>."
+msgstr "Pour préserver et transmettre les traditions tchadiennes, divers ateliers et espaces d'apprentissage offrent des expériences pratiques dans les arts, l'artisanat et la musique. Les visiteurs et les locaux peuvent participer à des activités telles que la <span class=\"highlight\">fabrication de poteries traditionnelles</span>, la <span class=\"highlight\">création d'instruments de musique</span> et les <span class=\"highlight\">ateliers de danse</span>."
+
+#: templates/index.html:346
+msgid "Local & Global Partnerships"
+msgstr "Partenariats locaux et mondiaux"
+
+#: templates/index.html:348
+msgid "Cultural preservation and promotion thrive through collaboration. Chad is actively engaging with local organizations, international cultural bodies, and academic institutions to <span class=\"highlight\">document, celebrate, and innovate</span> its rich traditions."
+msgstr "La préservation et la promotion culturelles prospèrent grâce à la collaboration. Le Tchad s'engage activement avec des organisations locales, des organismes culturels internationaux et des institutions académiques pour <span class=\"highlight\">documenter, célébrer et innover</span> ses riches traditions."
+
+#: templates/index.html:355
+msgid "Visual Journey: Gallery"
+msgstr "Voyage visuel : Galerie"
+
+#: templates/index.html:356
+msgid "Explore the beauty of Chad through stunning images showcasing its landscapes, arts, people, and traditions."
+msgstr "Explorez la beauté du Tchad à travers des images époustouflantes mettant en valeur ses paysages, ses arts, ses peuples et ses traditions."
+
+#: templates/index.html:359
+msgid "Beautiful landscape of Chad"
+msgstr "Beau paysage du Tchad"
+
+#: templates/index.html:360
+msgid "Traditional Chadian artwork"
+msgstr "Œuvre d'art traditionnelle tchadienne"
+
+#: templates/index.html:361
+msgid "People of Chad in traditional attire"
+msgstr "Peuple du Tchad en tenue traditionnelle"
+
+#: templates/index.html:362
+msgid "Chadian cultural festival"
+msgstr "Festival culturel tchadien"
+
+#: templates/index.html:363
+msgid "Traditional Chadian dance performance"
+msgstr "Performance de danse traditionnelle tchadienne"
+
+#: templates/index.html:364
+msgid "Local market in Chad"
+msgstr "Marché local au Tchad"
+
+#: templates/index.html:371
+msgid "Cultural Insights & Blog"
+msgstr "Perspectives culturelles et blog"
+
+#: templates/index.html:374
+msgid "Deep Dives into Chadian Traditions"
+msgstr "Plongées approfondies dans les traditions tchadiennes"
+
+#: templates/index.html:376
+msgid "Explore the rich traditions of Chad, from <strong>marriage customs</strong> to <strong>traditional clothing</strong> and ancient beliefs. These customs reflect the deep-rooted history and diversity of the country's many ethnic groups."
+msgstr "Explorez les riches traditions du Tchad, des <strong>coutumes de mariage</strong> aux <strong>vêtements traditionnels</strong> et aux croyances anciennes. Ces coutumes reflètent l'histoire profondément enracinée et la diversité des nombreux groupes ethniques du pays."
+
+#: templates/index.html:377
+msgid "Read More"
+msgstr "Lire la suite"
+
+#: templates/index.html:381
+msgid "Modern Cultural Shifts"
+msgstr "Changements culturels modernes"
+
+#: templates/index.html:383
+msgid "As Chad embraces modernization, its culture is evolving. Discover how traditional and contemporary influences blend, shaping the way Chadians live, dress, and celebrate today."
+msgstr "Alors que le Tchad embrasse la modernisation, sa culture évolue. Découvrez comment les influences traditionnelles et contemporaines se mélangent, façonnant la manière dont les Tchadiens vivent, s'habillent et célèbrent aujourd'hui."
+
+#: templates/index.html:388
+msgid "Interviews with Artists, Musicians, & Historians"
+msgstr "Interviews avec des artistes, musiciens et historiens"
+
+#: templates/index.html:390
+msgid "Meet the cultural pioneers preserving and promoting Chadian heritage. Read exclusive interviews with <strong>artists, musicians, and historians</strong> who are shaping the future of Chad’s cultural identity."
+msgstr "Rencontrez les pionniers culturels qui préservent et promeuvent le patrimoine tchadien. Lisez des interviews exclusives avec des <strong>artistes, musiciens et historiens</strong> qui façonnent l'avenir de l'identité culturelle du Tchad."
+
+#: templates/index.html:398
+msgid "Chadian Proverbs & Wisdom"
+msgstr "Proverbes et sagesse tchadienne"
+
+#: templates/index.html:401
+msgid "Traditional Sayings & Meanings"
+msgstr "Dictons traditionnels et significations"
+
+#: templates/index.html:402
+msgid "The river that forgets its source will soon dry up."
+msgstr "La rivière qui oublie sa source s'asséchera bientôt."
+
+#: templates/index.html:403
+msgid "Meaning"
+msgstr "Signification"
+
+#: templates/index.html:403
+msgid "Never forget your roots, heritage, or where you come from."
+msgstr "N'oubliez jamais vos racines, votre patrimoine ou d'où vous venez."
+
+#: templates/index.html:406
+msgid "Proverbs by Region"
+msgstr "Proverbes par région"
+
+#: templates/index.html:407
+msgid "Kanembu Proverb"
+msgstr "Proverbe Kanembu"
+
+#: templates/index.html:408
+msgid "A tree does not grow taller than the one that gave it shade."
+msgstr "Un arbre ne pousse pas plus haut que celui qui lui a donné de l'ombre."
+
+#: templates/index.html:409
+msgid "Respect and honor those who have supported and guided you."
+msgstr "Respectez et honorez ceux qui vous ont soutenu et guidé."
+
+#: templates/index.html:410
+msgid "Sara Proverb"
+msgstr "Proverbe Sara"
+
+#: templates/index.html:411
+msgid "A lion’s strength is not in its roar, but in its actions."
+msgstr "La force d'un lion n'est pas dans son rugissement, mais dans ses actions."
+
+#: templates/index.html:412
+msgid "True power is demonstrated through deeds, not words."
+msgstr "Le vrai pouvoir se démontre par les actes, pas par les mots."
+
+#: templates/index.html:413
+msgid "Arab Chadian Proverb"
+msgstr "Proverbe arabe tchadien"
+
+#: templates/index.html:414
+msgid "A traveler with no destination is like a bird without wings."
+msgstr "Un voyageur sans destination est comme un oiseau sans ailes."
+
+#: templates/index.html:415
+msgid "One must have purpose and direction in life."
+msgstr "Il faut avoir un but et une direction dans la vie."
+
+#: templates/index.html:422
+msgid "Featured Chadian Artists & Creatives"
+msgstr "Artistes et créatifs tchadiens en vedette"
+
+#: templates/index.html:423
+msgid "Discover the talented painters, musicians, writers, and cultural icons who are shaping Chad’s artistic and creative landscape."
+msgstr "Découvrez les peintres, musiciens, écrivains et icônes culturelles talentueux qui façonnent le paysage artistique et créatif du Tchad."
+
+#: templates/index.html:426
+msgid "Painting by Chadian artist Ahmed Djibrine"
+msgstr "Peinture de l'artiste tchadien Ahmed Djibrine"
+
+#: templates/index.html:427
+msgid "Ahmed Djibrine"
+msgstr "Ahmed Djibrine"
+
+#: templates/index.html:428
+msgid "A renowned Chadian painter whose artwork reflects the rich history and diverse cultures of Chad."
+msgstr "Un peintre tchadien renommé dont les œuvres reflètent l'histoire riche et les cultures diverses du Tchad."
+
+#: templates/index.html:433
+msgid "Performance by Chadian musician Ngass David"
+msgstr "Performance du musicien tchadien Ngass David"
+
+#: templates/index.html:434
+msgid "Ngass David"
+msgstr "Ngass David"
+
+#: templates/index.html:435
+msgid "A talented singer blending traditional Chadian rhythms with modern Afrobeat influences."
+msgstr "Un chanteur talentueux mélangeant les rythmes traditionnels tchadiens avec des influences afrobeat modernes."
+
+#: templates/index.html:440
+msgid "Portrait of Chadian writer Rais Kim"
+msgstr "Portrait de l'écrivain tchadien Rais Kim"
+
+#: templates/index.html:441
+msgid "Rais Kim"
+msgstr "Rais Kim"
+
+#: templates/index.html:442
+msgid "An acclaimed writer known for his novels that explore Chadian history, politics, and identity."
+msgstr "Un écrivain reconnu connu pour ses romans qui explorent l'histoire, la politique et l'identité tchadienne."
+
+#: templates/index.html:450
+msgid "Interactive Cultural Map of Chad"
+msgstr "Carte culturelle interactive du Tchad"
+
+#: templates/index.html:451
+msgid "Click on a region to learn more about its traditions, ethnic groups, and cultural highlights."
+msgstr "Cliquez sur une région pour en savoir plus sur ses traditions, ses groupes ethniques et ses points forts culturels."
+
+#: templates/index.html:453
+msgid "Interactive cultural map of Chad"
+msgstr "Carte culturelle interactive du Tchad"
+
+#: templates/index.html:455
+msgid "N'Djamena"
+msgstr "N'Djamena"
+
+#: templates/index.html:456
+msgid "Lac Region"
+msgstr "Région du Lac"
+
+#: templates/index.html:457
+msgid "Ennedi"
+msgstr "Ennedi"
+
+#: templates/index.html:461
+msgid "Region Name"
+msgstr "Nom de la région"
+
+#: templates/index.html:462
+msgid "Click on a region to explore its culture and traditions."
+msgstr "Cliquez sur une région pour explorer sa culture et ses traditions."
+
+#: templates/index.html:468
+msgid "Cultural Innovation and Future of Chadian Heritage"
+msgstr "Innovation culturelle et avenir du patrimoine tchadien"
+
+#: templates/index.html:471
+msgid "Chadian Culture in the Digital Age"
+msgstr "La culture tchadienne à l'ère numérique"
+
+#: templates/index.html:473
+msgid "The rise of technology is transforming how Chadian culture is preserved and shared. Social media platforms, digital archives, and streaming services are giving artists and historians the tools to showcase traditions to a global audience."
+msgstr "L'essor de la technologie transforme la manière dont la culture tchadienne est préservée et partagée. Les plateformes de médias sociaux, les archives numériques et les services de streaming offrent aux artistes et aux historiens les outils pour présenter les traditions à un public mondial."
+
+#: templates/index.html:476
+msgid "Young Chadians are using <strong>YouTube, TikTok, and Instagram</strong> to promote traditional music, fashion, and languages, making culture more accessible to the younger generation."
+msgstr "Les jeunes Tchadiens utilisent <strong>YouTube, TikTok et Instagram</strong> pour promouvoir la musique traditionnelle, la mode et les langues, rendant la culture plus accessible à la jeune génération."
+
+#: templates/index.html:481
+msgid "AI & Virtual Reality in Cultural Preservation"
+msgstr "IA et réalité virtuelle dans la préservation culturelle"
+
+#: templates/index.html:483
+msgid "Artificial Intelligence (AI) and Virtual Reality (VR) are opening new doors for cultural preservation. AI-driven <strong>language translation tools</strong> help document indigenous Chadian languages, ensuring they are not lost over time."
+msgstr "L'intelligence artificielle (IA) et la réalité virtuelle (VR) ouvrent de nouvelles portes pour la préservation culturelle. Les outils de <strong>traduction linguistique basés sur l'IA</strong> aident à documenter les langues indigènes tchadiennes, garantissant qu'elles ne se perdent pas avec le temps."
+
+#: templates/index.html:486
+msgid "Virtual reality experiences allow people to explore <strong>historical sites, festivals, and traditional ceremonies</strong> from anywhere in the world."
+msgstr "Les expériences de réalité virtuelle permettent aux gens d'explorer les <strong>sites historiques, festivals et cérémonies traditionnelles</strong> depuis n'importe où dans le monde."
+
+#: templates/index.html:491
+msgid "Diaspora’s Role in Cultural Promotion"
+msgstr "Rôle de la diaspora dans la promotion culturelle"
+
+#: templates/index.html:493
+msgid "The Chadian diaspora plays a crucial role in <strong>spreading and preserving Chadian culture</strong>. Through <strong>film, literature, music, and community events</strong>, Chadians living abroad are helping introduce their traditions to international audiences."
+msgstr "La diaspora tchadienne joue un rôle crucial dans la <strong>diffusion et la préservation de la culture tchadienne</strong>. À travers le <strong>cinéma, la littérature, la musique et les événements communautaires</strong>, les Tchadiens vivant à l'étranger aident à présenter leurs traditions à un public international."
+
+#: templates/index.html:500
+msgid "E-Learning & Cultural Resources"
+msgstr "E-learning et ressources culturelles"
+
+#: templates/index.html:501
+msgid "Access courses, e-books, and language guides to explore Chad’s rich culture and traditions."
+msgstr "Accédez à des cours, des livres électroniques et des guides linguistiques pour explorer la riche culture et les traditions du Tchad."
+
+#: templates/index.html:504
+msgid "Online Courses & Workshops"
+msgstr "Cours en ligne et ateliers"
+
+#: templates/index.html:505
+msgid "Learn Chadian arts, traditional music, and cultural practices through interactive courses."
+msgstr "Apprenez les arts tchadiens, la musique traditionnelle et les pratiques culturelles à travers des cours interactifs."
+
+#: templates/index.html:506
+msgid "Explore Courses"
+msgstr "Explorer les cours"
+
+#: templates/index.html:510
+msgid "Downloadable E-books & Research Materials"
+msgstr "Livres électroniques et matériaux de recherche téléchargeables"
+
+#: templates/index.html:511
+msgid "Access historical books, research papers, and cultural studies on Chad."
+msgstr "Accédez à des livres historiques, des articles de recherche et des études culturelles sur le Tchad."
+
+#: templates/index.html:512
+msgid "Download E-books"
+msgstr "Télécharger des livres électroniques"
+
+#: templates/index.html:516
+msgid "Chadian Language Guide"
+msgstr "Guide des langues tchadiennes"
+
+#: templates/index.html:517
+msgid "Learn key phrases in Sara, Kanembu, Arabic, and other Chadian languages."
+msgstr "Apprenez des phrases clés en Sara, Kanembu, arabe et autres langues tchadiennes."
+
+#: templates/index.html:518
+msgid "Explore Language Guide"
+msgstr "Explorer le guide linguistique"
+
+#: templates/index.html:525
+msgid "Digital Art & NFTs: The Future of Chadian Creativity"
+msgstr "Art numérique et NFT : L'avenir de la créativité tchadienne"
+
+#: templates/index.html:526
+msgid "Chadian artists are exploring new frontiers in the digital world. Through NFTs, they are showcasing and selling their artwork globally while preserving traditional art for future generations."
+msgstr "Les artistes tchadiens explorent de nouvelles frontières dans le monde numérique. À travers les NFT, ils présentent et vendent leurs œuvres à l'échelle mondiale tout en préservant l'art traditionnel pour les générations futures."
+
+#: templates/index.html:529
+msgid "Chadian NFT artwork"
+msgstr "Œuvre NFT tchadienne"
+
+#: templates/index.html:530
+msgid "Chadian Art in the NFT Space"
+msgstr "Art tchadien dans l'espace NFT"
+
+#: templates/index.html:531
+msgid "Support Chadian artists by purchasing unique digital artworks inspired by traditional and modern themes."
+msgstr "Soutenez les artistes tchadiens en achetant des œuvres numériques uniques inspirées de thèmes traditionnels et modernes."
+
+#: templates/index.html:532
+msgid "Buy on OpenSea"
+msgstr "Acheter sur OpenSea"
+
+#: templates/index.html:536
+msgid "Digital archive of Chadian traditional art"
+msgstr "Archive numérique de l'art traditionnel tchadien"
+
+#: templates/index.html:537
+msgid "Digitally Archiving Traditional Art"
+msgstr "Archivage numérique de l'art traditionnel"
+
+#: templates/index.html:538
+msgid "Efforts are being made to digitize and archive Chadian paintings, sculptures, and textiles for future generations."
+msgstr "Des efforts sont en cours pour numériser et archiver les peintures, sculptures et textiles tchadiens pour les générations futures."
+
+#: templates/index.html:539
+msgid "Explore Archive"
+msgstr "Explorer l'archive"
+
+#: templates/index.html:546
+msgid "Experience Chad: Virtual Cultural Tour"
+msgstr "Découvrez le Tchad : Visite culturelle virtuelle"
+
+#: templates/index.html:547
+msgid "Explore Chad’s rich heritage through immersive 360° virtual tours and interactive AR experiences. Take a multimedia journey through Chad’s heritage, no passport required."
+msgstr "Explorez le riche patrimoine du Tchad à travers des visites virtuelles immersives à 360° et des expériences AR interactives. Faites un voyage multimédia à travers le patrimoine du Tchad, sans passeport requis."
+
+#: templates/index.html:550
+msgid "360° Tour: Gerewol Festival"
+msgstr "Visite à 360° : Festival Gerewol"
+
+#: templates/index.html:551
+msgid "Step into the world of the Gerewol Festival, a breathtaking cultural event featuring dance, music, and tradition."
+msgstr "Plongez dans le monde du Festival Gerewol, un événement culturel époustouflant mettant en vedette la danse, la musique et la tradition."
+
+#: templates/index.html:552
+msgid "Start 360° Tour"
+msgstr "Démarrer la visite à 360°"
+
+#: templates/index.html:556
+msgid "Explore Ancient Chad"
+msgstr "Explorer le Tchad ancien"
+
+#: templates/index.html:557
+msgid "Take a virtual tour of Chad’s historical landmarks, including the Ennedi Plateau and ancient rock art sites."
+msgstr "Faites une visite virtuelle des monuments historiques du Tchad, y compris le plateau d'Ennedi et les sites d'art rupestre anciens."
+
+#: templates/index.html:558
+msgid "Explore Now"
+msgstr "Explorer maintenant"
+
+#: templates/index.html:562
+msgid "Augmented Reality: Chadian Artifacts"
+msgstr "Réalité augmentée : Artefacts tchadiens"
+
+#: templates/index.html:563
+msgid "Use AR to interact with traditional Chadian artifacts, sculptures, and ancient manuscripts."
+msgstr "Utilisez la réalité augmentée pour interagir avec des artefacts tchadiens traditionnels, des sculptures et des manuscrits anciens."
+
+#: templates/index.html:564
+msgid "Try AR Experience"
+msgstr "Essayer l'expérience AR"
+
+#: templates/index.html:571
+msgid "Membership & Community Portal"
+msgstr "Portail de membres et de communauté"
+
+#: templates/index.html:572
+msgid "Become part of a growing community dedicated to preserving and promoting Chadian culture."
+msgstr "Faites partie d'une communauté croissante dédiée à la préservation et à la promotion de la culture tchadienne."
+
+#: templates/index.html:575
+msgid "Exclusive Member Access"
+msgstr "Accès exclusif aux membres"
+
+#: templates/index.html:576
+msgid "Join a network of cultural enthusiasts, researchers, and artists for access to exclusive content and events."
+msgstr "Rejoignez un réseau de passionnés de culture, de chercheurs et d'artistes pour accéder à des contenus et événements exclusifs."
+
+#: templates/index.html:577
+msgid "Join Now"
+msgstr "Rejoignez maintenant"
+
+#: templates/index.html:581
+msgid "Discussion Forums"
+msgstr "Forums de discussion"
+
+#: templates/index.html:582
+msgid "Exchange ideas, share research, and collaborate with other members in our cultural discussion forums."
+msgstr "Échangez des idées, partagez des recherches et collaborez avec d'autres membres dans nos forums de discussion culturels."
+
+#: templates/index.html:583
+msgid "Visit Forum"
+msgstr "Visiter le forum"
+
+#: templates/index.html:587
+msgid "Monthly Newsletters"
+msgstr "Bulletins mensuels"
+
+#: templates/index.html:588
+msgid "Stay updated on Chadian culture, events, and featured artists with our exclusive monthly newsletter."
+msgstr "Restez informé sur la culture tchadienne, les événements et les artistes en vedette avec notre newsletter mensuelle exclusive."
+
+#: templates/index.html:589
+msgid "Subscribe Now"
+msgstr "S'abonner maintenant"
+
+#: templates/index.html:596
+msgid "Test Your Knowledge: Interactive Quiz"
+msgstr "Testez vos connaissances : Quiz interactif"
+
+#: templates/index.html:597
+msgid "Answer these fun questions about Chadian history, arts, and traditions and earn badges!"
+msgstr "Répondez à ces questions amusantes sur l'histoire, les arts et les traditions tchadiennes et gagnez des badges !"
+
+#: templates/index.html:600
+msgid "What is the capital of Chad?"
+msgstr "Quelle est la capitale du Tchad ?"
+
+#: templates/index.html:602
+msgid "Lagos"
+msgstr "Lagos"
+
+#: templates/index.html:603
+msgid "N'Djamena"
+msgstr "N'Djamena"
+
+#: templates/index.html:604
+msgid "Bamako"
+msgstr "Bamako"
+
+#: templates/index.html:605
+msgid "Sarh"
+msgstr "Sarh"
+
+#: templates/index.html:609
+msgid "What is the national language of Chad?"
+msgstr "Quelle est la langue nationale du Tchad ?"
+
+#: templates/index.html:611
+msgid "French"
+msgstr "Français"
+
+#: templates/index.html:612
+msgid "Arabic"
+msgstr "Arabe"
+
+#: templates/index.html:613
+msgid "Sara"
+msgstr "Sara"
+
+#: templates/index.html:614
+msgid "Arabic and French"
+msgstr "Arabe et Français"
+
+#: templates/index.html:618
+msgid "Who or what is 'Toumaï' in Chadian cultural and scientific history?"
+msgstr "Qui ou qu'est-ce que 'Toumaï' dans l'histoire culturelle et scientifique tchadienne ?"
+
+#: templates/index.html:620
+msgid "A traditional Chadian dance"
+msgstr "Une danse traditionnelle tchadienne"
+
+#: templates/index.html:621
+msgid "A legendary warrior of the Toubou people"
+msgstr "Un guerrier légendaire du peuple Toubou"
+
+#: templates/index.html:622
+msgid "The oldest known human ancestor discovered in Chad"
+msgstr "L'ancêtre humain le plus ancien découvert au Tchad"
+
+#: templates/index.html:623
+msgid "A sacred mountain in southern Chad"
+msgstr "Une montagne sacrée dans le sud du Tchad"
+
+#: templates/index.html:626
+msgid "Submit quiz answers"
+msgstr "Soumettre les réponses du quiz"
+
+#: templates/index.html:627
+msgid "Submit Answer"
+msgstr "Soumettre la réponse"
+
+#: templates/index.html:629
+msgid "Congratulations! You've earned the 'Chad Expert' badge!"
+msgstr "Félicitations ! Vous avez gagné le badge 'Expert du Tchad' !"
+
+#: templates/index.html:635
+msgid "Chadian Cultural Marketplace"
+msgstr "Marché culturel tchadien"
+
+#: templates/index.html:636
+msgid "Discover and support local Chadian artisans, musicians, and filmmakers."
+msgstr "Découvrez et soutenez les artisans, musiciens et cinéastes tchadiens locaux."
+
+#: templates/index.html:638
+msgid "Shop for Authentic Chadian Crafts, Books & Art"
+msgstr "Achetez des objets artisanaux, livres et œuvres d'art tchadiens authentiques"
+
+#: templates/index.html:641
+msgid "Handmade Chadian woven basket"
+msgstr "Panier tissé tchadien fait main"
+
+#: templates/index.html:642
+msgid "Handmade Chadian Basket"
+msgstr "Panier tchadien fait main"
+
+#: templates/index.html:643
+msgid "Beautifully woven baskets by Chadian artisans, perfect for home decor."
+msgstr "Paniers magnifiquement tissés par des artisans tchadiens, parfaits pour la décoration intérieure."
+
+#: templates/index.html:644
+msgid "Buy Now"
+msgstr "Acheter maintenant"
+
+#: templates/index.html:648
+msgid "Book on Chadian cultural history"
+msgstr "Livre sur l'histoire culturelle tchadienne"
+
+#: templates/index.html:649
+msgid "Voices of Chad - Book"
+msgstr "Voix du Tchad - Livre"
+
+#: templates/index.html:650
+msgid "An insightful book exploring the rich cultural history of Chad."
+msgstr "Un livre perspicace explorant la riche histoire culturelle du Tchad."
+
+#: templates/index.html:655
+msgid "Traditional Chadian painting"
+msgstr "Peinture traditionnelle tchadienne"
+
+#: templates/index.html:656
+msgid "Traditional Chadian Painting"
+msgstr "Peinture traditionnelle tchadienne"
+
+#: templates/index.html:657
+msgid "Vibrant artwork reflecting Chad’s landscapes and traditions."
+msgstr "Œuvres vibrantes reflétant les paysages et traditions du Tchad."
+
+#: templates/index.html:662
+msgid "Music & Film Streaming"
+msgstr "Streaming de musique et de films"
+
+#: templates/index.html:664
+msgid "Album cover of Chadian music collection"
+msgstr "Pochette d'album de la collection de musique tchadienne"
+
+#: templates/index.html:665
+msgid "Chadian Rhythms"
+msgstr "Rythmes tchadiens"
+
+#: templates/index.html:666
+msgid "A collection of traditional and modern Chadian music."
+msgstr "Une collection de musique tchadienne traditionnelle et moderne."
+
+#: templates/index.html:667
+msgid "Listen Now"
+msgstr "Écouter maintenant"
+
+#: templates/index.html:671
+msgid "Poster for Chadian cultural documentary"
+msgstr "Affiche pour le documentaire culturel tchadien"
+
+#: templates/index.html:672
+msgid "Chad: A Cultural Journey"
+msgstr "Tchad : Un voyage culturel"
+
+#: templates/index.html:673
+msgid "A documentary exploring Chad’s rich cultural heritage."
+msgstr "Un documentaire explorant le riche patrimoine culturel du Tchad."
+
+#: templates/index.html:674
+msgid "Watch Now"
+msgstr "Regarder maintenant"
+
+#: templates/index.html:681
+msgid "Get Involved in Preserving Chadian Culture"
+msgstr "Participez à la préservation de la culture tchadienne"
+
+#: templates/index.html:682
+msgid "Play a role in keeping Chad’s rich cultural heritage alive by volunteering, donating, or supporting artists and initiatives."
+msgstr "Jouez un rôle dans la préservation du riche patrimoine culturel du Tchad en faisant du bénévolat, en faisant un don ou en soutenant les artistes et les initiatives."
+
+#: templates/index.html:685
+msgid "Volunteer & Collaborate"
+msgstr "Bénévolat et collaboration"
+
+#: templates/index.html:686
+msgid "Join cultural projects, assist in research, or help document Chadian traditions for future generations."
+msgstr "Participez à des projets culturels, aidez à la recherche ou contribuez à documenter les traditions tchadiennes pour les générations futures."
+
+#: templates/index.html:687
+msgid "Join as a Volunteer"
+msgstr "Rejoignez en tant que bénévole"
+
+#: templates/index.html:691
+msgid "Donate to Cultural Initiatives"
+msgstr "Faire un don pour des initiatives culturelles"
+
+#: templates/index.html:692
+msgid "Your contributions help fund cultural preservation projects, support local artists, and document traditional heritage."
+msgstr "Vos contributions aident à financer des projets de préservation culturelle, à soutenir les artistes locaux et à documenter le patrimoine traditionnel."
+
+#: templates/index.html:693
+msgid "Donate Now"
+msgstr "Faire un don maintenant"
+
+#: templates/index.html:697
+msgid "Support Chadian Artists"
+msgstr "Soutenez les artistes tchadiens"
+
+#: templates/index.html:698
+msgid "Discover and sponsor talented artists, musicians, and writers to ensure Chadian culture thrives."
+msgstr "Découvrez et parrainez des artistes, musiciens et écrivains talentueux pour garantir que la culture tchadienne prospère."
+
+#: templates/index.html:699
+msgid "Support an Artist"
+msgstr "Soutenir un artiste"
+
+#: templates/index.html:706
+msgid "Contact & Collaborate"
+msgstr "Contact et collaboration"
+
+#: templates/index.html:707
+msgid "Connect with us to contribute, collaborate, or learn more about Chadian culture."
+msgstr "Contactez-nous pour contribuer, collaborer ou en apprendre davantage sur la culture tchadienne."
+
+#: templates/index.html:710
+msgid "Your Name"
+msgstr "Votre nom"
+
+#: templates/index.html:711
+msgid "Enter your name"
+msgstr "Entrez votre nom"
+
+#: templates/index.html:714
+msgid "Your Email"
+msgstr "Votre email"
+
+#: templates/index.html:715
+msgid "Enter your email address"
+msgstr "Entrez votre adresse email"
+
+#: templates/index.html:718
+msgid "Your Message"
+msgstr "Votre message"
+
+#: templates/index.html:719
+msgid "Enter your message"
+msgstr "Entrez votre message"
+
+#: templates/index.html:722
+msgid "Send your message"
+msgstr "Envoyez votre message"
+
+#: templates/index.html:722
+msgid "Send Message"
+msgstr "Envoyer le message"
+
+#: templates/index.html:729
+msgid "Contact Us"
+msgstr "Contactez-nous"
+
+#: templates/index.html:730
+msgid "Email"
+msgstr "Email"
+
+#: templates/index.html:730
+msgid "info@tchadmaculture.com"
+msgstr "info@tchadmaculture.com"
+
+#: templates/index.html:731
+msgid "Phone"
+msgstr "Téléphone"
+
+#: templates/index.html:731
+msgid "+235 64 74 76 26"
+msgstr "+235 64 74 76 26"
+
+#: templates/index.html:732
+msgid "Address"
+msgstr "Adresse"
+
+#: templates/index.html:732
+msgid "N'Djamena, Chad"
+msgstr "N'Djamena, Tchad"
+
+#: templates/index.html:735
+msgid "Follow Us"
+msgstr "Suivez-nous"
+
+#: templates/index.html:737
+msgid "Facebook"
+msgstr "Facebook"
+
+#: templates/index.html:738
+msgid "Instagram"
+msgstr "Instagram"
+
+#: templates/index.html:739
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/index.html:749
+msgid "N'Djamena"
+msgstr "N'Djamena"
+
+#: templates/index.html:749
+msgid "The capital city, a vibrant hub of Chadian culture and history."
+msgstr "La capitale, un centre vibrant de la culture et de l'histoire tchadienne."
+
+#: templates/index.html:750
+msgid "Lac Region"
+msgstr "Région du Lac"
+
+#: templates/index.html:750
+msgid "Home to Lake Chad, a vital cultural and economic landmark."
+msgstr "Abrite le lac Tchad, un monument culturel et économique vital."
+
+#: templates/index.html:751
+msgid "Ennedi"
+msgstr "Ennedi"
+
+#: templates/index.html:751
+msgid "Known for its stunning rock formations and ancient cave paintings."
+msgstr "Connu pour ses formations rocheuses époustouflantes et ses peintures rupestres anciennes."
+
+#: templates/index.html:756
+msgid "You got %s out of 3 correct!"
+msgstr "Vous avez obtenu %s sur 3 correct !"
